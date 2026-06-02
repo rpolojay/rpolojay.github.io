@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to set savings goals and actually hit them. A proven step-by-step method to save for anything — vacation, car, house, retirement.">
+<title>How to Set and Hit Your Savings Goals | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.step{display:flex;gap:1rem;margin-bottom:1.2rem;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.snum{min-width:34px;height:34px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.05rem;flex-shrink:0}
+.sc h3{font-size:.95rem;font-weight:500;margin-bottom:.28rem}
+.sc p{font-size:.88rem;color:var(--muted);margin:0}
+.goals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.4rem 0}
+.goal-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem;text-align:center}
+.goal-card .ico{font-size:1.8rem;margin-bottom:.5rem}
+.goal-card h3{font-size:.88rem;font-weight:500;margin-bottom:.25rem}
+.goal-card .timeframe{font-size:.75rem;color:var(--green);font-weight:500;margin-bottom:.3rem}
+.goal-card p{font-size:.78rem;color:var(--muted);margin:0}
+.example-calc{background:var(--gl);border-radius:var(--r);padding:1.3rem;margin:1.4rem 0}
+.example-calc h3{font-size:.95rem;font-weight:500;margin-bottom:.8rem;color:var(--gd)}
+.calc-row{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:.4rem}
+.calc-row.total{font-weight:500;border-top:1px solid #9FE1CB;padding-top:.5rem;margin-top:.5rem;font-size:.95rem;color:var(--gd)}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.goals-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="saving.html" id="bc2">Saving</a></div>
+  <div class="atag" id="atag">Saving · Beginner</div>
+  <h1 id="ah1">How to Set and Actually Hit Your Savings Goals</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">Most people have savings goals — a vacation, a new car, a down payment, an emergency fund. Most people also never reach them. The difference isn't income. It's having a clear, specific plan with a number and a deadline.</p>
+
+  <div id="len">
+    <h2>Why Vague Goals Fail</h2>
+    <p>"I want to save more money" is not a goal — it's a wish. Without a specific amount and deadline, your brain has no way to make it real. You'll always find something else to spend the money on.</p>
+    <p>A real savings goal has three parts: <strong>what</strong> you're saving for, <strong>how much</strong> it costs, and <strong>when</strong> you need it by. Everything else flows from those three numbers.</p>
+
+    <h2>Common Savings Goals — Where to Start</h2>
+    <div class="goals-grid">
+      <div class="goal-card"><div class="ico">🛡️</div><div class="timeframe">Priority #1</div><h3>Emergency Fund</h3><p>3–6 months of expenses. The foundation of every financial plan.</p></div>
+      <div class="goal-card"><div class="ico">✈️</div><div class="timeframe">Short-term (6–18 months)</div><h3>Vacation</h3><p>Specific trip with a budget and date. Very achievable with a plan.</p></div>
+      <div class="goal-card"><div class="ico">🚗</div><div class="timeframe">Medium-term (1–3 years)</div><h3>Car Purchase</h3><p>Save for a down payment or full cash purchase to avoid car loans.</p></div>
+      <div class="goal-card"><div class="ico">🏠</div><div class="timeframe">Long-term (3–7 years)</div><h3>Home Down Payment</h3><p>Typically 10–20% of the home price. Requires serious commitment.</p></div>
+      <div class="goal-card"><div class="ico">🎓</div><div class="timeframe">Variable</div><h3>Education</h3><p>Your own courses, certifications, or a child's education fund.</p></div>
+      <div class="goal-card"><div class="ico">🌅</div><div class="timeframe">Long-term (20–40 years)</div><h3>Retirement</h3><p>The biggest goal of all. Start early — even small contributions matter enormously.</p></div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>The 5-Step Goal-Setting Formula</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Name the goal and attach a specific number</h3><p>"Save for vacation" becomes "Save $2,400 for a trip to Mexico in December." Now it's real and actionable. Write it down.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Calculate your monthly savings target</h3><p>Divide the total amount by the number of months you have. $2,400 over 12 months = $200/month. Now you know exactly what to do each month.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Open a dedicated savings account for each goal</h3><p>Never mix goal money with your regular account. A separate account with a label ("Mexico Trip", "Emergency Fund") makes it feel real and protects it from impulse spending.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Automate the transfer on payday</h3><p>Set up an automatic transfer for your monthly savings amount on the day you get paid. You'll never miss money you never see. This is the most powerful step.</p></div></div>
+    <div class="step"><div class="snum">5</div><div class="sc"><h3>Track progress monthly</h3><p>Check your balance once a month. Watching the number grow is motivating and helps you catch problems early. Celebrate milestones — halfway there is worth acknowledging.</p></div></div>
+
+    <h2>Managing Multiple Goals at Once</h2>
+    <div class="example-calc">
+      <h3>Example: Splitting $500/month across goals</h3>
+      <div class="calc-row"><span>Emergency Fund (Priority)</span><span>$200/month</span></div>
+      <div class="calc-row"><span>Vacation Fund (12 months)</span><span>$150/month</span></div>
+      <div class="calc-row"><span>Car Down Payment (24 months)</span><span>$100/month</span></div>
+      <div class="calc-row"><span>Miscellaneous / Buffer</span><span>$50/month</span></div>
+      <div class="calc-row total"><span>Total Saved</span><span>$500/month</span></div>
+    </div>
+    <p>You don't have to save for only one thing at a time. Splitting your savings across multiple dedicated accounts keeps all your goals moving forward simultaneously.</p>
+
+    <div class="tipbox">
+      <strong>💡 The Order Matters</strong>
+      Always fully fund your emergency fund before any other goal. It's your financial foundation — without it, one unexpected expense will raid every other savings account. Once your emergency fund is complete, allocate that freed-up money to your next priority goal.
+    </div>
+
+    <h2>What to Do When You Fall Behind</h2>
+    <p>Life happens — an unexpected expense, a job change, a tough month. If you fall behind on a savings goal, don't give up. Simply recalculate: how much do you need to save per month now to still hit the goal? Adjust and keep going. A delayed goal is better than an abandoned one.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>Por qué las metas vagas fracasan</h2>
+    <p>"Quiero ahorrar más dinero" no es una meta — es un deseo. Sin un monto específico y una fecha límite, tu cerebro no puede hacerlo real. Siempre encontrarás algo más en qué gastar el dinero.</p>
+    <p>Una meta de ahorro real tiene tres partes: <strong>para qué</strong> ahorras, <strong>cuánto</strong> cuesta y <strong>cuándo</strong> lo necesitas. Todo lo demás fluye de esos tres números.</p>
+
+    <h2>Metas de ahorro comunes — por dónde empezar</h2>
+    <div class="goals-grid">
+      <div class="goal-card"><div class="ico">🛡️</div><div class="timeframe">Prioridad #1</div><h3>Fondo de emergencia</h3><p>3–6 meses de gastos. La base de todo plan financiero.</p></div>
+      <div class="goal-card"><div class="ico">✈️</div><div class="timeframe">Corto plazo (6–18 meses)</div><h3>Vacaciones</h3><p>Un viaje específico con presupuesto y fecha. Muy alcanzable con un plan.</p></div>
+      <div class="goal-card"><div class="ico">🚗</div><div class="timeframe">Mediano plazo (1–3 años)</div><h3>Compra de carro</h3><p>Ahorra para la cuota inicial o compra en efectivo para evitar créditos de vehículo.</p></div>
+      <div class="goal-card"><div class="ico">🏠</div><div class="timeframe">Largo plazo (3–7 años)</div><h3>Cuota inicial de vivienda</h3><p>Típicamente el 10–30% del precio. Requiere compromiso serio.</p></div>
+      <div class="goal-card"><div class="ico">🎓</div><div class="timeframe">Variable</div><h3>Educación</h3><p>Tus propios cursos, certificaciones o fondo educativo para un hijo.</p></div>
+      <div class="goal-card"><div class="ico">🌅</div><div class="timeframe">Largo plazo (20–40 años)</div><h3>Pensión / Retiro</h3><p>La meta más grande de todas. Empieza temprano — incluso pequeñas contribuciones importan enormemente.</p></div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>La fórmula de 5 pasos para fijar metas</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Nombra la meta y asígnale un número específico</h3><p>"Ahorrar para vacaciones" se convierte en "Ahorrar $2.400.000 para un viaje a Cartagena en diciembre." Ahora es real y accionable. Escríbelo.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Calcula tu objetivo de ahorro mensual</h3><p>Divide el monto total entre el número de meses que tienes. $2.400.000 en 12 meses = $200.000/mes. Ahora sabes exactamente qué hacer cada mes.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Abre una cuenta de ahorros dedicada para cada meta</h3><p>Nunca mezcles el dinero de las metas con tu cuenta regular. Una cuenta separada con una etiqueta ("Viaje a Cartagena", "Fondo de emergencia") lo hace real y lo protege del gasto impulsivo.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Automatiza la transferencia el día de pago</h3><p>Configura una transferencia automática por tu monto de ahorro mensual el día que recibes tu salario. Nunca extrañarás dinero que nunca ves. Este es el paso más poderoso.</p></div></div>
+    <div class="step"><div class="snum">5</div><div class="sc"><h3>Rastrea el progreso mensualmente</h3><p>Revisa tu saldo una vez al mes. Ver crecer el número es motivador y te ayuda a detectar problemas a tiempo. Celebra los hitos — llegar a la mitad vale reconocerlo.</p></div></div>
+
+    <div class="tipbox">
+      <strong>💡 El orden importa</strong>
+      Siempre financia completamente tu fondo de emergencia antes que cualquier otra meta. Es tu base financiera — sin él, un gasto inesperado vaciará todas las demás cuentas de ahorro. Una vez que tu fondo de emergencia esté completo, destina ese dinero liberado a tu siguiente meta prioritaria.
+    </div>
+
+    <h2>Qué hacer cuando te atrasas</h2>
+    <p>La vida pasa — un gasto inesperado, un cambio de trabajo, un mes difícil. Si te atrasas en una meta de ahorro, no te rindas. Simplemente recalcula: ¿cuánto necesitas ahorrar por mes ahora para aún alcanzar la meta? Ajusta y sigue adelante. Una meta retrasada es mejor que una abandonada.</p>
+  </div>
+</article>
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">Why Vague Goals Fail</a></li>
+        <li><a href="#" id="toc2">Common Savings Goals</a></li>
+        <li><a href="#" id="toc3">The 5-Step Formula</a></li>
+        <li><a href="#" id="toc4">Multiple Goals at Once</a></li>
+        <li><a href="#" id="toc5">When You Fall Behind</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="emergency-fund.html" id="rel1">Build an Emergency Fund</a></li>
+        <li><a href="high-yield-savings.html" id="rel2">High-Yield Savings Accounts</a></li>
+        <li><a href="budget-guide.html" id="rel3">The 50/30/20 Budget Rule</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Saving",atag:"Saving · Beginner",ah1:"How to Set and Actually Hit Your Savings Goals",ameta:"📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly",aintro:"Most people have savings goals — a vacation, a new car, a down payment, an emergency fund. Most people also never reach them. The difference isn't income. It's having a clear, specific plan with a number and a deadline.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"Why Vague Goals Fail",toc2:"Common Savings Goals",toc3:"The 5-Step Formula",toc4:"Multiple Goals at Once",toc5:"When You Fall Behind",relh:"Related Articles",rel1:"Build an Emergency Fund",rel2:"High-Yield Savings Accounts",rel3:"The 50/30/20 Budget Rule",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Ahorro",atag:"Ahorro · Principiante",ah1:"Cómo fijar metas de ahorro y realmente cumplirlas",ameta:"📅 Actualizado junio 2025 · ⏱ 6 min de lectura · 👤 Para principiantes",aintro:"La mayoría de las personas tiene metas de ahorro — unas vacaciones, un carro nuevo, una cuota inicial, un fondo de emergencia. La mayoría de las personas tampoco las alcanza. La diferencia no es el ingreso. Es tener un plan claro y específico con un número y una fecha límite.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"Por qué las metas vagas fracasan",toc2:"Metas de ahorro comunes",toc3:"La fórmula de 5 pasos",toc4:"Múltiples metas a la vez",toc5:"Cuando te atrasas",relh:"Artículos relacionados",rel1:"Fondo de emergencia",rel2:"Cuentas de ahorro de alto rendimiento",rel3:"La regla del 50/30/20",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'':'none';document.getElementById('les').style.display=l==='es'?'':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>
