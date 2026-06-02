@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MoneyMadeSimple / DineroFácil – Personal finance tips for beginners. Budgeting, saving, and building wealth from scratch.">
+<title>MoneyMadeSimple – Personal Finance for Beginners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<!-- Replace with your AdSense code once approved:
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR-ID" crossorigin="anonymous"></script>
+-->
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}
+.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{font-size:.9rem;font-weight:500;color:var(--muted);transition:color .2s}
+nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.nav-cta:hover{background:var(--gd)!important;text-decoration:none!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.hero{background:linear-gradient(135deg,var(--gd) 0%,#0f6e56 60%,var(--green) 100%);color:#fff;padding:5rem 2rem 4rem;text-align:center}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.32rem .9rem;font-size:.78rem;letter-spacing:.05em;margin-bottom:1.4rem;text-transform:uppercase}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;max-width:680px;margin:0 auto 1.1rem}
+.hero p{font-size:1.05rem;opacity:.88;max-width:500px;margin:0 auto 2rem}
+.hbtns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.bw{background:#fff;color:var(--gd);padding:.7rem 1.7rem;border-radius:999px;font-weight:500;font-size:.92rem;transition:transform .15s}
+.bw:hover{transform:translateY(-2px);text-decoration:none}
+.bo{border:1.5px solid rgba(255,255,255,.6);color:#fff;padding:.7rem 1.7rem;border-radius:999px;font-weight:500;font-size:.92rem}
+.bo:hover{background:rgba(255,255,255,.1);text-decoration:none}
+.stats{background:var(--white);border-bottom:1px solid var(--border);display:flex;justify-content:center;gap:3rem;padding:1.4rem 2rem;flex-wrap:wrap}
+.stat{text-align:center}
+.snum{font-family:'Playfair Display',serif;font-size:1.55rem;color:var(--green)}
+.slbl{font-size:.78rem;color:var(--muted)}
+.adbar{max-width:960px;margin:2rem auto;padding:0 1.5rem}
+.adph{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:90px;color:#bbb;font-size:.78rem;letter-spacing:.04em}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.5rem}
+.sh{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:1.4rem;margin-top:2.5rem}
+.sh h2{font-family:'Playfair Display',serif;font-size:1.65rem}
+.sa{font-size:.84rem;color:var(--green);font-weight:500}
+.sa:hover{text-decoration:underline}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:3rem}
+.cf{background:var(--white);border-radius:var(--r);border:1px solid var(--border);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;color:var(--text)}
+.cf:hover{box-shadow:0 8px 28px rgba(0,0,0,.09);transform:translateY(-3px);text-decoration:none}
+.ci{height:170px;display:flex;align-items:center;justify-content:center;font-size:3.2rem}
+.cb{padding:1.2rem;flex:1;display:flex;flex-direction:column}
+.ctag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.45rem}
+.cb h3{font-family:'Playfair Display',serif;font-size:1.1rem;line-height:1.35;margin-bottom:.55rem}
+.cb p{font-size:.86rem;color:var(--muted);flex:1;margin-bottom:.9rem}
+.cm{font-size:.73rem;color:#bbb}
+.twocol{display:grid;grid-template-columns:1fr 300px;gap:2rem;margin-bottom:3rem}
+.agrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:2rem}
+.cs{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;transition:box-shadow .2s,transform .2s;color:var(--text)}
+.cs:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-2px);text-decoration:none}
+.cs .ic{font-size:1.7rem;margin-bottom:.7rem}
+.cs h3{font-size:.92rem;font-weight:500;line-height:1.4;margin-bottom:.35rem}
+.cs p{font-size:.8rem;color:var(--muted)}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.55rem}
+.tlist{list-style:none}
+.tlist li{padding:.48rem 0;border-bottom:1px solid var(--border);font-size:.86rem;display:flex;justify-content:space-between;align-items:center}
+.tlist li:last-child{border-bottom:none}
+.tlist a{color:var(--text)}
+.tlist a:hover{color:var(--green);text-decoration:none}
+.tc{background:var(--gl);color:var(--gd);font-size:.7rem;font-weight:500;padding:.18rem .5rem;border-radius:999px}
+.nl{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.4rem;text-align:center}
+.nl h4{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:.38rem}
+.nl p{font-size:.8rem;color:var(--muted);margin-bottom:.9rem}
+.nl input{width:100%;padding:.58rem .85rem;border:1px solid #FAC775;border-radius:8px;font-size:.83rem;margin-bottom:.55rem;font-family:'DM Sans',sans-serif;background:#fff}
+.nl button{width:100%;background:var(--amber);color:#fff;border:none;padding:.62rem;border-radius:8px;font-size:.83rem;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif}
+.nl button:hover{background:#633806}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:3rem}
+.tc2{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.25rem;transition:background .2s,transform .2s}
+.tc2:hover{background:#042C53;transform:translateY(-2px);text-decoration:none}
+.tc2 .ic{font-size:1.55rem;margin-bottom:.55rem}
+.tc2 h3{font-size:.88rem;font-weight:500;margin-bottom:.28rem;color:#fff}
+.tc2 p{font-size:.76rem;opacity:.75;color:#fff}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2.5rem 2rem;margin-top:2rem}
+.fi{max-width:960px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
+.fb .logo{color:#fff;font-size:1.1rem;display:block;margin-bottom:.55rem}
+.fb p{font-size:.8rem}
+footer h5{color:#fff;font-size:.83rem;font-weight:500;margin-bottom:.75rem}
+footer ul{list-style:none}
+footer ul li{margin-bottom:.42rem}
+footer ul a{font-size:.8rem;opacity:.7;color:#fff}
+footer ul a:hover{opacity:1;text-decoration:none}
+.fd{max-width:960px;margin:1rem auto 0;font-size:.7rem;opacity:.52}
+.fb2{max-width:960px;margin:1.2rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.15);font-size:.73rem;display:flex;justify-content:space-between}
+@media(max-width:768px){nav ul{display:none}.feat,.twocol,.agrid,.tgrid,.fi{grid-template-columns:1fr}.stats{gap:1.5rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="logo" id="logo">Money<span>Made</span>Simple</span>
+  <ul>
+    <li><a id="n1" href="#">Budgeting</a></li>
+    <li><a id="n2" href="#">Saving</a></li>
+    <li><a id="n3" href="#">Debt</a></li>
+    <li><a id="n4" href="#">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="badge" id="badge">🌱 Personal Finance for Real People</div>
+  <h1 id="h1">Take Control of Your Money — Starting Today</h1>
+  <p id="herop">Simple, jargon-free guides to help you budget, save, and build wealth no matter where you're starting from.</p>
+  <div class="hbtns">
+    <a href="budget-guide.html" class="bw" id="cta1">Start With Budgeting →</a>
+    <a href="#" class="bo" id="cta2">Browse All Guides</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="snum">50+</div><div class="slbl" id="st1">Free Articles</div></div>
+  <div class="stat"><div class="snum">10k+</div><div class="slbl" id="st2">Readers Monthly</div></div>
+  <div class="stat"><div class="snum">$0</div><div class="slbl" id="st3">Cost to Learn</div></div>
+  <div class="stat"><div class="snum">5 min</div><div class="slbl" id="st4">Average Read</div></div>
+</div>
+
+<div class="adbar"><div class="adph" id="ad1">Advertisement (728×90) — Replace with AdSense code</div></div>
+
+<div class="wrap">
+  <div class="sh"><h2 id="sh1">Start Here</h2><a href="#" class="sa" id="sa1">See all guides →</a></div>
+  <div class="feat">
+    <a href="budget-guide.html" class="cf">
+      <div class="ci" style="background:var(--gl)">💰</div>
+      <div class="cb"><div class="ctag" id="c1tag">Budgeting</div><h3 id="c1h">The 50/30/20 Budget Rule: A Beginner's Complete Guide</h3><p id="c1p">The simplest budgeting method ever created. Learn how to split your income into needs, wants, and savings in under 5 minutes.</p><div class="cm" id="c1m">8 min read · Beginner</div></div>
+    </a>
+    <a href="emergency-fund.html" class="cf">
+      <div class="ci" style="background:var(--al)">🛡️</div>
+      <div class="cb"><div class="ctag" id="c2tag">Saving</div><h3 id="c2h">How to Build an Emergency Fund From Zero</h3><p id="c2p">Life is unpredictable. Discover the step-by-step method to build a safety net of 3–6 months' expenses even on a tight budget.</p><div class="cm" id="c2m">6 min read · Beginner</div></div>
+    </a>
+  </div>
+
+  <div class="twocol">
+    <div>
+      <div class="sh" style="margin-top:0"><h2 id="sh2">Latest Articles</h2><a href="#" class="sa" id="sa2">All articles →</a></div>
+      <div class="agrid">
+        <a href="credit-score.html" class="cs"><div class="ic">📊</div><h3 id="s1h">What Is a Credit Score?</h3><p id="s1p">Everything you need to know in plain English.</p></a>
+        <a href="#" class="cs"><div class="ic">💳</div><h3 id="s2h">Credit Card Basics</h3><p id="s2p">How to use credit cards to your advantage.</p></a>
+        <a href="#" class="cs"><div class="ic">📈</div><h3 id="s3h">Investing for Beginners</h3><p id="s3p">You don't need thousands to start building wealth.</p></a>
+        <a href="#" class="cs"><div class="ic">🏠</div><h3 id="s4h">Renting vs Buying</h3><p id="s4p">Run the real numbers before this big decision.</p></a>
+        <a href="#" class="cs"><div class="ic">💸</div><h3 id="s5h">7 Ways to Cut Bills</h3><p id="s5p">Small changes that add up to hundreds per month.</p></a>
+        <a href="#" class="cs"><div class="ic">🎯</div><h3 id="s6h">Hit Your Savings Goals</h3><p id="s6p">A proven method that makes saving feel effortless.</p></a>
+      </div>
+    </div>
+    <aside>
+      <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+      <div class="scard">
+        <h4 id="toph">Browse by Topic</h4>
+        <ul class="tlist">
+          <li><a href="#" id="t1">Budgeting</a><span class="tc">12</span></li>
+          <li><a href="#" id="t2">Saving Money</a><span class="tc">9</span></li>
+          <li><a href="#" id="t3">Debt & Credit</a><span class="tc">8</span></li>
+          <li><a href="#" id="t4">Investing</a><span class="tc">7</span></li>
+          <li><a href="#" id="t5">Side Income</a><span class="tc">5</span></li>
+        </ul>
+      </div>
+      <div class="nl">
+        <h4 id="nlh">💌 Free Money Tips</h4>
+        <p id="nlp">Get one simple finance tip every week. No spam, ever.</p>
+        <input type="email" id="nlemail" placeholder="your@email.com">
+        <button id="nlb">Subscribe — It's Free</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="sh"><h2 id="toolsh">Free Finance Tools</h2></div>
+  <div class="tgrid">
+    <a href="tools/budget-calculator.html" class="tc2"><div class="ic">🧮</div><h3 id="tl1h">Budget Calculator</h3><p id="tl1p">Enter your income and see your 50/30/20 split instantly.</p></a>
+    <a href="#" class="tc2"><div class="ic">💳</div><h3 id="tl2h">Debt Payoff Planner</h3><p id="tl2p">Find out exactly when you'll be debt-free.</p></a>
+    <a href="#" class="tc2"><div class="ic">📅</div><h3 id="tl3h">Savings Goal Tracker</h3><p id="tl3p">Set a goal and see the monthly savings needed.</p></a>
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="fb"><span class="logo" id="flogo">Money<span style="color:#5DCAA5">Made</span>Simple</span><p id="ftag">Helping everyday people understand money without the jargon. No fancy finance degree required.</p></div>
+    <div><h5 id="ftop">Topics</h5><ul><li><a href="#" id="fn1">Budgeting</a></li><li><a href="#" id="fn2">Saving</a></li><li><a href="#" id="fn3">Investing</a></li><li><a href="#" id="fn4">Debt</a></li></ul></div>
+    <div><h5 id="fsite">Site</h5><ul><li><a href="#" id="fab">About</a></li><li><a href="#" id="fpr">Privacy Policy</a></li><li><a href="#" id="fdi">Disclaimer</a></li><li><a href="#" id="fco">Contact</a></li></ul></div>
+  </div>
+  <div class="fd" id="flegal">MoneyMadeSimple is for informational purposes only and does not constitute financial advice. Always consult a qualified financial advisor before making financial decisions.</div>
+  <div class="fb2"><span id="fcopy">© 2025 MoneyMadeSimple. All rights reserved.</span></div>
+</footer>
+
+<script>
+const T={
+  en:{
+    logo:"Money<span style='color:var(--green)'>Made</span>Simple",
+    flogo:"Money<span style='color:#5DCAA5'>Made</span>Simple",
+    badge:"🌱 Personal Finance for Real People",
+    h1:"Take Control of Your Money — Starting Today",
+    herop:"Simple, jargon-free guides to help you budget, save, and build wealth no matter where you're starting from.",
+    cta1:"Start With Budgeting →",cta2:"Browse All Guides",
+    st1:"Free Articles",st2:"Readers Monthly",st3:"Cost to Learn",st4:"Average Read",
+    ad1:"Advertisement (728×90) — Replace with AdSense code",adside:"Ad (300×250) — AdSense",
+    sh1:"Start Here",sa1:"See all guides →",
+    c1tag:"Budgeting",c1h:"The 50/30/20 Budget Rule: A Beginner's Complete Guide",
+    c1p:"The simplest budgeting method ever created. Learn how to split your income into needs, wants, and savings in under 5 minutes.",c1m:"8 min read · Beginner",
+    c2tag:"Saving",c2h:"How to Build an Emergency Fund From Zero",
+    c2p:"Life is unpredictable. Discover the step-by-step method to build a safety net of 3–6 months' expenses even on a tight budget.",c2m:"6 min read · Beginner",
+    sh2:"Latest Articles",sa2:"All articles →",
+    s1h:"What Is a Credit Score?",s1p:"Everything you need to know in plain English.",
+    s2h:"Credit Card Basics",s2p:"How to use credit cards to your advantage.",
+    s3h:"Investing for Beginners",s3p:"You don't need thousands to start building wealth.",
+    s4h:"Renting vs Buying",s4p:"Run the real numbers before this big decision.",
+    s5h:"7 Ways to Cut Bills",s5p:"Small changes that add up to hundreds per month.",
+    s6h:"Hit Your Savings Goals",s6p:"A proven method that makes saving feel effortless.",
+    toph:"Browse by Topic",t1:"Budgeting",t2:"Saving Money",t3:"Debt & Credit",t4:"Investing",t5:"Side Income",
+    nlh:"💌 Free Money Tips",nlp:"Get one simple finance tip every week. No spam, ever.",nlb:"Subscribe — It's Free",
+    toolsh:"Free Finance Tools",
+    tl1h:"Budget Calculator",tl1p:"Enter your income and see your 50/30/20 split instantly.",
+    tl2h:"Debt Payoff Planner",tl2p:"Find out exactly when you'll be debt-free.",
+    tl3h:"Savings Goal Tracker",tl3p:"Set a goal and see the monthly savings needed.",
+    n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",
+    ftop:"Topics",fsite:"Site",fab:"About",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",
+    ftag:"Helping everyday people understand money without the jargon. No fancy finance degree required.",
+    flegal:"MoneyMadeSimple is for informational purposes only and does not constitute financial advice. Always consult a qualified financial advisor before making financial decisions.",
+    fcopy:"© 2025 MoneyMadeSimple. All rights reserved.",
+    fn1:"Budgeting",fn2:"Saving",fn3:"Investing",fn4:"Debt"
+  },
+  es:{
+    logo:"Dinero<span style='color:var(--green)'>Fácil</span>",
+    flogo:"Dinero<span style='color:#5DCAA5'>Fácil</span>",
+    badge:"🌱 Finanzas personales para todos",
+    h1:"Toma el control de tu dinero — comenzando hoy",
+    herop:"Guías simples y sin tecnicismos para ayudarte a presupuestar, ahorrar y construir riqueza sin importar desde dónde empiezas.",
+    cta1:"Empieza con el presupuesto →",cta2:"Ver todas las guías",
+    st1:"Artículos gratis",st2:"Lectores al mes",st3:"Costo para aprender",st4:"Lectura promedio",
+    ad1:"Publicidad (728×90) — Reemplaza con código AdSense",adside:"Publicidad (300×250)",
+    sh1:"Empieza aquí",sa1:"Ver todas las guías →",
+    c1tag:"Presupuesto",c1h:"La regla del 50/30/20: Guía completa para principiantes",
+    c1p:"El método de presupuesto más sencillo que existe. Aprende a dividir tus ingresos en necesidades, deseos y ahorro en menos de 5 minutos.",c1m:"8 min de lectura · Principiante",
+    c2tag:"Ahorro",c2h:"Cómo construir un fondo de emergencia desde cero",
+    c2p:"La vida es impredecible. Descubre el método paso a paso para crear un colchón financiero de 3–6 meses de gastos, incluso con presupuesto ajustado.",c2m:"6 min de lectura · Principiante",
+    sh2:"Últimos artículos",sa2:"Todos los artículos →",
+    s1h:"¿Qué es el puntaje de crédito?",s1p:"Todo lo que necesitas saber en términos sencillos.",
+    s2h:"Tarjetas de crédito: recompensas vs interés",s2p:"Cómo usar las tarjetas a tu favor.",
+    s3h:"Invertir para principiantes",s3p:"No necesitas miles para empezar a construir riqueza.",
+    s4h:"¿Arrendar o comprar?",s4p:"Haz los cálculos reales antes de esta gran decisión.",
+    s5h:"7 formas de reducir tus gastos",s5p:"Pequeños cambios que suman cientos al mes.",
+    s6h:"Cumple tus metas de ahorro",s6p:"Un método probado que hace que ahorrar sea casi automático.",
+    toph:"Explorar por tema",t1:"Presupuesto",t2:"Ahorro",t3:"Deudas y crédito",t4:"Inversión",t5:"Ingresos extra",
+    nlh:"💌 Consejos gratis",nlp:"Un consejo financiero sencillo cada semana. Sin spam, nunca.",nlb:"Suscribirme — Es gratis",
+    toolsh:"Herramientas financieras gratuitas",
+    tl1h:"Calculadora de presupuesto",tl1p:"Ingresa tus ingresos y ve tu división 50/30/20 al instante.",
+    tl2h:"Planificador de deudas",tl2p:"Descubre exactamente cuándo estarás libre de deudas.",
+    tl3h:"Rastreador de metas",tl3p:"Fija una meta y ve cuánto necesitas ahorrar cada mes.",
+    n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",
+    ftop:"Temas",fsite:"Sitio",fab:"Acerca de",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",
+    ftag:"Ayudando a personas comunes a entender el dinero sin tecnicismos. No se necesita un título en finanzas.",
+    flegal:"DineroFácil es solo para fines informativos y no constituye asesoría financiera. Consulta siempre con un asesor financiero calificado antes de tomar decisiones económicas.",
+    fcopy:"© 2025 DineroFácil. Todos los derechos reservados.",
+    fn1:"Presupuesto",fn2:"Ahorro",fn3:"Inversión",fn4:"Deudas"
+  }
+};
+
+let lang=localStorage.getItem('lang')||'en';
+
+function setLang(l){
+  lang=l;
+  localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){
+    const el=document.getElementById(id);
+    if(!el)continue;
+    if(id==='nlemail')el.placeholder=val;
+    else el.innerHTML=val;
+  }
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+
+setLang(lang);
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to build an emergency fund from zero, step by step, even on a tight budget.">
+<title>Emergency Fund Guide | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.step{display:flex;gap:1rem;margin-bottom:1.1rem;padding:1.15rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.snum{width:34px;height:34px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.05rem;flex-shrink:0}
+.sc h3{font-size:.93rem;font-weight:500;margin-bottom:.28rem}
+.sc p{font-size:.86rem;color:var(--muted);margin:0}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul><li><a id="n1" href="#">Budgeting</a></li><li><a id="n2" href="#">Saving</a></li><li><a id="n3" href="#">Debt</a></li><li><a id="n4" href="#">Investing</a></li></ul>
+  <div class="nav-r"><div class="ltog"><button class="lb on" onclick="setLang('en')">EN</button><button class="lb" onclick="setLang('es')">ES</button></div></div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <span id="bc2">Saving</span></div>
+  <div class="atag" id="atag">Saving · Beginner</div>
+  <h1 id="ah1">How to Build an Emergency Fund From Zero</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">An emergency fund is the foundation of your financial security. Without one, a single unexpected expense can push you into debt. Here's how to build yours, even starting from nothing.</p>
+
+  <div id="len">
+    <h2>Why You Need an Emergency Fund</h2>
+    <p>Life is unpredictable. Studies show that nearly 60% of people couldn't cover a $1,000 emergency without going into debt. An emergency fund breaks this cycle by giving you a financial cushion when things go wrong.</p>
+    <p>Your emergency fund is for genuine emergencies only:</p>
+    <ul><li>Unexpected medical or dental bills</li><li>Car or home repairs</li><li>Job loss or reduced hours</li><li>Emergency travel</li></ul>
+    <h2>How Much Should You Save?</h2>
+    <p>The standard advice is to save <strong>3 to 6 months of essential expenses</strong>. Start with a mini goal of <strong>$1,000</strong> — this alone protects you from most small emergencies.</p>
+    <div class="tipbox"><strong>💡 Quick Calculation</strong>Add up your monthly rent, groceries, utilities, and transport. Multiply by 3 for your minimum target, by 6 for a solid cushion.</div>
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+    <h2>6 Steps to Build Your Emergency Fund</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Open a separate savings account</h3><p>Keep it separate so you're not tempted to dip into it. A high-yield savings account is ideal — you'll earn interest while your money sits there.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Set a starter goal of $1,000</h3><p>Don't think about 6 months yet. Focus on your first $1,000 — it protects you from the most common financial emergencies.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Automate your savings on payday</h3><p>Set up an automatic transfer the same day you get paid. Even $25–$50 per week adds up to $1,300–$2,600 per year.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Find extra money to accelerate</h3><p>Sell unused items, cut one subscription, do one extra shift. Put any windfall (tax refund, birthday money) straight into the fund.</p></div></div>
+    <div class="step"><div class="snum">5</div><div class="sc"><h3>Never use it for non-emergencies</h3><p>A sale is not an emergency. A holiday is not an emergency. Keep this fund sacred — it's your financial safety net.</p></div></div>
+    <div class="step"><div class="snum">6</div><div class="sc"><h3>Refill it after you use it</h3><p>If you dip into your emergency fund, topping it back up becomes your top financial priority.</p></div></div>
+    <h2>Where to Keep Your Emergency Fund</h2>
+    <ul><li><strong>Accessible</strong> — withdraw within 1–2 business days</li><li><strong>Safe</strong> — not invested in stocks (which can drop in value)</li><li><strong>Earning interest</strong> — a high-yield savings account beats a regular one</li></ul>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>¿Por qué necesitas un fondo de emergencia?</h2>
+    <p>La vida es impredecible. Una gran parte de las personas no podría cubrir una emergencia de $500.000 COP sin endeudarse. Un fondo de emergencia rompe ese ciclo dándote un colchón financiero cuando las cosas salen mal.</p>
+    <p>Tu fondo de emergencia es para emergencias genuinas únicamente:</p>
+    <ul><li>Cuentas médicas u odontológicas inesperadas</li><li>Reparaciones del carro o del hogar</li><li>Pérdida del empleo o reducción de horas</li><li>Viajes de emergencia</li></ul>
+    <h2>¿Cuánto debes ahorrar?</h2>
+    <p>El consejo estándar es ahorrar entre <strong>3 y 6 meses de gastos esenciales</strong>. Empieza con una meta pequeña de <strong>$500.000 COP</strong> — esto solo ya te protege de la mayoría de las emergencias menores.</p>
+    <div class="tipbox"><strong>💡 Cálculo rápido</strong>Suma tu arriendo, mercado, servicios y transporte mensuales. Multiplica por 3 para tu meta mínima, por 6 para un colchón sólido.</div>
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+    <h2>6 pasos para construir tu fondo de emergencia</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Abre una cuenta de ahorros separada</h3><p>Mantenla separada para no caer en la tentación de usarla. Una cuenta con buena tasa de interés es ideal.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Fija una meta inicial de $500.000</h3><p>No pienses todavía en 6 meses. Enfócate en tu primer medio millón — te protege de las emergencias más comunes.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Automatiza tu ahorro el día de pago</h3><p>Configura una transferencia automática el mismo día que recibes tu salario. Incluso $50.000–$100.000 al mes suman mucho en un año.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Busca dinero extra para acelerar</h3><p>Vende cosas que no usas, cancela una suscripción, haz un trabajo extra. Destina cualquier ingreso inesperado (prima, bono) al fondo.</p></div></div>
+    <div class="step"><div class="snum">5</div><div class="sc"><h3>No lo uses para no-emergencias</h3><p>Una oferta no es una emergencia. Un viaje no es una emergencia. Mantén este fondo sagrado.</p></div></div>
+    <div class="step"><div class="snum">6</div><div class="sc"><h3>Recárgalo después de usarlo</h3><p>Si tienes que usar el fondo, recargarlo se convierte en tu prioridad financiera número uno.</p></div></div>
+    <h2>¿Dónde guardar el fondo de emergencia?</h2>
+    <ul><li><strong>Accesible</strong> — debes poder retirarlo en 1–2 días hábiles</li><li><strong>Seguro</strong> — no invertido en acciones (que pueden caer de valor)</li><li><strong>Generando intereses</strong> — una cuenta con buena tasa es mejor que una cuenta corriente</li></ul>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl"><li><a href="#" id="toc1">Why You Need One</a></li><li><a href="#" id="toc2">How Much to Save</a></li><li><a href="#" id="toc3">6 Steps to Build It</a></li><li><a href="#" id="toc4">Where to Keep It</a></li></ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll"><li><a href="budget-guide.html" id="rel1">The 50/30/20 Budget Rule</a></li><li><a href="credit-score.html" id="rel2">Understanding Your Credit Score</a></li><li><a href="tools/budget-calculator.html" id="rel3">Budget Calculator Tool</a></li></ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="#" id="fpr">Privacy Policy</a> · <a href="#" id="fdi">Disclaimer</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",bc1:"Home",bc2:"Saving",atag:"Saving · Beginner",ah1:"How to Build an Emergency Fund From Zero",ameta:"📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly",aintro:"An emergency fund is the foundation of your financial security. Without one, a single unexpected expense can push you into debt. Here's how to build yours, even starting from nothing.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"Why You Need One",toc2:"How Much to Save",toc3:"6 Steps to Build It",toc4:"Where to Keep It",relh:"Related Articles",rel1:"The 50/30/20 Budget Rule",rel2:"Understanding Your Credit Score",rel3:"Budget Calculator Tool",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",bc1:"Inicio",bc2:"Ahorro",atag:"Ahorro · Principiante",ah1:"Cómo construir un fondo de emergencia desde cero",ameta:"📅 Actualizado junio 2025 · ⏱ 6 min de lectura · 👤 Para principiantes",aintro:"El fondo de emergencia es la base de tu seguridad financiera. Sin él, un gasto inesperado puede empujarte a las deudas. Así es como construyes el tuyo, incluso desde cero.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"¿Por qué necesitas uno?",toc2:"¿Cuánto debes ahorrar?",toc3:"6 pasos para construirlo",toc4:"¿Dónde guardarlo?",relh:"Artículos relacionados",rel1:"La regla del 50/30/20",rel2:"Entendiendo tu puntaje de crédito",rel3:"Calculadora de presupuesto",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'':'none';document.getElementById('les').style.display=l==='es'?'':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>
