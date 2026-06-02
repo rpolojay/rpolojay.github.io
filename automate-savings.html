@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to automate your savings and build wealth on autopilot. Set up automatic transfers and never forget to save again.">
+<title>Automate Your Savings: Set It and Forget It | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.step{display:flex;gap:1rem;margin-bottom:1.2rem;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.snum{min-width:34px;height:34px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.05rem;flex-shrink:0}
+.sc h3{font-size:.95rem;font-weight:500;margin-bottom:.28rem}
+.sc p{font-size:.88rem;color:var(--muted);margin:0}
+.flow{display:flex;align-items:center;gap:.5rem;margin:1.4rem 0;flex-wrap:wrap;justify-content:center}
+.flow-box{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:.8rem 1rem;text-align:center;min-width:110px}
+.flow-box .ico{font-size:1.4rem;display:block;margin-bottom:.3rem}
+.flow-box p{font-size:.78rem;font-weight:500;margin:0}
+.flow-arrow{font-size:1.3rem;color:var(--green);font-weight:700}
+.accounts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.4rem 0}
+.acc{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem}
+.acc h3{font-size:.92rem;font-weight:500;margin-bottom:.3rem}
+.acc p{font-size:.82rem;color:var(--muted);margin:0}
+.acc .tag{font-size:.68rem;font-weight:500;text-transform:uppercase;color:var(--green);letter-spacing:.05em;margin-bottom:.4rem;display:block}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.accounts-grid{grid-template-columns:1fr}.flow{gap:.3rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="saving.html" id="bc2">Saving</a></div>
+  <div class="atag" id="atag">Saving · Beginner</div>
+  <h1 id="ah1">Automate Your Savings: Set It and Forget It</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">The most reliable way to save money isn't willpower — it's automation. When savings happen automatically before you can spend, you never have to make the hard choice. Here's how to set up a system that builds wealth while you sleep.</p>
+
+  <div id="len">
+    <h2>Why Automation Works When Willpower Doesn't</h2>
+    <p>Research consistently shows that people who automate their savings save significantly more than those who try to save whatever is left over at the end of the month. The reason is simple: if the money hits your checking account, it gets spent. If it never arrives in your checking account, you adapt and live on what remains.</p>
+    <p>This is called "paying yourself first" — and it's the foundational habit of almost every financially successful person.</p>
+
+    <h2>The Automatic Savings Flow</h2>
+    <div class="flow">
+      <div class="flow-box"><span class="ico">💼</span><p>Paycheck</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">🏦</span><p>Checking Account</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">🛡️</span><p>Emergency Fund</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">📈</span><p>Investments</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">✈️</span><p>Goals</p></div>
+    </div>
+    <p>Set this up once and it runs every month without any effort from you. The key is that transfers happen on payday — before you have a chance to spend.</p>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>What Accounts to Automate</h2>
+    <div class="accounts-grid">
+      <div class="acc"><span class="tag">Priority 1</span><h3>🛡️ Emergency Fund</h3><p>Until you reach 3–6 months of expenses. Then redirect to investments.</p></div>
+      <div class="acc"><span class="tag">Priority 2</span><h3>📈 Retirement / Investments</h3><p>401(k) contributions or a brokerage account. Even $50/month compounds dramatically.</p></div>
+      <div class="acc"><span class="tag">Priority 3</span><h3>✈️ Savings Goals</h3><p>Separate accounts for each goal — vacation, car, house. One account per goal.</p></div>
+      <div class="acc"><span class="tag">Always</span><h3>💳 Bill Payments</h3><p>Automate minimum payments on all debts to protect your credit score.</p></div>
+    </div>
+
+    <h2>How to Set It Up in 4 Steps</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Open separate accounts for each savings goal</h3><p>Your emergency fund, vacation fund, and investment account should each be separate. Mixing them makes it hard to track progress and easy to raid one goal to fund another.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Calculate how much to send to each account</h3><p>Use the 50/30/20 rule as a starting point — 20% of take-home pay toward savings and investments. Split it across your goals by priority.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Set up automatic transfers on payday</h3><p>Log into each bank and set a recurring transfer for the day after your paycheck arrives. Most banks let you schedule this in 5 minutes online.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Review and adjust every 3 months</h3><p>As your income grows or goals change, update your automatic transfers. Whenever you get a raise, increase your savings amount before you get used to spending more.</p></div></div>
+
+    <div class="tipbox">
+      <strong>💡 The Pay Yourself First Rule</strong>
+      Set your transfers to happen the day AFTER payday — not the day before. This gives your paycheck time to clear but moves money before you've had a chance to spend it. Even one day makes a huge psychological difference.
+    </div>
+
+    <h2>How Much Should You Automate?</h2>
+    <p>Start with whatever amount doesn't cause stress. Even $25/month automated is better than $200/month intended but never transferred. Then increase by $25 every 3 months — you'll barely notice the reduction in spending money but the savings add up fast.</p>
+    <ul>
+      <li><strong>Starting out:</strong> Automate 5–10% of take-home pay</li>
+      <li><strong>Getting serious:</strong> Automate 15–20% of take-home pay</li>
+      <li><strong>Wealth-building mode:</strong> Automate 20–30%+ of take-home pay</li>
+    </ul>
+    <p>The goal is to make saving the default — not a decision. Once it's automated, you'll be surprised how quickly you stop missing the money.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>Por qué la automatización funciona cuando la fuerza de voluntad no</h2>
+    <p>Las investigaciones muestran consistentemente que las personas que automatizan sus ahorros ahorran significativamente más que las que intentan guardar lo que sobra al final del mes. La razón es simple: si el dinero llega a tu cuenta corriente, se gasta. Si nunca llega a tu cuenta corriente, te adaptas y vives con lo que queda.</p>
+    <p>Esto se llama "pagarte primero a ti mismo" — y es el hábito fundamental de casi todas las personas financieramente exitosas.</p>
+
+    <h2>El flujo de ahorro automático</h2>
+    <div class="flow">
+      <div class="flow-box"><span class="ico">💼</span><p>Salario</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">🏦</span><p>Cuenta corriente</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">🛡️</span><p>Fondo de emergencia</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">📈</span><p>Inversiones</p></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box"><span class="ico">✈️</span><p>Metas</p></div>
+    </div>
+    <p>Configura esto una vez y funciona cada mes sin ningún esfuerzo de tu parte. La clave es que las transferencias ocurran el día de pago — antes de que tengas la oportunidad de gastar.</p>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Qué cuentas automatizar</h2>
+    <div class="accounts-grid">
+      <div class="acc"><span class="tag">Prioridad 1</span><h3>🛡️ Fondo de emergencia</h3><p>Hasta alcanzar 3–6 meses de gastos. Luego redirige a inversiones.</p></div>
+      <div class="acc"><span class="tag">Prioridad 2</span><h3>📈 Retiro / Inversiones</h3><p>Aportes a pensión voluntaria o cuenta de corretaje. Incluso $50.000/mes se compone dramáticamente.</p></div>
+      <div class="acc"><span class="tag">Prioridad 3</span><h3>✈️ Metas de ahorro</h3><p>Cuentas separadas para cada meta — vacaciones, carro, casa. Una cuenta por meta.</p></div>
+      <div class="acc"><span class="tag">Siempre</span><h3>💳 Pagos de facturas</h3><p>Automatiza los pagos mínimos de todas las deudas para proteger tu puntaje de crédito.</p></div>
+    </div>
+
+    <h2>Cómo configurarlo en 4 pasos</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Abre cuentas separadas para cada meta de ahorro</h3><p>Tu fondo de emergencia, fondo de vacaciones y cuenta de inversión deben ser separados. Mezclarlos hace difícil rastrear el progreso y fácil saquear una meta para financiar otra.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Calcula cuánto enviar a cada cuenta</h3><p>Usa la regla 50/30/20 como punto de partida — 20% del ingreso neto hacia ahorros e inversiones. Divídelo entre tus metas por prioridad.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Configura transferencias automáticas el día de pago</h3><p>Inicia sesión en cada banco y configura una transferencia recurrente para el día después de que llegue tu salario. La mayoría de los bancos te permiten programar esto en 5 minutos en línea.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Revisa y ajusta cada 3 meses</h3><p>A medida que crecen tus ingresos o cambian tus metas, actualiza tus transferencias automáticas. Cada vez que recibas un aumento, incrementa tu monto de ahorro antes de acostumbrarte a gastar más.</p></div></div>
+
+    <div class="tipbox">
+      <strong>💡 La regla de pagarte primero</strong>
+      Configura tus transferencias para que ocurran al día SIGUIENTE del día de pago — no antes. Esto le da tiempo a tu salario para acreditarse pero mueve el dinero antes de que hayas tenido la oportunidad de gastarlo.
+    </div>
+
+    <h2>¿Cuánto deberías automatizar?</h2>
+    <p>Empieza con la cantidad que no cause estrés. Incluso $25.000/mes automatizados son mejores que $200.000/mes con la intención pero nunca transferidos. Luego aumenta $25.000 cada 3 meses — apenas notarás la reducción en dinero para gastos pero los ahorros se acumulan rápidamente.</p>
+    <ul>
+      <li><strong>Empezando:</strong> Automatiza el 5–10% del ingreso neto</li>
+      <li><strong>Tomándolo en serio:</strong> Automatiza el 15–20% del ingreso neto</li>
+      <li><strong>Modo de construcción de riqueza:</strong> Automatiza el 20–30%+ del ingreso neto</li>
+    </ul>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">Why Automation Works</a></li>
+        <li><a href="#" id="toc2">The Savings Flow</a></li>
+        <li><a href="#" id="toc3">What to Automate</a></li>
+        <li><a href="#" id="toc4">4 Steps to Set It Up</a></li>
+        <li><a href="#" id="toc5">How Much to Automate</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="emergency-fund.html" id="rel1">Build an Emergency Fund</a></li>
+        <li><a href="savings-goals.html" id="rel2">How to Set Savings Goals</a></li>
+        <li><a href="high-yield-savings.html" id="rel3">High-Yield Savings Accounts</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Saving",atag:"Saving · Beginner",ah1:"Automate Your Savings: Set It and Forget It",ameta:"📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly",aintro:"The most reliable way to save money isn't willpower — it's automation. When savings happen automatically before you can spend, you never have to make the hard choice. Here's how to set up a system that builds wealth while you sleep.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"Why Automation Works",toc2:"The Savings Flow",toc3:"What to Automate",toc4:"4 Steps to Set It Up",toc5:"How Much to Automate",relh:"Related Articles",rel1:"Build an Emergency Fund",rel2:"How to Set Savings Goals",rel3:"High-Yield Savings Accounts",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Ahorro",atag:"Ahorro · Principiante",ah1:"Automatiza tus ahorros: configúralo y olvídate",ameta:"📅 Actualizado junio 2025 · ⏱ 6 min de lectura · 👤 Para principiantes",aintro:"La forma más confiable de ahorrar dinero no es la fuerza de voluntad — es la automatización. Cuando los ahorros ocurren automáticamente antes de que puedas gastar, nunca tienes que tomar la decisión difícil. Aquí cómo configurar un sistema que construye riqueza mientras duermes.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"Por qué funciona la automatización",toc2:"El flujo de ahorro",toc3:"Qué automatizar",toc4:"4 pasos para configurarlo",toc5:"Cuánto automatizar",relh:"Artículos relacionados",rel1:"Fondo de emergencia",rel2:"Cómo fijar metas de ahorro",rel3:"Cuentas de ahorro de alto rendimiento",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){
+  lang=l;localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+setLang(lang);
+</script>
+</body>
+</html>

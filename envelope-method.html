@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The envelope budgeting method explained — a simple cash budgeting system that stops overspending in its tracks. Perfect for beginners.">
+<title>The Envelope Budgeting Method | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.step{display:flex;gap:1rem;margin-bottom:1.2rem;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.snum{min-width:34px;height:34px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.05rem;flex-shrink:0}
+.sc h3{font-size:.95rem;font-weight:500;margin-bottom:.28rem}
+.sc p{font-size:.88rem;color:var(--muted);margin:0}
+.envelope-demo{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.4rem 0}
+.env{background:var(--white);border:2px solid var(--border);border-radius:var(--r);padding:1.1rem;text-align:center;position:relative}
+.env .ico{font-size:1.8rem;margin-bottom:.4rem}
+.env h3{font-size:.88rem;font-weight:500;margin-bottom:.3rem}
+.env .amount{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--green)}
+.env p{font-size:.74rem;color:var(--muted);margin:.2rem 0 0}
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.4rem 0}
+.pc{border-radius:var(--r);padding:1.2rem;border:1px solid var(--border)}
+.pc.pros{background:var(--gl);border-color:#9FE1CB}
+.pc.cons{background:#fafafa}
+.pc h3{font-size:.92rem;font-weight:500;margin-bottom:.6rem}
+.pc ul{margin:0 0 0 1.1rem}
+.pc li{font-size:.83rem;margin-bottom:.28rem}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.envelope-demo,.pros-cons{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="budgeting.html" id="bc2">Budgeting</a></div>
+  <div class="atag" id="atag">Budgeting · Beginner</div>
+  <h1 id="ah1">The Envelope Budgeting Method: How to Stop Overspending With Cash</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">If you've tried budgeting apps and spreadsheets but keep overspending, the envelope method might be exactly what you need. It's old-school, simple, and remarkably effective — because when the cash is gone, it's gone.</p>
+
+  <div id="len">
+    <h2>What Is the Envelope Method?</h2>
+    <p>The envelope budgeting method is exactly what it sounds like. At the start of each month, you withdraw cash and divide it into labelled envelopes — one for each spending category. Groceries get $400. Dining out gets $150. Entertainment gets $100. When an envelope is empty, you stop spending in that category until next month.</p>
+    <p>It was popularised by financial expert Dave Ramsey and has helped millions of people break the cycle of overspending. The physical act of handing over cash makes spending feel more real than swiping a card.</p>
+
+    <h2>A Sample Envelope Setup</h2>
+    <div class="envelope-demo">
+      <div class="env"><div class="ico">🛒</div><h3>Groceries</h3><div class="amount">$400</div><p>Weekly shops only</p></div>
+      <div class="env"><div class="ico">🍕</div><h3>Dining Out</h3><div class="amount">$150</div><p>Restaurants & takeout</p></div>
+      <div class="env"><div class="ico">⛽</div><h3>Gas</h3><div class="amount">$120</div><p>Fuel only</p></div>
+      <div class="env"><div class="ico">🎬</div><h3>Entertainment</h3><div class="amount">$100</div><p>Movies, events, hobbies</p></div>
+      <div class="env"><div class="ico">👕</div><h3>Clothing</h3><div class="amount">$80</div><p>Clothes & personal care</p></div>
+      <div class="env"><div class="ico">🎁</div><h3>Miscellaneous</h3><div class="amount">$50</div><p>Anything else</p></div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>How to Set It Up in 5 Steps</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>List your variable spending categories</h3><p>Only cash-based categories go in envelopes — groceries, dining, gas, entertainment, clothing. Fixed bills like rent and utilities stay as automatic payments.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Set a monthly budget for each category</h3><p>Look at last month's bank statements to set realistic limits. Be honest — if you spent $300 on dining, don't set $50 as your target straight away.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Withdraw cash on payday and fill the envelopes</h3><p>Go to the ATM on the day you get paid. Count out the cash for each category and physically put it in labelled envelopes or a wallet with dividers.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Spend only from the envelope</h3><p>When you go grocery shopping, bring only the groceries envelope. When you go out to dinner, bring only the dining envelope. Leave cards at home if you need to.</p></div></div>
+    <div class="step"><div class="snum">5</div><div class="sc"><h3>When it's gone, it's gone</h3><p>This is the rule that makes it work. No borrowing from other envelopes. No "I'll pay it back next month." Empty envelope = done spending in that category this month.</p></div></div>
+
+    <h2>Pros and Cons</h2>
+    <div class="pros-cons">
+      <div class="pc pros">
+        <h3>✅ Why It Works</h3>
+        <ul>
+          <li>Physical cash feels more real than cards</li>
+          <li>Instant visual feedback on remaining budget</li>
+          <li>Eliminates mindless card swiping</li>
+          <li>Simple — no app needed</li>
+          <li>Highly effective for impulse spenders</li>
+        </ul>
+      </div>
+      <div class="pc cons">
+        <h3>⚠️ Limitations</h3>
+        <ul>
+          <li>Carrying cash can feel inconvenient</li>
+          <li>Doesn't work for online purchases</li>
+          <li>Lost cash is gone forever</li>
+          <li>Requires ATM trips each month</li>
+          <li>Less useful if most spending is fixed bills</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tipbox">
+      <strong>💡 Digital Envelope Alternative</strong>
+      Don't like carrying cash? Use a budgeting app like YNAB (You Need A Budget) or EveryDollar — they replicate the envelope system digitally. You assign every dollar to a category and the app tracks your spending against those limits.
+    </div>
+
+    <h2>Who Should Use the Envelope Method?</h2>
+    <ul>
+      <li>People who consistently overspend despite having a budget</li>
+      <li>Anyone who loses track of where their money goes</li>
+      <li>People who find card spending feels "fake" or painless</li>
+      <li>Anyone who has tried apps but doesn't stick to them</li>
+    </ul>
+    <p>The envelope method isn't for everyone — but for people who struggle with overspending, it's one of the most effective tools available. Try it for just one month and see if it changes how you think about money.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>¿Qué es el método de sobres?</h2>
+    <p>El método de presupuesto con sobres es exactamente lo que suena. Al comienzo de cada mes, retiras efectivo y lo divides en sobres etiquetados — uno para cada categoría de gasto. El mercado recibe $400.000. Restaurantes recibe $150.000. Entretenimiento recibe $100.000. Cuando un sobre está vacío, dejas de gastar en esa categoría hasta el mes siguiente.</p>
+    <p>Fue popularizado por el experto financiero Dave Ramsey y ha ayudado a millones de personas a romper el ciclo de gastos excesivos. El acto físico de entregar efectivo hace que gastar se sienta más real que pasar una tarjeta.</p>
+
+    <h2>Ejemplo de configuración de sobres</h2>
+    <div class="envelope-demo">
+      <div class="env"><div class="ico">🛒</div><h3>Mercado</h3><div class="amount">$400k</div><p>Solo compras semanales</p></div>
+      <div class="env"><div class="ico">🍕</div><h3>Restaurantes</h3><div class="amount">$150k</div><p>Salidas y domicilios</p></div>
+      <div class="env"><div class="ico">⛽</div><h3>Gasolina</h3><div class="amount">$120k</div><p>Solo combustible</p></div>
+      <div class="env"><div class="ico">🎬</div><h3>Entretenimiento</h3><div class="amount">$100k</div><p>Cine, eventos, hobbies</p></div>
+      <div class="env"><div class="ico">👕</div><h3>Ropa</h3><div class="amount">$80k</div><p>Ropa y cuidado personal</p></div>
+      <div class="env"><div class="ico">🎁</div><h3>Imprevistos</h3><div class="amount">$50k</div><p>Cualquier otra cosa</p></div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Cómo configurarlo en 5 pasos</h2>
+    <div class="step"><div class="snum">1</div><div class="sc"><h3>Lista tus categorías de gasto variable</h3><p>Solo las categorías basadas en efectivo van en sobres — mercado, restaurantes, gasolina, entretenimiento, ropa. Las facturas fijas como arriendo y servicios se mantienen como pagos automáticos.</p></div></div>
+    <div class="step"><div class="snum">2</div><div class="sc"><h3>Establece un presupuesto mensual para cada categoría</h3><p>Revisa los extractos bancarios del mes pasado para establecer límites realistas. Sé honesto — si gastaste $300.000 en restaurantes, no establezcas $50.000 como objetivo de inmediato.</p></div></div>
+    <div class="step"><div class="snum">3</div><div class="sc"><h3>Retira efectivo el día de pago y llena los sobres</h3><p>Ve al cajero el día que recibes tu salario. Cuenta el efectivo para cada categoría y ponlo físicamente en sobres etiquetados.</p></div></div>
+    <div class="step"><div class="snum">4</div><div class="sc"><h3>Gasta solo del sobre correspondiente</h3><p>Cuando vayas al mercado, lleva solo el sobre del mercado. Cuando salgas a cenar, lleva solo el sobre de restaurantes. Deja las tarjetas en casa si es necesario.</p></div></div>
+    <div class="step"><div class="snum">5</div><div class="sc"><h3>Cuando se acaba, se acaba</h3><p>Esta es la regla que lo hace funcionar. Sin tomar prestado de otros sobres. Sobre vacío = dejaste de gastar en esa categoría este mes.</p></div></div>
+
+    <h2>Ventajas y limitaciones</h2>
+    <div class="pros-cons">
+      <div class="pc pros">
+        <h3>✅ Por qué funciona</h3>
+        <ul>
+          <li>El efectivo físico se siente más real que las tarjetas</li>
+          <li>Retroalimentación visual instantánea del presupuesto restante</li>
+          <li>Elimina el deslizamiento irreflexivo de tarjetas</li>
+          <li>Simple — no se necesita app</li>
+          <li>Muy efectivo para quienes gastan por impulso</li>
+        </ul>
+      </div>
+      <div class="pc cons">
+        <h3>⚠️ Limitaciones</h3>
+        <ul>
+          <li>Llevar efectivo puede sentirse inconveniente</li>
+          <li>No funciona para compras en línea</li>
+          <li>El efectivo perdido se va para siempre</li>
+          <li>Requiere visitas al cajero cada mes</li>
+          <li>Menos útil si la mayoría del gasto son facturas fijas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tipbox">
+      <strong>💡 Alternativa digital de sobres</strong>
+      ¿No te gusta llevar efectivo? Usa una app de presupuesto como YNAB (You Need A Budget) o EveryDollar — replican el sistema de sobres digitalmente. Asignas cada peso a una categoría y la app rastrea tu gasto contra esos límites.
+    </div>
+
+    <h2>¿Quién debería usar el método de sobres?</h2>
+    <ul>
+      <li>Personas que constantemente gastan más de lo presupuestado</li>
+      <li>Cualquiera que pierde el rastro de a dónde va su dinero</li>
+      <li>Personas que sienten que gastar con tarjeta se siente "falso" o sin dolor</li>
+      <li>Cualquiera que haya probado apps pero no se adhiere a ellas</li>
+    </ul>
+    <p>El método de sobres no es para todos — pero para las personas que luchan con el gasto excesivo, es una de las herramientas más efectivas disponibles. Pruébalo durante solo un mes y verás si cambia tu forma de pensar sobre el dinero.</p>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">What Is the Envelope Method?</a></li>
+        <li><a href="#" id="toc2">Sample Envelope Setup</a></li>
+        <li><a href="#" id="toc3">How to Set It Up</a></li>
+        <li><a href="#" id="toc4">Pros and Cons</a></li>
+        <li><a href="#" id="toc5">Who Should Use It?</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="budget-guide.html" id="rel1">The 50/30/20 Budget Rule</a></li>
+        <li><a href="zero-based-budgeting.html" id="rel2">Zero-Based Budgeting</a></li>
+        <li><a href="cut-monthly-bills.html" id="rel3">7 Ways to Cut Monthly Bills</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Budgeting",atag:"Budgeting · Beginner",ah1:"The Envelope Budgeting Method: How to Stop Overspending With Cash",ameta:"📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly",aintro:"If you've tried budgeting apps and spreadsheets but keep overspending, the envelope method might be exactly what you need. It's old-school, simple, and remarkably effective — because when the cash is gone, it's gone.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"What Is the Envelope Method?",toc2:"Sample Envelope Setup",toc3:"How to Set It Up",toc4:"Pros and Cons",toc5:"Who Should Use It?",relh:"Related Articles",rel1:"The 50/30/20 Budget Rule",rel2:"Zero-Based Budgeting",rel3:"7 Ways to Cut Monthly Bills",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Presupuesto",atag:"Presupuesto · Principiante",ah1:"El método de sobres: cómo dejar de gastar de más con efectivo",ameta:"📅 Actualizado junio 2025 · ⏱ 6 min de lectura · 👤 Para principiantes",aintro:"Si has probado apps de presupuesto y hojas de cálculo pero sigues gastando de más, el método de sobres podría ser exactamente lo que necesitas. Es anticuado, simple y notablemente efectivo — porque cuando el efectivo se acaba, se acaba.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"¿Qué es el método de sobres?",toc2:"Ejemplo de configuración",toc3:"Cómo configurarlo",toc4:"Ventajas y limitaciones",toc5:"¿Quién debería usarlo?",relh:"Artículos relacionados",rel1:"La regla del 50/30/20",rel2:"Presupuesto base cero",rel3:"7 formas de reducir tus facturas",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){
+  lang=l;localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+setLang(lang);
+</script>
+</body>
+</html>
