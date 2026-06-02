@@ -142,10 +142,10 @@ function setLang(l){
   lang=l;localStorage.setItem('lang',l);
   const d=T[l];
   for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
-  document.getElementById('s1en').style.display=l==='en'?'':'none';
-  document.getElementById('s1es').style.display=l==='es'?'':'none';
-  document.getElementById('s2en').style.display=l==='en'?'':'none';
-  document.getElementById('s2es').style.display=l==='es'?'':'none';
+  document.getElementById('s1en').style.display=l==='en'?'block':'none';
+  document.getElementById('s1es').style.display=l==='es'?'block':'none';
+  document.getElementById('s2en').style.display=l==='en'?'block':'none';
+  document.getElementById('s2es').style.display=l==='es'?'block':'none';
   document.documentElement.lang=l;
   document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
 }

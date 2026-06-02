@@ -58,7 +58,7 @@ footer a{color:rgba(255,255,255,.8)}
 <body>
 <nav>
   <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
-  <ul><li><a id="n1" href="#">Budgeting</a></li><li><a id="n2" href="#">Saving</a></li><li><a id="n3" href="#">Debt</a></li><li><a id="n4" href="#">Investing</a></li></ul>
+  <ul><li><a id="n1" href="budgeting.html">Budgeting</a></li><li><a id="n2" href="saving.html">Saving</a></li><li><a id="n3" href="debt.html">Debt</a></li><li><a id="n4" href="investing.html">Investing</a></li></ul>
   <div class="nav-r"><div class="ltog"><button class="lb on" onclick="setLang('en')">EN</button><button class="lb" onclick="setLang('es')">ES</button></div></div>
 </nav>
 
@@ -125,7 +125,7 @@ footer a{color:rgba(255,255,255,.8)}
 </div>
 
 <footer>
-  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="#" id="fpr">Privacy Policy</a> · <a href="#" id="fdi">Disclaimer</a><br><br>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a><br><br>
   <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
 </footer>
 
@@ -135,7 +135,7 @@ const T={
   es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",bc1:"Inicio",bc2:"Deudas y crédito",atag:"Crédito · Principiante",ah1:"¿Qué es el puntaje de crédito y por qué importa?",ameta:"📅 Actualizado junio 2025 · ⏱ 7 min de lectura · 👤 Para principiantes",aintro:"Tu puntaje de crédito es un número que te sigue a todas partes — afecta si puedes arrendar un apartamento, conseguir un préstamo o incluso ciertos empleos. Aquí todo en términos sencillos.",sb5n:"Excelente",sb5d:"Acceso a las mejores tasas. Aprobación casi garantizada.",sb4n:"Muy bueno",sb4d:"Por encima del promedio. Buenas tasas de interés.",sb3n:"Bueno",sb3d:"La mayoría de entidades te aprueban.",sb2n:"Regular",sb2d:"Por debajo del promedio. Tasas de interés más altas.",sb1n:"Bajo",sb1d:"Difícil conseguir aprobación. Requiere reconstrucción.",adil:"Publicidad — Reemplaza con unidad AdSense",f1h:"Historial de pagos",f1p:"¿Pagas a tiempo? Es el factor más importante. Un solo pago atrasado puede dañar tu puntaje.",f2h:"Nivel de endeudamiento",f2p:"¿Qué porcentaje de tu cupo disponible estás usando? Mantenerlo bajo el 30% es ideal.",f3h:"Antigüedad del crédito",f3p:"Las cuentas antiguas ayudan. No cierres tu tarjeta más antigua.",f4h:"Tipos de crédito",f4p:"Tener diferentes tipos de crédito demuestra que los manejas bien.",f5h:"Solicitudes recientes",f5p:"Pedir mucho crédito al mismo tiempo genera alertas. Espacía tus solicitudes.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"¿Qué es el puntaje?",toc2:"Rangos del puntaje",toc3:"¿Qué lo afecta?",toc4:"Cómo mejorarlo",toc5:"¿Por qué importa?",relh:"Artículos relacionados",rel1:"La regla del 50/30/20",rel2:"Fondo de emergencia",rel3:"Calculadora de presupuesto",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
 };
 let lang=localStorage.getItem('lang')||'en';
-function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'':'none';document.getElementById('les').style.display=l==='es'?'':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'block':'none';document.getElementById('les').style.display=l==='es'?'block':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
 setLang(lang);
 </script>
 </body>
