@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Investing guides for beginners. Learn how to start investing with any budget and build long-term wealth.">
+<title>Investing Guides | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{font-size:.9rem;font-weight:500;color:var(--muted);transition:color .2s}
+nav ul a:hover{color:var(--green);text-decoration:none}
+nav ul a.active{color:var(--green)}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.nav-cta:hover{background:var(--gd)!important;text-decoration:none!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.cat-hero{background:linear-gradient(135deg,#0a3d6b 0%,#378ADD 100%);color:#fff;padding:3.5rem 2rem;text-align:center}
+.cat-hero .chip{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.28rem .9rem;font-size:.75rem;letter-spacing:.05em;margin-bottom:1rem;text-transform:uppercase}
+.cat-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:.8rem}
+.cat-hero p{opacity:.88;max-width:480px;margin:0 auto;font-size:.97rem}
+.wrap{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem}
+.adph{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:90px;color:#bbb;font-size:.78rem;margin-bottom:2rem}
+.disclaimer{background:var(--bl);border:1px solid #b5d4f4;border-radius:var(--r);padding:1rem 1.2rem;margin-bottom:2rem;font-size:.82rem;color:#0C447C}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-bottom:3rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;color:var(--text)}
+.card:hover{box-shadow:0 6px 24px rgba(0,0,0,.09);transform:translateY(-3px);text-decoration:none}
+.card-ico{height:110px;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+.card-b{padding:1.1rem;flex:1;display:flex;flex-direction:column}
+.card-tag{font-size:.68rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.4rem}
+.card-b h3{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.35;margin-bottom:.5rem}
+.card-b p{font-size:.83rem;color:var(--muted);flex:1;margin-bottom:.8rem}
+.card-meta{font-size:.7rem;color:#bbb}
+.feat-card{grid-column:span 2}
+.feat-card .card-ico{height:160px;font-size:3.5rem}
+.feat-card .card-b h3{font-size:1.25rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:1rem}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:768px){nav ul{display:none}.grid{grid-template-columns:1fr}.feat-card{grid-column:span 1}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" class="active" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="cat-hero">
+  <div class="chip" id="chip">📈 Investing</div>
+  <h1 id="h1">Investing for Beginners</h1>
+  <p id="heroP">You don't need thousands to start. Learn how to grow your money with confidence, starting small.</p>
+</div>
+
+<div class="wrap">
+  <div class="adph" id="adtop">Advertisement (728×90) — AdSense slot</div>
+  <p class="disclaimer" id="disc">⚠️ Investing involves risk. The content on this page is for educational purposes only and is not personalised financial advice. Always do your own research or consult a qualified advisor before investing.</p>
+
+  <div class="grid">
+    <a href="#" class="card feat-card">
+      <div class="card-ico" style="background:var(--bl)">📈</div>
+      <div class="card-b">
+        <div class="card-tag" id="t1">Featured · Beginner</div>
+        <h3 id="c1h">Investing for Beginners: How to Start With $50</h3>
+        <p id="c1p">You don't need a lot of money to start investing. Here's a simple, step-by-step guide to making your first investment — even with a small amount.</p>
+        <div class="card-meta" id="c1m">9 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#eaf3fb">🗂️</div>
+      <div class="card-b">
+        <div class="card-tag" id="t2">Investing</div>
+        <h3 id="c2h">What Are Index Funds and Why Do Experts Love Them?</h3>
+        <p id="c2p">The investment vehicle Warren Buffett recommends for most people — and why it's so powerful.</p>
+        <div class="card-meta" id="c2m">7 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#eaf3fb">⏳</div>
+      <div class="card-b">
+        <div class="card-tag" id="t3">Investing</div>
+        <h3 id="c3h">Compound Interest Explained: The 8th Wonder of the World</h3>
+        <p id="c3p">Why starting to invest even a small amount today is dramatically more powerful than waiting.</p>
+        <div class="card-meta" id="c3m">6 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#eaf3fb">🏠</div>
+      <div class="card-b">
+        <div class="card-tag" id="t4">Investing</div>
+        <h3 id="c4h">Stocks vs Real Estate: Which Is Better for Beginners?</h3>
+        <p id="c4p">A straight comparison of the two most popular investment types, and which makes more sense when you're starting out.</p>
+        <div class="card-meta" id="c4m">8 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#eaf3fb">🛡️</div>
+      <div class="card-b">
+        <div class="card-tag" id="t5">Investing</div>
+        <h3 id="c5h">How to Invest Without Losing Sleep: Managing Risk</h3>
+        <p id="c5p">What investment risk really means and how to build a portfolio that lets you sleep at night.</p>
+        <div class="card-meta" id="c5m">7 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#eaf3fb">💼</div>
+      <div class="card-b">
+        <div class="card-tag" id="t6">Investing</div>
+        <h3 id="c6h">Retirement Accounts Explained: Where to Start</h3>
+        <p id="c6p">A plain-English guide to retirement accounts, why they matter, and how to open your first one.</p>
+        <div class="card-meta" id="c6m">8 min read · Beginner</div>
+      </div>
+    </a>
+  </div>
+  <div class="adph" id="adbot">Advertisement (728×90) — AdSense slot</div>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",chip:"📈 Investing",h1:"Investing for Beginners",heroP:"You don't need thousands to start. Learn how to grow your money with confidence, starting small.",disc:"⚠️ Investing involves risk. The content on this page is for educational purposes only and is not personalised financial advice. Always do your own research or consult a qualified advisor before investing.",adtop:"Advertisement (728×90) — AdSense slot",adbot:"Advertisement (728×90) — AdSense slot",t1:"Featured · Beginner",c1h:"Investing for Beginners: How to Start With $50",c1p:"You don't need a lot of money to start investing. Here's a simple, step-by-step guide to making your first investment — even with a small amount.",c1m:"9 min read · Beginner",t2:"Investing",c2h:"What Are Index Funds and Why Do Experts Love Them?",c2p:"The investment vehicle Warren Buffett recommends for most people — and why it's so powerful.",c2m:"7 min read · Beginner",t3:"Investing",c3h:"Compound Interest Explained: The 8th Wonder of the World",c3p:"Why starting to invest even a small amount today is dramatically more powerful than waiting.",c3m:"6 min read · Beginner",t4:"Investing",c4h:"Stocks vs Real Estate: Which Is Better for Beginners?",c4p:"A straight comparison of the two most popular investment types, and which makes more sense when you're starting out.",c4m:"8 min read · Beginner",t5:"Investing",c5h:"How to Invest Without Losing Sleep: Managing Risk",c5p:"What investment risk really means and how to build a portfolio that lets you sleep at night.",c5m:"7 min read · Beginner",t6:"Investing",c6h:"Retirement Accounts Explained: Where to Start",c6p:"A plain-English guide to retirement accounts, why they matter, and how to open your first one.",c6m:"8 min read · Beginner",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",chip:"📈 Inversión",h1:"Inversión para Principiantes",heroP:"No necesitas miles para empezar. Aprende a hacer crecer tu dinero con confianza, empezando pequeño.",disc:"⚠️ Invertir implica riesgos. El contenido de esta página es solo para fines educativos y no constituye asesoría financiera personalizada. Siempre haz tu propia investigación o consulta con un asesor calificado antes de invertir.",adtop:"Publicidad (728×90) — Espacio AdSense",adbot:"Publicidad (728×90) — Espacio AdSense",t1:"Destacado · Principiante",c1h:"Inversión para principiantes: cómo empezar con $50",c1p:"No necesitas mucho dinero para empezar a invertir. Aquí está una guía simple paso a paso para hacer tu primera inversión — incluso con una cantidad pequeña.",c1m:"9 min de lectura · Principiante",t2:"Inversión",c2h:"¿Qué son los fondos índice y por qué los expertos los adoran?",c2p:"El vehículo de inversión que Warren Buffett recomienda para la mayoría de personas — y por qué es tan poderoso.",c2m:"7 min de lectura · Principiante",t3:"Inversión",c3h:"Interés compuesto explicado: la octava maravilla del mundo",c3p:"Por qué empezar a invertir aunque sea una pequeña cantidad hoy es dramáticamente más poderoso que esperar.",c3m:"6 min de lectura · Principiante",t4:"Inversión",c4h:"Acciones vs bienes raíces: ¿cuál es mejor para principiantes?",c4p:"Una comparación directa de los dos tipos de inversión más populares, y cuál tiene más sentido cuando estás empezando.",c4m:"8 min de lectura · Principiante",t5:"Inversión",c5h:"Cómo invertir sin perder el sueño: gestión del riesgo",c5p:"Qué significa realmente el riesgo de inversión y cómo construir un portafolio que te permita dormir tranquilo.",c5m:"7 min de lectura · Principiante",t6:"Inversión",c6h:"Cuentas de retiro explicadas: por dónde empezar",c6p:"Una guía en lenguaje sencillo sobre cuentas de retiro, por qué importan y cómo abrir tu primera.",c6m:"8 min de lectura · Principiante",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>

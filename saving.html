@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Saving money guides for beginners. Emergency funds, savings goals, and practical tips to grow your savings.">
+<title>Saving Guides | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{font-size:.9rem;font-weight:500;color:var(--muted);transition:color .2s}
+nav ul a:hover{color:var(--green);text-decoration:none}
+nav ul a.active{color:var(--green)}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.nav-cta:hover{background:var(--gd)!important;text-decoration:none!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.cat-hero{background:linear-gradient(135deg,#085041 0%,#1D9E75 100%);color:#fff;padding:3.5rem 2rem;text-align:center}
+.cat-hero .chip{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.28rem .9rem;font-size:.75rem;letter-spacing:.05em;margin-bottom:1rem;text-transform:uppercase}
+.cat-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:.8rem}
+.cat-hero p{opacity:.88;max-width:480px;margin:0 auto;font-size:.97rem}
+.wrap{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem}
+.adph{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:90px;color:#bbb;font-size:.78rem;margin-bottom:2rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-bottom:3rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;color:var(--text)}
+.card:hover{box-shadow:0 6px 24px rgba(0,0,0,.09);transform:translateY(-3px);text-decoration:none}
+.card-ico{height:110px;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+.card-b{padding:1.1rem;flex:1;display:flex;flex-direction:column}
+.card-tag{font-size:.68rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.4rem}
+.card-b h3{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.35;margin-bottom:.5rem}
+.card-b p{font-size:.83rem;color:var(--muted);flex:1;margin-bottom:.8rem}
+.card-meta{font-size:.7rem;color:#bbb}
+.feat-card{grid-column:span 2}
+.feat-card .card-ico{height:160px;font-size:3.5rem}
+.feat-card .card-b h3{font-size:1.25rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:1rem}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:768px){nav ul{display:none}.grid{grid-template-columns:1fr}.feat-card{grid-column:span 1}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" class="active" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="cat-hero">
+  <div class="chip" id="chip">🛡️ Saving</div>
+  <h1 id="h1">Saving Money Guides</h1>
+  <p id="heroP">Build your safety net and grow your savings — step by step, starting from zero.</p>
+</div>
+
+<div class="wrap">
+  <div class="adph" id="adtop">Advertisement (728×90) — AdSense slot</div>
+  <div class="grid">
+    <a href="emergency-fund.html" class="card feat-card">
+      <div class="card-ico" style="background:var(--al)">🛡️</div>
+      <div class="card-b">
+        <div class="card-tag" id="t1">Featured · Beginner</div>
+        <h3 id="c1h">How to Build an Emergency Fund From Zero</h3>
+        <p id="c1p">Life is unpredictable. Discover the step-by-step method to build a safety net of 3–6 months' expenses, even on a tight budget.</p>
+        <div class="card-meta" id="c1m">6 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#fff8ed">🎯</div>
+      <div class="card-b">
+        <div class="card-tag" id="t2">Saving</div>
+        <h3 id="c2h">How to Set and Actually Hit Your Savings Goals</h3>
+        <p id="c2p">A proven framework that makes saving feel automatic and keeps you motivated long-term.</p>
+        <div class="card-meta" id="c2m">5 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#fff8ed">🏦</div>
+      <div class="card-b">
+        <div class="card-tag" id="t3">Saving</div>
+        <h3 id="c3h">High-Yield Savings Accounts: Are They Worth It?</h3>
+        <p id="c3p">How to earn more interest on your savings without any extra risk.</p>
+        <div class="card-meta" id="c3m">6 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#fff8ed">💸</div>
+      <div class="card-b">
+        <div class="card-tag" id="t4">Saving</div>
+        <h3 id="c4h">The 30-Day Savings Challenge That Actually Works</h3>
+        <p id="c4p">A fun, manageable challenge to kick-start your savings habit in just one month.</p>
+        <div class="card-meta" id="c4m">4 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#fff8ed">🛒</div>
+      <div class="card-b">
+        <div class="card-tag" id="t5">Saving</div>
+        <h3 id="c5h">How to Save Money on Groceries Without Eating Less</h3>
+        <p id="c5p">Practical strategies to slash your food bill without sacrificing quality or nutrition.</p>
+        <div class="card-meta" id="c5m">7 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#fff8ed">⚡</div>
+      <div class="card-b">
+        <div class="card-tag" id="t6">Saving</div>
+        <h3 id="c6h">Automate Your Savings: Set It and Forget It</h3>
+        <p id="c6p">How to set up automatic transfers so your savings grow every month without any effort.</p>
+        <div class="card-meta" id="c6m">5 min read · Beginner</div>
+      </div>
+    </a>
+  </div>
+  <div class="adph" id="adbot">Advertisement (728×90) — AdSense slot</div>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",chip:"🛡️ Saving",h1:"Saving Money Guides",heroP:"Build your safety net and grow your savings — step by step, starting from zero.",adtop:"Advertisement (728×90) — AdSense slot",adbot:"Advertisement (728×90) — AdSense slot",t1:"Featured · Beginner",c1h:"How to Build an Emergency Fund From Zero",c1p:"Life is unpredictable. Discover the step-by-step method to build a safety net of 3–6 months' expenses, even on a tight budget.",c1m:"6 min read · Beginner",t2:"Saving",c2h:"How to Set and Actually Hit Your Savings Goals",c2p:"A proven framework that makes saving feel automatic and keeps you motivated long-term.",c2m:"5 min read · Beginner",t3:"Saving",c3h:"High-Yield Savings Accounts: Are They Worth It?",c3p:"How to earn more interest on your savings without any extra risk.",c3m:"6 min read · Beginner",t4:"Saving",c4h:"The 30-Day Savings Challenge That Actually Works",c4p:"A fun, manageable challenge to kick-start your savings habit in just one month.",c4m:"4 min read · Beginner",t5:"Saving",c5h:"How to Save Money on Groceries Without Eating Less",c5p:"Practical strategies to slash your food bill without sacrificing quality or nutrition.",c5m:"7 min read · Beginner",t6:"Saving",c6h:"Automate Your Savings: Set It and Forget It",c6p:"How to set up automatic transfers so your savings grow every month without any effort.",c6m:"5 min read · Beginner",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",chip:"🛡️ Ahorro",h1:"Guías de Ahorro",heroP:"Construye tu colchón financiero y haz crecer tus ahorros — paso a paso, desde cero.",adtop:"Publicidad (728×90) — Espacio AdSense",adbot:"Publicidad (728×90) — Espacio AdSense",t1:"Destacado · Principiante",c1h:"Cómo construir un fondo de emergencia desde cero",c1p:"La vida es impredecible. Descubre el método paso a paso para crear un colchón financiero de 3–6 meses de gastos, incluso con presupuesto ajustado.",c1m:"6 min de lectura · Principiante",t2:"Ahorro",c2h:"Cómo fijar metas de ahorro y realmente cumplirlas",c2p:"Un marco probado que hace que ahorrar sea automático y te mantiene motivado a largo plazo.",c2m:"5 min de lectura · Principiante",t3:"Ahorro",c3h:"Cuentas de ahorro de alto rendimiento: ¿valen la pena?",c3p:"Cómo ganar más intereses en tus ahorros sin ningún riesgo adicional.",c3m:"6 min de lectura · Principiante",t4:"Ahorro",c4h:"El reto de ahorro de 30 días que realmente funciona",c4p:"Un reto divertido y manejable para arrancar tu hábito de ahorro en solo un mes.",c4m:"4 min de lectura · Principiante",t5:"Ahorro",c5h:"Cómo ahorrar en el mercado sin comer menos",c5p:"Estrategias prácticas para reducir tu factura de comida sin sacrificar calidad ni nutrición.",c5m:"7 min de lectura · Principiante",t6:"Ahorro",c6h:"Automatiza tus ahorros: configúralo y olvídate",c6p:"Cómo configurar transferencias automáticas para que tus ahorros crezcan cada mes sin esfuerzo.",c6m:"5 min de lectura · Principiante",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Budgeting guides for beginners. Learn how to budget, track spending, and take control of your money.">
+<title>Budgeting Guides | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}
+nav ul a{font-size:.9rem;font-weight:500;color:var(--muted);transition:color .2s}
+nav ul a:hover{color:var(--green);text-decoration:none}
+nav ul a.active{color:var(--green)}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.nav-cta:hover{background:var(--gd)!important;text-decoration:none!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.cat-hero{background:linear-gradient(135deg,var(--gd) 0%,#0f6e56 100%);color:#fff;padding:3.5rem 2rem;text-align:center}
+.cat-hero .chip{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.28rem .9rem;font-size:.75rem;letter-spacing:.05em;margin-bottom:1rem;text-transform:uppercase}
+.cat-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:.8rem}
+.cat-hero p{opacity:.88;max-width:480px;margin:0 auto;font-size:.97rem}
+.wrap{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem}
+.adph{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:90px;color:#bbb;font-size:.78rem;margin-bottom:2rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-bottom:3rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;color:var(--text)}
+.card:hover{box-shadow:0 6px 24px rgba(0,0,0,.09);transform:translateY(-3px);text-decoration:none}
+.card-ico{height:110px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;background:var(--gl)}
+.card-b{padding:1.1rem;flex:1;display:flex;flex-direction:column}
+.card-tag{font-size:.68rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.4rem}
+.card-b h3{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.35;margin-bottom:.5rem}
+.card-b p{font-size:.83rem;color:var(--muted);flex:1;margin-bottom:.8rem}
+.card-meta{font-size:.7rem;color:#bbb}
+.feat-card{grid-column:span 2}
+.feat-card .card-ico{height:160px;font-size:3.5rem}
+.feat-card .card-b h3{font-size:1.25rem}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:90px;color:#bbb;font-size:.78rem;margin-bottom:2rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:1rem}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:768px){nav ul{display:none}.grid{grid-template-columns:1fr}.feat-card{grid-column:span 1}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" class="active" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="cat-hero">
+  <div class="chip" id="chip">💰 Budgeting</div>
+  <h1 id="h1">Budgeting Guides</h1>
+  <p id="heroP">Simple, practical budgeting methods that actually work — no financial degree required.</p>
+</div>
+
+<div class="wrap">
+  <div class="adph" id="adtop">Advertisement (728×90) — AdSense slot</div>
+
+  <div class="grid">
+    <!-- Featured -->
+    <a href="budget-guide.html" class="card feat-card">
+      <div class="card-ico" style="background:var(--gl)">💰</div>
+      <div class="card-b">
+        <div class="card-tag" id="t1">Featured · Beginner</div>
+        <h3 id="c1h">The 50/30/20 Budget Rule: A Complete Beginner's Guide</h3>
+        <p id="c1p">The simplest budgeting method ever created. Learn how to split your income into needs, wants, and savings in under 5 minutes.</p>
+        <div class="card-meta" id="c1m">8 min read · Beginner</div>
+      </div>
+    </a>
+    <!-- Regular cards -->
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#f0faf6">📋</div>
+      <div class="card-b">
+        <div class="card-tag" id="t2">Budgeting</div>
+        <h3 id="c2h">Zero-Based Budgeting: Give Every Dollar a Job</h3>
+        <p id="c2p">A more detailed method where you assign every single dollar of income to a specific purpose.</p>
+        <div class="card-meta" id="c2m">6 min read · Intermediate</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#f0faf6">✉️</div>
+      <div class="card-b">
+        <div class="card-tag" id="t3">Budgeting</div>
+        <h3 id="c3h">The Envelope Method: Budgeting With Cash</h3>
+        <p id="c3p">An old-school technique that still works brilliantly for people who overspend with cards.</p>
+        <div class="card-meta" id="c3m">5 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#f0faf6">📱</div>
+      <div class="card-b">
+        <div class="card-tag" id="t4">Budgeting</div>
+        <h3 id="c4h">Best Free Apps to Track Your Spending in 2025</h3>
+        <p id="c4p">The top budgeting apps that make it painless to see where your money actually goes every month.</p>
+        <div class="card-meta" id="c4m">7 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="#" class="card">
+      <div class="card-ico" style="background:#f0faf6">📉</div>
+      <div class="card-b">
+        <div class="card-tag" id="t5">Budgeting</div>
+        <h3 id="c5h">7 Ways to Cut Your Monthly Bills Starting Today</h3>
+        <p id="c5p">Small, painless changes that can free up hundreds of dollars every single month.</p>
+        <div class="card-meta" id="c5m">6 min read · Beginner</div>
+      </div>
+    </a>
+    <a href="tools/budget-calculator.html" class="card">
+      <div class="card-ico" style="background:var(--gd)">🧮</div>
+      <div class="card-b">
+        <div class="card-tag" id="t6" style="color:var(--amber)">Free Tool</div>
+        <h3 id="c6h">Budget Calculator — See Your 50/30/20 Split Instantly</h3>
+        <p id="c6p">Enter your income and get your personalised budget breakdown in seconds.</p>
+        <div class="card-meta" id="c6m">Interactive tool</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="adil" id="adbot">Advertisement (728×90) — AdSense slot</div>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",chip:"💰 Budgeting",h1:"Budgeting Guides",heroP:"Simple, practical budgeting methods that actually work — no financial degree required.",adtop:"Advertisement (728×90) — AdSense slot",adbot:"Advertisement (728×90) — AdSense slot",t1:"Featured · Beginner",c1h:"The 50/30/20 Budget Rule: A Complete Beginner's Guide",c1p:"The simplest budgeting method ever created. Learn how to split your income into needs, wants, and savings in under 5 minutes.",c1m:"8 min read · Beginner",t2:"Budgeting",c2h:"Zero-Based Budgeting: Give Every Dollar a Job",c2p:"A more detailed method where you assign every single dollar of income to a specific purpose.",c2m:"6 min read · Intermediate",t3:"Budgeting",c3h:"The Envelope Method: Budgeting With Cash",c3p:"An old-school technique that still works brilliantly for people who overspend with cards.",c3m:"5 min read · Beginner",t4:"Budgeting",c4h:"Best Free Apps to Track Your Spending in 2025",c4p:"The top budgeting apps that make it painless to see where your money actually goes every month.",c4m:"7 min read · Beginner",t5:"Budgeting",c5h:"7 Ways to Cut Your Monthly Bills Starting Today",c5p:"Small, painless changes that can free up hundreds of dollars every single month.",c5m:"6 min read · Beginner",t6:"Free Tool",c6h:"Budget Calculator — See Your 50/30/20 Split Instantly",c6p:"Enter your income and get your personalised budget breakdown in seconds.",c6m:"Interactive tool",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",chip:"💰 Presupuesto",h1:"Guías de Presupuesto",heroP:"Métodos de presupuesto simples y prácticos que realmente funcionan — sin necesidad de un título en finanzas.",adtop:"Publicidad (728×90) — Espacio AdSense",adbot:"Publicidad (728×90) — Espacio AdSense",t1:"Destacado · Principiante",c1h:"La regla del 50/30/20: Guía completa para principiantes",c1p:"El método de presupuesto más sencillo que existe. Aprende a dividir tus ingresos en necesidades, deseos y ahorro en menos de 5 minutos.",c1m:"8 min de lectura · Principiante",t2:"Presupuesto",c2h:"Presupuesto base cero: dale un trabajo a cada peso",c2p:"Un método más detallado donde asignas cada peso de tu ingreso a un propósito específico.",c2m:"6 min de lectura · Intermedio",t3:"Presupuesto",c3h:"El método de sobres: presupuestar con efectivo",c3p:"Una técnica clásica que sigue funcionando muy bien para quienes gastan de más con tarjeta.",c3m:"5 min de lectura · Principiante",t4:"Presupuesto",c4h:"Las mejores apps gratuitas para controlar tus gastos en 2025",c4p:"Las mejores apps de presupuesto para ver sin dolor a dónde va tu dinero cada mes.",c4m:"7 min de lectura · Principiante",t5:"Presupuesto",c5h:"7 formas de reducir tus facturas mensuales desde hoy",c5p:"Cambios pequeños e indoloros que pueden liberar cientos de pesos cada mes.",c5m:"6 min de lectura · Principiante",t6:"Herramienta gratis",c6h:"Calculadora de presupuesto — Ve tu división 50/30/20 al instante",c6p:"Ingresa tus ingresos y obtén tu desglose de presupuesto personalizado en segundos.",c6m:"Herramienta interactiva",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>
