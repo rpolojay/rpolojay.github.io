@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free 50/30/20 budget calculator. Enter your income and instantly see how to split it into needs, wants, and savings.">
+<title>Budget Calculator | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.ph{background:var(--gd);color:#fff;text-align:center;padding:2.5rem 2rem}
+.ph h1{font-family:'Playfair Display',serif;font-size:clamp(1.55rem,4vw,2.2rem);margin-bottom:.55rem}
+.ph p{opacity:.85;max-width:480px;margin:0 auto;font-size:.96rem}
+.cw{max-width:760px;margin:0 auto;padding:2rem 1.5rem}
+.adph{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:88px;color:#bbb;font-size:.76rem;margin-bottom:1.4rem}
+.cc{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.8rem;margin-bottom:1.4rem}
+.cc h2{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:1.1rem}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:.9rem}
+label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:.28rem;font-weight:500}
+.iw{position:relative}
+.ip{position:absolute;left:.75rem;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.88rem}
+input[type=number]{width:100%;padding:.58rem .75rem .58rem 1.7rem;border:1px solid var(--border);border-radius:8px;font-size:.94rem;font-family:'DM Sans',sans-serif;background:var(--bg)}
+input[type=number]:focus{outline:none;border-color:var(--green)}
+input.nopfx{padding-left:.75rem}
+select{width:100%;padding:.58rem .75rem;border:1px solid var(--border);border-radius:8px;font-size:.94rem;font-family:'DM Sans',sans-serif;background:var(--bg)}
+.cbtn{background:var(--green);color:#fff;border:none;padding:.75rem 2rem;border-radius:999px;font-size:.94rem;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%;margin-top:.4rem;transition:background .2s}
+.cbtn:hover{background:var(--gd)}
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.4rem}
+.rb{border-radius:var(--r);padding:1.2rem;text-align:center}
+.rb .amt{font-family:'Playfair Display',serif;font-size:1.65rem;margin-bottom:.18rem}
+.rb .lbl{font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.18rem}
+.rb .sub{font-size:.78rem;opacity:.7}
+.rn{background:var(--gl);color:var(--gd)}.rw{background:var(--al);color:#633806}.rs{background:var(--bl);color:#0C447C}
+.bw{margin-bottom:1.4rem}
+.bt{height:22px;background:var(--border);border-radius:999px;overflow:hidden;display:flex}
+.bn2{background:var(--green);height:100%;transition:width .5s ease}
+.bw2{background:var(--amber);height:100%;transition:width .5s ease}
+.bs2{background:var(--blue);height:100%;transition:width .5s ease}
+.bl2{display:flex;gap:1.1rem;margin-top:.45rem}
+.ld{display:flex;align-items:center;gap:.38rem;font-size:.76rem;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%}
+.dtbl{width:100%;border-collapse:collapse;font-size:.87rem}
+.dtbl th{text-align:left;padding:.48rem .75rem;color:var(--muted);font-weight:500;font-size:.76rem;text-transform:uppercase;border-bottom:1px solid var(--border)}
+.dtbl td{padding:.55rem .75rem;border-bottom:1px solid var(--border)}
+.dtbl tr:last-child td{border-bottom:none}
+.tg{font-size:.68rem;font-weight:500;padding:.18rem .48rem;border-radius:999px}
+.tgn{background:var(--gl);color:var(--gd)}.tgw{background:var(--al);color:#633806}.tgs{background:var(--bl);color:#0C447C}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:1rem}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:600px){nav ul{display:none}.ig,.rg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul><li><a id="n1" href="#">Budgeting</a></li><li><a id="n2" href="#">Saving</a></li><li><a id="n3" href="#">Investing</a></li></ul>
+  <div class="nav-r"><div class="ltog"><button class="lb on" onclick="setLang('en')">EN</button><button class="lb" onclick="setLang('es')">ES</button></div></div>
+</nav>
+
+<div class="ph">
+  <h1 id="ph1">🧮 Free Budget Calculator</h1>
+  <p id="ph2">Enter your income below and instantly see your 50/30/20 split.</p>
+</div>
+
+<div class="cw">
+  <div class="adph" id="adtop">Advertisement — Replace with AdSense code</div>
+
+  <div class="cc">
+    <h2 id="ch2">Your Income Details</h2>
+    <div class="ig">
+      <div>
+        <label id="incl">Monthly Take-Home Pay (after tax)</label>
+        <div class="iw"><span class="ip">$</span><input type="number" id="income" placeholder="3000" min="0"></div>
+      </div>
+      <div>
+        <label id="freql">Pay Frequency</label>
+        <select id="frequency">
+          <option value="1" id="fo1">Monthly</option>
+          <option value="2" id="fo2">Twice a month</option>
+          <option value="4.33" id="fo3">Weekly</option>
+          <option value="2.17" id="fo4">Every 2 weeks</option>
+        </select>
+      </div>
+    </div>
+    <div class="ig">
+      <div>
+        <label id="nl">Needs % (default: 50%)</label>
+        <div class="iw"><input type="number" class="nopfx" id="pn" value="50" min="0" max="100"></div>
+      </div>
+      <div>
+        <label id="wl">Wants % (default: 30%)</label>
+        <div class="iw"><input type="number" class="nopfx" id="pw" value="30" min="0" max="100"></div>
+      </div>
+    </div>
+    <button class="cbtn" id="cbtn" onclick="calculate()">Calculate My Budget →</button>
+  </div>
+
+  <div id="results" style="display:none">
+    <div class="cc">
+      <h2 id="rh2">Your Monthly Budget Split</h2>
+      <div class="rg">
+        <div class="rb rn"><div class="lbl" id="rln">Needs</div><div class="amt" id="rvn">$0</div><div class="sub" id="rpn">50% of income</div></div>
+        <div class="rb rw"><div class="lbl" id="rlw">Wants</div><div class="amt" id="rvw">$0</div><div class="sub" id="rpw">30% of income</div></div>
+        <div class="rb rs"><div class="lbl" id="rls">Savings</div><div class="amt" id="rvs">$0</div><div class="sub" id="rps">20% of income</div></div>
+      </div>
+      <div class="bw">
+        <div class="bt"><div class="bn2" id="bar-n"></div><div class="bw2" id="bar-w"></div><div class="bs2" id="bar-s"></div></div>
+        <div class="bl2">
+          <div class="ld"><div class="dot" style="background:var(--green)"></div><span id="ll1">Needs</span></div>
+          <div class="ld"><div class="dot" style="background:var(--amber)"></div><span id="ll2">Wants</span></div>
+          <div class="ld"><div class="dot" style="background:var(--blue)"></div><span id="ll3">Savings</span></div>
+        </div>
+      </div>
+      <table class="dtbl">
+        <thead><tr><th id="th1">Category</th><th id="th2">Monthly</th><th id="th3">Weekly</th><th id="th4">Annual</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="adph" id="adbot">Advertisement — Replace with AdSense code</div>
+
+    <div class="cc">
+      <h2 id="nexth">What to Do Next</h2>
+      <p style="font-size:.9rem;color:var(--muted);margin-bottom:1rem" id="nextp">Now that you have your numbers, here's how to put them into action:</p>
+      <ol style="font-size:.9rem;padding-left:1.2rem" id="nextol">
+        <li style="margin-bottom:.75rem" id="nx1">Open a separate savings account and set up an automatic transfer for your savings amount on payday.</li>
+        <li style="margin-bottom:.75rem" id="nx2">Track your needs for one month — use bank statements to check you're within the target.</li>
+        <li style="margin-bottom:.75rem" id="nx3">Set a wants limit — use cash or a prepaid card to make it tangible.</li>
+        <li id="nx4">Review monthly and recalculate whenever your income changes.</li>
+      </ol>
+      <p style="margin-top:1rem;font-size:.9rem"><a href="../budget-guide.html" id="nextlink">Want to learn more? Read our full guide: The 50/30/20 Budget Rule →</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="../index.html" id="flogo">MoneyMadeSimple</a> · <a href="#" id="fpr">Privacy Policy</a> · <a href="#" id="fdi">Disclaimer</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Investing",ph1:"🧮 Free Budget Calculator",ph2:"Enter your income below and instantly see your 50/30/20 split.",adtop:"Advertisement — Replace with AdSense code",adbot:"Advertisement — Replace with AdSense code",ch2:"Your Income Details",incl:"Monthly Take-Home Pay (after tax)",freql:"Pay Frequency",fo1:"Monthly",fo2:"Twice a month",fo3:"Weekly",fo4:"Every 2 weeks",nl:"Needs % (default: 50%)",wl:"Wants % (default: 30%)",cbtn:"Calculate My Budget →",rh2:"Your Monthly Budget Split",rln:"Needs",rlw:"Wants",rls:"Savings",ll1:"Needs",ll2:"Wants",ll3:"Savings",th1:"Category",th2:"Monthly",th3:"Weekly",th4:"Annual",nexth:"What to Do Next",nextp:"Now that you have your numbers, here's how to put them into action:",nx1:"Open a separate savings account and set up an automatic transfer for your savings amount on payday.",nx2:"Track your needs for one month — use bank statements to check you're within the target.",nx3:"Set a wants limit — use cash or a prepaid card to make it tangible.",nx4:"Review monthly and recalculate whenever your income changes.",nextlink:"Want to learn more? Read our full guide: The 50/30/20 Budget Rule →",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",flegal:"This content is for informational purposes only and does not constitute financial advice.",err:"Please enter a valid income amount.",ofLabel:["Needs","Wants","Savings","Total Income"],pctSuffix:"% of income",locale:"en-US"},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Inversión",ph1:"🧮 Calculadora de Presupuesto Gratis",ph2:"Ingresa tus ingresos y ve al instante cómo dividirlos con la regla del 50/30/20.",adtop:"Publicidad — Reemplaza con código AdSense",adbot:"Publicidad — Reemplaza con código AdSense",ch2:"Tus datos de ingresos",incl:"Ingreso mensual neto (después de impuestos)",freql:"Frecuencia de pago",fo1:"Mensual",fo2:"Quincenal",fo3:"Semanal",fo4:"Cada 2 semanas",nl:"% Necesidades (predeterminado: 50%)",wl:"% Deseos (predeterminado: 30%)",cbtn:"Calcular mi presupuesto →",rh2:"Tu división presupuestaria mensual",rln:"Necesidades",rlw:"Deseos",rls:"Ahorro",ll1:"Necesidades",ll2:"Deseos",ll3:"Ahorro",th1:"Categoría",th2:"Mensual",th3:"Semanal",th4:"Anual",nexth:"¿Y ahora qué hago?",nextp:"Ahora que tienes tus números, aquí te decimos cómo ponerlos en práctica:",nx1:"Abre una cuenta de ahorros separada y configura una transferencia automática por el monto de tu ahorro el día de pago.",nx2:"Revisa tus necesidades durante un mes — usa tus extractos bancarios para ver si estás dentro del objetivo.",nx3:"Fija un límite de deseos — usa efectivo o tarjeta prepago para hacerlo tangible.",nx4:"Revisa mensualmente y recalcula cada vez que cambien tus ingresos.",nextlink:"¿Quieres aprender más? Lee nuestra guía completa: La regla del 50/30/20 →",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera.",err:"Por favor ingresa un monto de ingreso válido.",ofLabel:["Necesidades","Deseos","Ahorro","Total ingresos"],pctSuffix:"% del ingreso",locale:"es-CO"}
+};
+
+let lang=localStorage.getItem('lang')||'en';
+
+function fmt(n,locale){return'$'+Math.round(n).toLocaleString(locale);}
+
+function setLang(l){
+  lang=l;
+  localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){
+    if(['ofLabel','pctSuffix','locale','err'].includes(id))continue;
+    const el=document.getElementById(id);
+    if(el)el.innerHTML=val;
+  }
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+
+function calculate(){
+  const d=T[lang];
+  const raw=parseFloat(document.getElementById('income').value);
+  const freq=parseFloat(document.getElementById('frequency').value);
+  const pn=parseFloat(document.getElementById('pn').value)||50;
+  const pw=parseFloat(document.getElementById('pw').value)||30;
+  const ps=Math.max(0,100-pn-pw);
+  if(!raw||raw<=0){alert(d.err);return;}
+  let mo;
+  if(freq===1)mo=raw;
+  else if(freq===2)mo=raw*2;
+  else if(freq===4.33)mo=raw*4.33;
+  else mo=raw*2.17;
+  const vn=mo*pn/100,vw=mo*pw/100,vs=mo*ps/100;
+  const loc=d.locale;
+  document.getElementById('rvn').textContent=fmt(vn,loc);
+  document.getElementById('rvw').textContent=fmt(vw,loc);
+  document.getElementById('rvs').textContent=fmt(vs,loc);
+  document.getElementById('rpn').textContent=pn+d.pctSuffix;
+  document.getElementById('rpw').textContent=pw+d.pctSuffix;
+  document.getElementById('rps').textContent=ps+d.pctSuffix;
+  document.getElementById('bar-n').style.width=pn+'%';
+  document.getElementById('bar-w').style.width=pw+'%';
+  document.getElementById('bar-s').style.width=ps+'%';
+  const rows=[{cls:'tgn',val:vn,i:0},{cls:'tgw',val:vw,i:1},{cls:'tgs',val:vs,i:2},{cls:null,val:mo,i:3}];
+  document.getElementById('tbody').innerHTML=rows.map(r=>`<tr><td>${r.cls?`<span class="tg ${r.cls}">${d.ofLabel[r.i]}</span>`:`<strong>${d.ofLabel[r.i]}</strong>`}</td><td>${r.cls?fmt(r.val,loc):`<strong>${fmt(r.val,loc)}</strong>`}</td><td>${fmt(r.val/4.33,loc)}</td><td>${fmt(r.val*12,loc)}</td></tr>`).join('');
+  document.getElementById('results').style.display='block';
+  document.getElementById('results').scrollIntoView({behavior:'smooth'});
+}
+
+setLang(lang);
+</script>
+</body>
+</html>
