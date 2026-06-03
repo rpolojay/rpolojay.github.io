@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to stop living paycheck to paycheck — a realistic step-by-step plan to break the cycle and build financial breathing room.">
+<title>How to Stop Living Paycheck to Paycheck | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--red:#C0392B;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.step{display:flex;gap:1rem;margin-bottom:1.2rem;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.snum{min-width:38px;height:38px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.1rem;flex-shrink:0}
+.sc h3{font-size:.95rem;font-weight:500;margin-bottom:.28rem}
+.sc p{font-size:.88rem;color:var(--muted);margin:0}
+.cycle-box{background:var(--bl);border:1px solid #b5d4f4;border-radius:var(--r);padding:1.2rem;margin:1.4rem 0}
+.cycle-box h3{font-size:.92rem;font-weight:500;color:#0C447C;margin-bottom:.6rem}
+.cycle-box ul{margin:0 0 0 1.2rem}
+.cycle-box li{font-size:.86rem;color:#0C447C;margin-bottom:.28rem}
+.causes{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0}
+.cause{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1rem}
+.cause h3{font-size:.88rem;font-weight:500;margin-bottom:.3rem}
+.cause p{font-size:.82rem;color:var(--muted);margin:0}
+.cause .ico{font-size:1.4rem;margin-bottom:.4rem;display:block}
+.progress-plan{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.4rem;margin:1.4rem 0}
+.progress-plan h3{font-size:1rem;font-weight:500;margin-bottom:1rem}
+.pp-item{display:flex;gap:.8rem;margin-bottom:.8rem;align-items:flex-start}
+.pp-dot{min-width:28px;height:28px;border:2px solid rgba(255,255,255,.5);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:500;flex-shrink:0}
+.pp-dot.done{background:var(--green);border-color:var(--green)}
+.pp-content h4{font-size:.88rem;font-weight:500;margin-bottom:.15rem}
+.pp-content p{font-size:.8rem;opacity:.8;margin:0}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.causes{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="budgeting.html" id="bc2">Budgeting</a></div>
+  <div class="atag" id="atag">Budgeting · Beginner</div>
+  <h1 id="ah1">How to Stop Living Paycheck to Paycheck</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 8 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">Living paycheck to paycheck means one unexpected expense — a car repair, a medical bill, a broken appliance — can derail your entire month. It's stressful, exhausting, and hard to escape. But it's not a trap you're stuck in forever. Here's how to break the cycle.</p>
+
+  <div id="len">
+    <h2>Why So Many People Are Stuck in This Cycle</h2>
+    <p>Around 60% of Americans live paycheck to paycheck — including many with six-figure salaries. This isn't just about income. It's about the gap between what comes in and what goes out, and whether any buffer exists between the two.</p>
+
+    <div class="cycle-box">
+      <h3>🔄 How the paycheck-to-paycheck cycle works</h3>
+      <ul>
+        <li>Paycheck arrives → bills and expenses consume it</li>
+        <li>No buffer → any surprise expense goes on a credit card</li>
+        <li>Credit card balance grows → minimum payments eat future paychecks</li>
+        <li>Less money available each month → harder to break free</li>
+        <li>Repeat indefinitely</li>
+      </ul>
+    </div>
+
+    <h2>The 4 Root Causes — Which One Is Yours?</h2>
+    <div class="causes">
+      <div class="cause"><span class="ico">📊</span><h3>No budget</h3><p>Money is spent without a plan, so it disappears before the month ends.</p></div>
+      <div class="cause"><span class="ico">💸</span><h3>Lifestyle inflation</h3><p>Income grew but spending grew with it — nothing was saved from raises.</p></div>
+      <div class="cause"><span class="ico">💳</span><h3>Debt payments</h3><p>Minimum payments on cards and loans consume too much of each paycheck.</p></div>
+      <div class="cause"><span class="ico">📉</span><h3>Income is too low</h3><p>After essentials, genuinely nothing is left — a budget problem and an income problem.</p></div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>The 7-Step Plan to Break the Cycle</h2>
+
+    <div class="step"><div class="snum">1</div><div class="sc">
+      <h3>Find out exactly where your money goes</h3>
+      <p>Print your last two bank statements and categorise every transaction. Most people are shocked. Common findings: $200+ on food delivery, $100+ on forgotten subscriptions, $150+ on impulse purchases. You can't fix what you can't see.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">2</div><div class="sc">
+      <h3>Build a $500 emergency buffer — immediately</h3>
+      <p>Before anything else, your goal is $500 in a separate account that you do not touch. This one buffer prevents the cycle from continuing — when the unexpected expense happens, you pay cash instead of going into debt. Sell something, cut spending aggressively for 4–6 weeks, pick up extra hours. Get to $500 first.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">3</div><div class="sc">
+      <h3>Cut your three biggest non-essential expenses</h3>
+      <p>Look at your spending categories and find the three biggest discretionary costs — dining out, entertainment, subscriptions, clothing. Cut each one by 50% this month. This is temporary, not permanent. The goal is to free up cash to break the cycle.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">4</div><div class="sc">
+      <h3>Create a zero-based budget for next month</h3>
+      <p>Assign every dollar of your income to a category before the month starts. Needs, wants, savings, debt payments — everything gets a number. When every dollar has a job, it stops disappearing. Use our free <a href="tools/budget-calculator.html">Budget Calculator</a> to get started.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">5</div><div class="sc">
+      <h3>Automate savings on payday</h3>
+      <p>Set up an automatic transfer of even $25–$50 to a separate savings account the day your paycheck arrives. Once the $500 buffer is built, redirect this to your emergency fund (3–6 months of expenses). Automation removes the decision and makes saving the default.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">6</div><div class="sc">
+      <h3>Attack debt with any extra money</h3>
+      <p>Debt minimum payments are the engine of the paycheck-to-paycheck cycle. Every extra dollar you put toward debt reduces future minimum payments and frees up monthly cash flow. Use the <a href="debt-avalanche-snowball.html">avalanche or snowball method</a> — pick one and attack relentlessly.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">7</div><div class="sc">
+      <h3>Find one way to increase income</h3>
+      <p>If after cutting everything there still isn't enough margin, the income itself needs to grow. Ask for a raise, pick up overtime, start a small side gig. Even an extra $200–$300/month permanently changes your financial trajectory.</p>
+    </div></div>
+
+    <h2>Your 6-Month Progress Plan</h2>
+    <div class="progress-plan">
+      <h3>📍 The roadmap out of paycheck-to-paycheck</h3>
+      <div class="pp-item"><div class="pp-dot done">1</div><div class="pp-content"><h4>Month 1 — Stop the bleeding</h4><p>Track spending, cut 3 biggest non-essentials, build $500 buffer</p></div></div>
+      <div class="pp-item"><div class="pp-dot done">2</div><div class="pp-content"><h4>Month 2 — Get a real budget</h4><p>Zero-based budget in place, automate $50/month to savings</p></div></div>
+      <div class="pp-item"><div class="pp-dot">3</div><div class="pp-content"><h4>Month 3 — Build momentum</h4><p>Budget feels normal, starting to pay extra on debt</p></div></div>
+      <div class="pp-item"><div class="pp-dot">4</div><div class="pp-content"><h4>Month 4–5 — Growing breathing room</h4><p>Emergency buffer growing, one debt paid off or reduced significantly</p></div></div>
+      <div class="pp-item"><div class="pp-dot">5</div><div class="pp-content"><h4>Month 6 — Breaking free</h4><p>1 month of expenses saved, paycheck no longer consumed before the next one arrives</p></div></div>
+    </div>
+
+    <div class="tipbox">
+      <strong>💡 The Truth Nobody Tells You</strong>
+      Breaking this cycle takes 3–6 months of uncomfortable choices. You will feel restricted. You will want to quit. The people who break free are not the ones who find a magic trick — they're the ones who stay uncomfortable long enough for the habits to stick. One month of discipline changes nothing. Six months changes everything.
+    </div>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>Por qué tanta gente está atrapada en este ciclo</h2>
+    <p>Vivir de quincena en quincena significa que un gasto inesperado — una reparación del carro, una factura médica, un electrodoméstico roto — puede descarrilar todo tu mes. Es estresante, agotador y difícil de escapar. Pero no es una trampa en la que estás atrapado para siempre.</p>
+
+    <div class="cycle-box">
+      <h3>🔄 Cómo funciona el ciclo de quincena en quincena</h3>
+      <ul>
+        <li>Llega el salario → las facturas y gastos lo consumen</li>
+        <li>Sin colchón → cualquier gasto sorpresa va a la tarjeta de crédito</li>
+        <li>El saldo de la tarjeta crece → los pagos mínimos consumen futuros salarios</li>
+        <li>Menos dinero disponible cada mes → más difícil salir</li>
+        <li>Se repite indefinidamente</li>
+      </ul>
+    </div>
+
+    <h2>Las 4 causas raíz — ¿Cuál es la tuya?</h2>
+    <div class="causes">
+      <div class="cause"><span class="ico">📊</span><h3>Sin presupuesto</h3><p>El dinero se gasta sin plan, así que desaparece antes de que termine el mes.</p></div>
+      <div class="cause"><span class="ico">💸</span><h3>Inflación de estilo de vida</h3><p>Los ingresos crecieron pero el gasto creció con ellos — nada se ahorró de los aumentos.</p></div>
+      <div class="cause"><span class="ico">💳</span><h3>Pagos de deuda</h3><p>Los pagos mínimos de tarjetas y préstamos consumen demasiado de cada salario.</p></div>
+      <div class="cause"><span class="ico">📉</span><h3>Ingresos demasiado bajos</h3><p>Después de los gastos esenciales, genuinamente no queda nada.</p></div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>El plan de 7 pasos para romper el ciclo</h2>
+
+    <div class="step"><div class="snum">1</div><div class="sc">
+      <h3>Descubre exactamente a dónde va tu dinero</h3>
+      <p>Imprime tus últimos dos extractos bancarios y categoriza cada transacción. La mayoría de las personas se sorprenden. Hallazgos comunes: $200.000+ en domicilios, $100.000+ en suscripciones olvidadas, $150.000+ en compras impulsivas. No puedes arreglar lo que no puedes ver.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">2</div><div class="sc">
+      <h3>Construye un colchón de emergencia de $500.000 — inmediatamente</h3>
+      <p>Antes que cualquier otra cosa, tu objetivo es $500.000 en una cuenta separada que no toques. Este colchón previene que el ciclo continúe — cuando llegue el gasto inesperado, pagas en efectivo en lugar de endeudarte. Vende algo, recorta gastos agresivamente por 4–6 semanas. Llega primero a $500.000.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">3</div><div class="sc">
+      <h3>Recorta tus tres mayores gastos no esenciales</h3>
+      <p>Mira tus categorías de gasto y encuentra los tres costos discrecionales más grandes — restaurantes, entretenimiento, suscripciones, ropa. Recorta cada uno a la mitad este mes. Esto es temporal, no permanente. El objetivo es liberar efectivo para romper el ciclo.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">4</div><div class="sc">
+      <h3>Crea un presupuesto base cero para el próximo mes</h3>
+      <p>Asigna cada peso de tus ingresos a una categoría antes de que comience el mes. Necesidades, deseos, ahorros, pagos de deuda — todo recibe un número. Cuando cada peso tiene un trabajo, deja de desaparecer.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">5</div><div class="sc">
+      <h3>Automatiza el ahorro el día de pago</h3>
+      <p>Configura una transferencia automática de incluso $25.000–$50.000 a una cuenta de ahorros separada el día que llega tu salario. Una vez construido el colchón de $500.000, redirige esto a tu fondo de emergencia.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">6</div><div class="sc">
+      <h3>Ataca la deuda con cualquier dinero extra</h3>
+      <p>Los pagos mínimos de deuda son el motor del ciclo de quincena en quincena. Cada peso extra que pones hacia la deuda reduce los pagos mínimos futuros y libera flujo de caja mensual.</p>
+    </div></div>
+
+    <div class="step"><div class="snum">7</div><div class="sc">
+      <h3>Encuentra una forma de aumentar tus ingresos</h3>
+      <p>Si después de recortar todo todavía no hay suficiente margen, los ingresos necesitan crecer. Pide un aumento, busca horas extra, empieza un pequeño negocio paralelo. Incluso $200.000–$300.000 adicionales al mes cambian permanentemente tu trayectoria financiera.</p>
+    </div></div>
+
+    <div class="tipbox">
+      <strong>💡 La verdad que nadie te dice</strong>
+      Romper este ciclo toma 3–6 meses de elecciones incómodas. Te sentirás restringido. Querrás rendirte. Las personas que logran salir no son las que encuentran un truco mágico — son las que permanecen incómodas el tiempo suficiente para que los hábitos se arraiguen. Un mes de disciplina no cambia nada. Seis meses lo cambian todo.
+    </div>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">Why You're Stuck</a></li>
+        <li><a href="#" id="toc2">The 4 Root Causes</a></li>
+        <li><a href="#" id="toc3">The 7-Step Plan</a></li>
+        <li><a href="#" id="toc4">6-Month Progress Plan</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="emergency-fund.html" id="rel1">Build an Emergency Fund</a></li>
+        <li><a href="budget-guide.html" id="rel2">The 50/30/20 Budget Rule</a></li>
+        <li><a href="debt-avalanche-snowball.html" id="rel3">Pay Off Debt Faster</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Budgeting",atag:"Budgeting · Beginner",ah1:"How to Stop Living Paycheck to Paycheck",ameta:"📅 Updated June 2025 · ⏱ 8 min read · 👤 Beginner-friendly",aintro:"Living paycheck to paycheck means one unexpected expense — a car repair, a medical bill, a broken appliance — can derail your entire month. It's stressful, exhausting, and hard to escape. But it's not a trap you're stuck in forever. Here's how to break the cycle.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"Why You're Stuck",toc2:"The 4 Root Causes",toc3:"The 7-Step Plan",toc4:"6-Month Progress Plan",relh:"Related Articles",rel1:"Build an Emergency Fund",rel2:"The 50/30/20 Budget Rule",rel3:"Pay Off Debt Faster",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Presupuesto",atag:"Presupuesto · Principiante",ah1:"Cómo dejar de vivir de quincena en quincena",ameta:"📅 Actualizado junio 2025 · ⏱ 8 min de lectura · 👤 Para principiantes",aintro:"Vivir de quincena en quincena significa que un gasto inesperado puede descarrilar todo tu mes. Es estresante, agotador y difícil de escapar. Pero no es una trampa en la que estás atrapado para siempre. Así es como romper el ciclo.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"Por qué estás atrapado",toc2:"Las 4 causas raíz",toc3:"El plan de 7 pasos",toc4:"Plan de progreso de 6 meses",relh:"Artículos relacionados",rel1:"Fondo de emergencia",rel2:"La regla del 50/30/20",rel3:"Pagar deudas más rápido",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){
+  lang=l;localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+setLang(lang);
+</script>
+</body>
+</html>
