@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="About MoneyMadeSimple / DineroFácil — a personal finance site helping everyday people take control of their money.">
-<title>About | MoneyMadeSimple</title>
+<meta name="description" content="About MoneyMadeSimple — built by Raul, who paid off debt and learned personal finance the hard way. Now sharing what actually works.">
+<title>About MoneyMadeSimple | Built by Someone Who's Been There</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -14,36 +14,44 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
 a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
 nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
 .logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
-nav ul{list-style:none;display:flex;gap:2rem}
-nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
 .nav-r{display:flex;align-items:center;gap:1rem}
 .nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
-.nav-cta:hover{background:var(--gd)!important;text-decoration:none!important}
 .ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
 .lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
 .lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
-.hero{background:linear-gradient(135deg,var(--gd) 0%,#0f6e56 100%);color:#fff;padding:4rem 2rem 3.5rem;text-align:center}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:.8rem}
-.hero p{opacity:.88;max-width:520px;margin:0 auto;font-size:1rem}
-.wrap{max-width:780px;margin:0 auto;padding:3rem 1.5rem}
-.section{margin-bottom:2.8rem}
-.section h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:1rem;color:var(--gd)}
-.section p{font-size:.97rem;margin-bottom:1rem;color:var(--text)}
-.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin:1.5rem 0}
-.val{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.3rem;text-align:center}
-.val .ico{font-size:1.8rem;margin-bottom:.6rem}
-.val h3{font-size:.95rem;font-weight:500;margin-bottom:.35rem}
-.val p{font-size:.8rem;color:var(--muted);margin:0}
-.disclaimer-box{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.3rem;margin-top:2rem}
-.disclaimer-box h3{font-size:.95rem;font-weight:500;margin-bottom:.5rem;color:var(--amber)}
-.disclaimer-box p{font-size:.85rem;margin:0}
-.contact-box{background:var(--gl);border:1px solid #9FE1CB;border-radius:var(--r);padding:1.3rem;margin-top:1.5rem;text-align:center}
-.contact-box p{font-size:.92rem;margin-bottom:.6rem}
-.contact-box a{font-weight:500}
-footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2rem}
+.hero{background:linear-gradient(135deg,var(--gd) 0%,#0f6e56 100%);color:#fff;padding:4rem 2rem;text-align:center}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:.8rem}
+.hero p{font-size:1.05rem;opacity:.88;max-width:560px;margin:0 auto}
+.wrap{max-width:800px;margin:0 auto;padding:3rem 1.5rem}
+.author-card{display:flex;gap:1.5rem;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.8rem;margin-bottom:2.5rem}
+.author-avatar{min-width:72px;height:72px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;flex-shrink:0}
+.author-info h2{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:.25rem}
+.author-info .role{font-size:.82rem;color:var(--green);font-weight:500;margin-bottom:.6rem}
+.author-info p{font-size:.9rem;color:var(--muted);margin:0}
+h2.section{font-family:'Playfair Display',serif;font-size:1.5rem;margin:2rem 0 .9rem}
+p.body{font-size:.97rem;margin-bottom:1rem}
+.story-block{background:var(--gl);border-left:3px solid var(--green);border-radius:0 var(--r) var(--r) 0;padding:1.3rem 1.5rem;margin:1.5rem 0}
+.story-block p{font-size:.96rem;margin:0;font-style:italic;color:var(--gd)}
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0}
+.pillar{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem}
+.pillar .ico{font-size:1.5rem;margin-bottom:.5rem}
+.pillar h3{font-size:.95rem;font-weight:500;margin-bottom:.3rem}
+.pillar p{font-size:.84rem;color:var(--muted);margin:0}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
+.val{text-align:center;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.val .ico{font-size:1.8rem;margin-bottom:.5rem}
+.val h3{font-size:.9rem;font-weight:500;margin-bottom:.25rem}
+.val p{font-size:.78rem;color:var(--muted);margin:0}
+.cta-box{background:var(--gd);color:#fff;border-radius:var(--r);padding:2rem;text-align:center;margin:2.5rem 0}
+.cta-box h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.6rem}
+.cta-box p{opacity:.85;font-size:.92rem;margin-bottom:1.2rem}
+.cta-box a{background:var(--green);color:#fff;padding:.65rem 1.6rem;border-radius:999px;font-weight:500;font-size:.92rem;display:inline-block}
+.disclaimer{background:#f5f5f0;border-radius:var(--r);padding:1.1rem 1.3rem;font-size:.82rem;color:var(--muted);margin-top:2rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
 footer a{color:rgba(255,255,255,.8)}
 .lc{display:none}
-@media(max-width:768px){nav ul{display:none}.values{grid-template-columns:1fr}}
+@media(max-width:768px){nav ul{display:none}.pillars{grid-template-columns:1fr}.values{grid-template-columns:1fr}.author-card{flex-direction:column;align-items:center;text-align:center}}
 </style>
 </head>
 <body>
@@ -65,66 +73,91 @@ footer a{color:rgba(255,255,255,.8)}
 </nav>
 
 <div class="hero">
-  <h1 id="h1">About MoneyMadeSimple</h1>
-  <p id="heroP">Helping everyday people understand money — without the jargon, the complexity, or the judgment.</p>
+  <h1 id="h1">Built by Someone Who's Been There</h1>
+  <p id="hp">MoneyMadeSimple exists because personal finance shouldn't require a finance degree — it should just require a starting point.</p>
 </div>
 
 <div class="wrap">
-
-  <div class="section" id="s1en">
-    <h2>Why This Site Exists</h2>
-    <p>Most personal finance content is written by people with finance degrees, for people who already understand finance. It's full of jargon, complicated strategies, and advice that assumes you're already comfortable with money.</p>
-    <p>MoneyMadeSimple was built for everyone else. For people who weren't taught about budgeting growing up. For people who feel overwhelmed every time they look at their bank account. For people who want to do better with money but don't know where to start.</p>
-    <p>Every article on this site is written with one goal: make it so simple and clear that anyone can understand it and take action today.</p>
+  <div class="author-card">
+    <div class="author-avatar">R</div>
+    <div class="author-info">
+      <h2 id="aname">Raul — Founder, MoneyMadeSimple</h2>
+      <div class="role" id="arole">Personal Finance Writer · Bilingual EN/ES</div>
+      <p id="abio">I'm not a certified financial planner or a Wall Street veteran. I'm someone who spent years carrying credit card debt, not really understanding how interest worked, and watching my paycheck disappear before the month ended. I learned personal finance the hard way — by making mistakes, researching obsessively, and slowly turning things around. This site is everything I wish I had found when I was starting out.</p>
+    </div>
   </div>
 
-  <div class="section lc" id="s1es">
-    <h2>Por qué existe este sitio</h2>
-    <p>La mayoría del contenido de finanzas personales está escrito por personas con títulos en finanzas, para personas que ya entienden de finanzas. Está lleno de tecnicismos, estrategias complicadas y consejos que asumen que ya te sientes cómodo con el dinero.</p>
-    <p>DineroFácil fue creado para todos los demás. Para personas que no aprendieron a presupuestar cuando eran jóvenes. Para personas que se sienten abrumadas cada vez que miran su cuenta bancaria. Para personas que quieren mejorar con el dinero pero no saben por dónde empezar.</p>
-    <p>Cada artículo en este sitio está escrito con un objetivo: hacerlo tan simple y claro que cualquiera pueda entenderlo y actuar hoy mismo.</p>
+  <div id="len">
+    <h2 class="section">My Story</h2>
+    <p class="body">For a long time, I was living with debt I didn't fully understand. I knew the minimum payment number and I paid it every month — not realising I was barely touching the principal. Every month the balance barely moved. I felt stuck.</p>
+    <div class="story-block">
+      <p>"I remember the moment I actually calculated how long it would take to pay off my debt making only minimum payments. The number was shocking. That was the moment everything changed."</p>
+    </div>
+    <p class="body">I started reading everything I could about personal finance. Not the complicated investing strategies — just the fundamentals. How interest works. What a budget actually is. How to build an emergency fund. Simple things that nobody had ever explained clearly to me.</p>
+    <p class="body">Over time, I paid off the debt. I built an emergency fund. I started investing small amounts. None of it was dramatic or fast — it was consistent, informed decisions made month after month.</p>
+    <p class="body">I built MoneyMadeSimple because I noticed two things: most personal finance content is written for people who already understand finance, and almost none of it is available in quality Spanish for the millions of Spanish speakers who need it just as much.</p>
+
+    <h2 class="section">What This Site Covers</h2>
+    <div class="pillars">
+      <div class="pillar"><div class="ico">💰</div><h3>Budgeting</h3><p>How to track your spending, set limits, and stick to a plan without feeling restricted.</p></div>
+      <div class="pillar"><div class="ico">🛡️</div><h3>Saving</h3><p>Building an emergency fund, setting savings goals, and making your money grow while it sits.</p></div>
+      <div class="pillar"><div class="ico">💳</div><h3>Debt & Credit</h3><p>Understanding credit scores, paying off debt faster, and using credit cards without getting burned.</p></div>
+      <div class="pillar"><div class="ico">📈</div><h3>Investing</h3><p>Growing your money long-term — starting with whatever you have, even if it's just $50.</p></div>
+    </div>
+
+    <h2 class="section">Our Commitment to You</h2>
+    <div class="values">
+      <div class="val"><div class="ico">🎯</div><h3>Simple First</h3><p>If it needs a finance degree to understand, we rewrite it.</p></div>
+      <div class="val"><div class="ico">🤝</div><h3>No Judgment</h3><p>Everyone starts somewhere. We meet you where you are.</p></div>
+      <div class="val"><div class="ico">🆓</div><h3>Always Free</h3><p>Every guide, article, and tool on this site is free.</p></div>
+    </div>
+
+    <h2 class="section">A Note on the Advice Here</h2>
+    <p class="body">Everything on this site is based on well-established personal finance principles — the 50/30/20 rule, compound interest, debt payoff strategies — researched and validated over decades. I'm not a licensed financial advisor, and nothing here is personalised financial advice. Every article is educational. For major financial decisions, please consult a qualified professional.</p>
+
+    <div class="cta-box">
+      <h2>Ready to Start?</h2>
+      <p>The best time to take control of your money was yesterday. The second best time is right now.</p>
+      <a href="budget-guide.html">Start With the 50/30/20 Rule →</a>
+    </div>
+    <div class="disclaimer"><strong>Disclaimer:</strong> MoneyMadeSimple is for informational and educational purposes only. Content does not constitute financial, investment, tax, or legal advice. Always consult a qualified professional before making major financial decisions. See our full <a href="disclaimer.html">disclaimer</a> and <a href="privacy.html">privacy policy</a>.</div>
   </div>
 
-  <div class="values">
-    <div class="val"><div class="ico">🎯</div><h3 id="v1h">Simple First</h3><p id="v1p">If you need a finance degree to understand it, we'll rewrite it until you don't.</p></div>
-    <div class="val"><div class="ico">🤝</div><h3 id="v2h">No Judgment</h3><p id="v2p">Everyone starts somewhere. We meet you exactly where you are.</p></div>
-    <div class="val"><div class="ico">🆓</div><h3 id="v3h">Always Free</h3><p id="v3p">Every guide, article, and tool on this site is completely free to use.</p></div>
-  </div>
+  <div id="les" class="lc">
+    <h2 class="section">Mi historia</h2>
+    <p class="body">Durante mucho tiempo viví con deudas que no entendía completamente. Conocía el número del pago mínimo y lo pagaba cada mes — sin darme cuenta de que apenas tocaba el capital. Cada mes el saldo casi no se movía. Me sentía atrapado.</p>
+    <div class="story-block">
+      <p>"Recuerdo el momento en que realmente calculé cuánto tiempo tardaría en pagar mi deuda haciendo solo los pagos mínimos. El número fue impactante. Ese fue el momento en que todo cambió."</p>
+    </div>
+    <p class="body">Comencé a leer todo lo que pude sobre finanzas personales. No las estrategias complicadas — solo los fundamentos. Cómo funcionan los intereses. Qué es realmente un presupuesto. Cómo construir un fondo de emergencia. Cosas simples que nadie me había explicado claramente.</p>
+    <p class="body">Con el tiempo, pagué la deuda. Construí un fondo de emergencia. Comencé a invertir pequeñas cantidades. Nada fue dramático ni rápido — fueron decisiones consistentes e informadas tomadas mes tras mes.</p>
+    <p class="body">Construí DineroFácil porque noté dos cosas: la mayoría del contenido de finanzas personales está escrito para quienes ya entienden de finanzas, y casi nada está disponible en español de calidad para los millones de hispanohablantes que lo necesitan igual.</p>
 
-  <div class="section" id="s2en">
-    <h2>What You'll Find Here</h2>
-    <p>MoneyMadeSimple covers the four pillars of personal finance that matter most when you're starting out:</p>
-    <ul style="margin:.8rem 0 1rem 1.4rem">
-      <li style="margin-bottom:.4rem"><strong>Budgeting</strong> — how to track and control your spending</li>
-      <li style="margin-bottom:.4rem"><strong>Saving</strong> — building an emergency fund and saving for goals</li>
-      <li style="margin-bottom:.4rem"><strong>Debt & Credit</strong> — understanding and improving your credit, paying off debt</li>
-      <li style="margin-bottom:.4rem"><strong>Investing</strong> — growing your money over the long term</li>
-    </ul>
-    <p>Every article is available in both English and Spanish — just use the EN / ES toggle in the top right corner of any page.</p>
-  </div>
+    <h2 class="section">Lo que cubre este sitio</h2>
+    <div class="pillars">
+      <div class="pillar"><div class="ico">💰</div><h3>Presupuesto</h3><p>Cómo rastrear tus gastos, establecer límites y realmente cumplir un plan sin sentirte restringido.</p></div>
+      <div class="pillar"><div class="ico">🛡️</div><h3>Ahorro</h3><p>Construir un fondo de emergencia, establecer metas y hacer crecer tu dinero mientras descansa.</p></div>
+      <div class="pillar"><div class="ico">💳</div><h3>Deudas y crédito</h3><p>Entender los puntajes de crédito, pagar deudas más rápido y usar tarjetas sin quemarte.</p></div>
+      <div class="pillar"><div class="ico">📈</div><h3>Inversión</h3><p>Hacer crecer tu dinero a largo plazo — empezando con lo que tengas, incluso $50.</p></div>
+    </div>
 
-  <div class="section lc" id="s2es">
-    <h2>Qué encontrarás aquí</h2>
-    <p>DineroFácil cubre los cuatro pilares de las finanzas personales que más importan cuando estás empezando:</p>
-    <ul style="margin:.8rem 0 1rem 1.4rem">
-      <li style="margin-bottom:.4rem"><strong>Presupuesto</strong> — cómo controlar y rastrear tus gastos</li>
-      <li style="margin-bottom:.4rem"><strong>Ahorro</strong> — construir un fondo de emergencia y ahorrar para metas</li>
-      <li style="margin-bottom:.4rem"><strong>Deudas y crédito</strong> — entender y mejorar tu crédito, pagar deudas</li>
-      <li style="margin-bottom:.4rem"><strong>Inversión</strong> — hacer crecer tu dinero a largo plazo</li>
-    </ul>
-    <p>Cada artículo está disponible en inglés y español — usa el botón EN / ES en la esquina superior derecha de cualquier página.</p>
-  </div>
+    <h2 class="section">Nuestro compromiso contigo</h2>
+    <div class="values">
+      <div class="val"><div class="ico">🎯</div><h3>Simple primero</h3><p>Si necesita un título para entenderlo, lo reescribimos.</p></div>
+      <div class="val"><div class="ico">🤝</div><h3>Sin juicios</h3><p>Todos empezamos en algún lugar. Te encontramos donde estás.</p></div>
+      <div class="val"><div class="ico">🆓</div><h3>Siempre gratis</h3><p>Cada guía, artículo y herramienta en este sitio es gratuita.</p></div>
+    </div>
 
-  <div class="disclaimer-box">
-    <h3 id="dh">⚠️ Financial Disclaimer</h3>
-    <p id="dp">MoneyMadeSimple is an educational website. All content is for informational purposes only and does not constitute personalised financial advice. We are not licensed financial advisors. Always consult a qualified financial professional before making financial decisions.</p>
-  </div>
+    <h2 class="section">Una nota sobre los consejos aquí</h2>
+    <p class="body">Todo en DineroFácil se basa en principios de finanzas personales bien establecidos. No soy un asesor financiero certificado y nada aquí es asesoría personalizada. Para decisiones financieras importantes, consulta a un profesional calificado.</p>
 
-  <div class="contact-box">
-    <p id="cp">Have a question, suggestion, or topic you'd like us to cover?</p>
-    <a href="contact.html" id="cl">Get in touch →</a>
+    <div class="cta-box">
+      <h2>¿Listo para empezar?</h2>
+      <p>El mejor momento para tomar control de tu dinero fue ayer. El segundo mejor momento es ahora mismo.</p>
+      <a href="budget-guide.html">Empieza con la regla 50/30/20 →</a>
+    </div>
+    <div class="disclaimer"><strong>Aviso legal:</strong> DineroFácil es solo para fines informativos y educativos. El contenido no constituye asesoría financiera, de inversión, fiscal o legal. Siempre consulta a un profesional calificado antes de tomar decisiones financieras importantes.</div>
   </div>
-
 </div>
 
 <footer>
@@ -134,18 +167,16 @@ footer a{color:rgba(255,255,255,.8)}
 
 <script>
 const T={
-  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",h1:"About MoneyMadeSimple",heroP:"Helping everyday people understand money — without the jargon, the complexity, or the judgment.",v1h:"Simple First",v1p:"If you need a finance degree to understand it, we'll rewrite it until you don't.",v2h:"No Judgment",v2p:"Everyone starts somewhere. We meet you exactly where you are.",v3h:"Always Free",v3p:"Every guide, article, and tool on this site is completely free to use.",dh:"⚠️ Financial Disclaimer",dp:"MoneyMadeSimple is an educational website. All content is for informational purposes only and does not constitute personalised financial advice. We are not licensed financial advisors. Always consult a qualified financial professional before making financial decisions.",cp:"Have a question, suggestion, or topic you'd like us to cover?",cl:"Get in touch →",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
-  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",h1:"Acerca de DineroFácil",heroP:"Ayudando a personas comunes a entender el dinero — sin tecnicismos, sin complicaciones, sin juicios.",v1h:"Simplicidad ante todo",v1p:"Si necesitas un título en finanzas para entenderlo, lo reescribimos hasta que no lo necesites.",v2h:"Sin juicios",v2p:"Todos empezamos desde algún lugar. Te encontramos exactamente donde estás.",v3h:"Siempre gratis",v3p:"Cada guía, artículo y herramienta en este sitio es completamente gratuita.",dh:"⚠️ Aviso legal financiero",dp:"DineroFácil es un sitio web educativo. Todo el contenido es solo para fines informativos y no constituye asesoría financiera personalizada. No somos asesores financieros certificados. Consulta siempre con un profesional financiero calificado antes de tomar decisiones económicas.",cp:"¿Tienes una pregunta, sugerencia o tema que te gustaría que cubramos?",cl:"Contáctanos →",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",h1:"Built by Someone Who's Been There",hp:"MoneyMadeSimple exists because personal finance shouldn't require a finance degree — it should just require a starting point.",aname:"Raul — Founder, MoneyMadeSimple",arole:"Personal Finance Writer · Bilingual EN/ES",abio:"I'm not a certified financial planner or a Wall Street veteran. I'm someone who spent years carrying credit card debt, not really understanding how interest worked, and watching my paycheck disappear before the month ended. I learned personal finance the hard way — by making mistakes, researching obsessively, and slowly turning things around. This site is everything I wish I had found when I was starting out.",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",h1:"Creado por alguien que ha estado ahí",hp:"DineroFácil existe porque las finanzas personales no deberían requerir un título — solo deberían requerir un punto de partida.",aname:"Raul — Fundador, DineroFácil",arole:"Escritor de finanzas personales · Bilingüe EN/ES",abio:"No soy un planificador financiero certificado ni un veterano de Wall Street. Soy alguien que pasó años cargando deuda de tarjeta de crédito, sin entender cómo funcionaban los intereses, y viendo cómo su salario desaparecía antes de que terminara el mes. Aprendí finanzas personales a la manera difícil — cometiendo errores, investigando obsesivamente y dando vuelta las cosas poco a poco. Este sitio es todo lo que desearía haber encontrado cuando estaba empezando.",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
 };
 let lang=localStorage.getItem('lang')||'en';
 function setLang(l){
   lang=l;localStorage.setItem('lang',l);
   const d=T[l];
   for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
-  document.getElementById('s1en').style.display=l==='en'?'block':'none';
-  document.getElementById('s1es').style.display=l==='es'?'block':'none';
-  document.getElementById('s2en').style.display=l==='en'?'block':'none';
-  document.getElementById('s2es').style.display=l==='es'?'block':'none';
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
   document.documentElement.lang=l;
   document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
 }
