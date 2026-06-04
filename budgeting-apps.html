@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The best free budgeting apps reviewed. Find the right app to track spending, stick to your budget, and save more money every month.">
+<title>Best Free Budgeting Apps in 2025 | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.app-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.3rem;margin-bottom:1.3rem}
+.app-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:.8rem;gap:1rem}
+.app-name{display:flex;align-items:center;gap:.7rem}
+.app-ico{font-size:1.8rem}
+.app-title h3{font-size:1rem;font-weight:500;margin-bottom:.2rem}
+.app-title .sub{font-size:.78rem;color:var(--muted)}
+.app-badge{font-size:.72rem;font-weight:500;padding:.22rem .6rem;border-radius:999px;white-space:nowrap;flex-shrink:0}
+.badge-free{background:var(--gl);color:var(--gd)}
+.badge-freemium{background:var(--al);color:#633806}
+.app-stars{color:var(--amber);font-size:.85rem;margin-bottom:.5rem}
+.app-desc{font-size:.88rem;color:var(--muted);margin-bottom:.7rem}
+.app-pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;font-size:.82rem}
+.app-pros li{color:var(--gd)}
+.app-cons li{color:#C0392B}
+.app-pros ul,.app-cons ul{list-style:none;padding:0;margin:0}
+.app-pros li::before{content:"✓ ";font-weight:500}
+.app-cons li::before{content:"✗ ";font-weight:500}
+.best-for{font-size:.78rem;font-weight:500;color:var(--green);margin-top:.6rem}
+.comparison-table{width:100%;border-collapse:collapse;margin:1.4rem 0;font-size:.84rem}
+.comparison-table th{background:var(--gd);color:#fff;padding:.55rem .8rem;text-align:left;font-weight:500}
+.comparison-table td{padding:.55rem .8rem;border-bottom:1px solid var(--border)}
+.comparison-table tr:nth-child(even) td{background:#f7f7f3}
+.comparison-table tr:last-child td{border-bottom:none}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.app-pros-cons{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="budgeting.html" id="bc2">Budgeting</a></div>
+  <div class="atag" id="atag">Budgeting · Beginner</div>
+  <h1 id="ah1">Best Free Budgeting Apps in 2025</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">The right budgeting app can transform your finances — or sit unused on your phone. The best app isn't the one with the most features. It's the one you'll actually use. Here are the top free options and how to pick the right one for you.</p>
+
+  <div id="len">
+    <h2>What Makes a Great Budgeting App?</h2>
+    <p>Before diving in, here's what actually matters in a budgeting app:</p>
+    <ul>
+      <li><strong>Easy to set up</strong> — if it takes an hour to configure, you won't stick with it</li>
+      <li><strong>Syncs with your bank</strong> — manual entry is the fastest way to abandon an app</li>
+      <li><strong>Visual and clear</strong> — you should see your spending picture at a glance</li>
+      <li><strong>Actually free</strong> — not "free" with a premium upsell on every screen</li>
+    </ul>
+
+    <h2>The Best Free Budgeting Apps</h2>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">📊</div>
+          <div class="app-title"><h3>Mint</h3><div class="sub">Free · iOS & Android</div></div>
+        </div>
+        <span class="app-badge badge-free">100% Free</span>
+      </div>
+      <div class="app-stars">★★★★☆ 4.2/5</div>
+      <p class="app-desc">The most popular budgeting app in the US. Connects to your bank, credit cards, and investments to give you a complete financial picture automatically. Categorises transactions and shows where your money goes.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Completely free</li><li>Bank sync works well</li><li>Credit score tracking</li><li>Bill reminders</li></ul></div>
+        <div class="app-cons"><ul><li>Ads in the app</li><li>Can be glitchy</li><li>Less control than YNAB</li></ul></div>
+      </div>
+      <div class="best-for">✅ Best for: Beginners who want automatic tracking with zero setup effort</div>
+    </div>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">💚</div>
+          <div class="app-title"><h3>YNAB (You Need A Budget)</h3><div class="sub">Free trial · iOS & Android</div></div>
+        </div>
+        <span class="app-badge badge-freemium">Free 34-day trial</span>
+      </div>
+      <div class="app-stars">★★★★★ 4.8/5</div>
+      <p class="app-desc">The gold standard of budgeting apps. Uses the zero-based budgeting method — you assign every dollar a job before the month starts. Steeper learning curve but dramatically more effective for people serious about changing their finances.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Most effective method</li><li>Excellent education</li><li>Bank sync</li><li>Great community</li></ul></div>
+        <div class="app-cons"><ul><li>$14.99/month after trial</li><li>Learning curve</li><li>Requires active use</li></ul></div>
+      </div>
+      <div class="best-for">✅ Best for: Anyone serious about zero-based budgeting and willing to pay after trial</div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">🟢</div>
+          <div class="app-title"><h3>EveryDollar</h3><div class="sub">Free version · iOS & Android</div></div>
+        </div>
+        <span class="app-badge badge-freemium">Free (basic)</span>
+      </div>
+      <div class="app-stars">★★★★☆ 4.0/5</div>
+      <p class="app-desc">Created by Dave Ramsey, EveryDollar uses zero-based budgeting in a simpler, cleaner interface than YNAB. The free version requires manual transaction entry — bank sync requires a paid upgrade.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Simple interface</li><li>Zero-based budgeting</li><li>Free version available</li></ul></div>
+        <div class="app-cons"><ul><li>No bank sync for free</li><li>Basic free features</li><li>Less robust than YNAB</li></ul></div>
+      </div>
+      <div class="best-for">✅ Best for: Dave Ramsey followers who want a simpler zero-based budgeting app</div>
+    </div>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">📱</div>
+          <div class="app-title"><h3>Goodbudget</h3><div class="sub">Free version · iOS & Android</div></div>
+        </div>
+        <span class="app-badge badge-free">Free (limited)</span>
+      </div>
+      <div class="app-stars">★★★★☆ 4.1/5</div>
+      <p class="app-desc">A digital version of the envelope method. You manually allocate money to virtual envelopes and track spending against each one. No bank sync — all manual entry. Works great for couples budgeting together.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Envelope method digital</li><li>Great for couples</li><li>Simple concept</li><li>Cross-device sync</li></ul></div>
+        <div class="app-cons"><ul><li>Manual entry only</li><li>10 envelope limit (free)</li><li>No investment tracking</li></ul></div>
+      </div>
+      <div class="best-for">✅ Best for: People who like the envelope method but don't want to use physical cash</div>
+    </div>
+
+    <h2>Quick Comparison</h2>
+    <table class="comparison-table">
+      <thead><tr><th>App</th><th>Cost</th><th>Bank Sync</th><th>Method</th><th>Best For</th></tr></thead>
+      <tbody>
+        <tr><td>Mint</td><td>Free</td><td>✅ Yes</td><td>Category tracking</td><td>Beginners</td></tr>
+        <tr><td>YNAB</td><td>$15/mo after trial</td><td>✅ Yes</td><td>Zero-based</td><td>Serious budgeters</td></tr>
+        <tr><td>EveryDollar</td><td>Free (limited)</td><td>❌ Paid only</td><td>Zero-based</td><td>Dave Ramsey fans</td></tr>
+        <tr><td>Goodbudget</td><td>Free (limited)</td><td>❌ No</td><td>Envelope</td><td>Couples / envelope fans</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tipbox">
+      <strong>💡 The Best App Is the One You Use</strong>
+      Don't spend weeks researching apps. Pick one, use it for 30 days, and see if it fits. The perfect app used imperfectly beats the perfect app left uninstalled. Start with Mint if you want zero friction, or YNAB's free trial if you want maximum effectiveness.
+    </div>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>¿Qué hace que una app de presupuesto sea excelente?</h2>
+    <p>Antes de comenzar, esto es lo que realmente importa en una app de presupuesto:</p>
+    <ul>
+      <li><strong>Fácil de configurar</strong> — si tarda una hora en configurarse, no la seguirás usando</li>
+      <li><strong>Se sincroniza con tu banco</strong> — la entrada manual es la forma más rápida de abandonar una app</li>
+      <li><strong>Visual y clara</strong> — deberías ver tu panorama de gastos de un vistazo</li>
+      <li><strong>Realmente gratis</strong> — no "gratis" con una oferta premium en cada pantalla</li>
+    </ul>
+
+    <h2>Las mejores apps gratuitas de presupuesto</h2>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">📊</div>
+          <div class="app-title"><h3>Mint</h3><div class="sub">Gratis · iOS y Android</div></div>
+        </div>
+        <span class="app-badge badge-free">100% Gratis</span>
+      </div>
+      <div class="app-stars">★★★★☆ 4.2/5</div>
+      <p class="app-desc">La app de presupuesto más popular. Se conecta a tu banco, tarjetas de crédito e inversiones para darte una imagen financiera completa automáticamente. Categoriza transacciones y muestra a dónde va tu dinero.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Completamente gratis</li><li>Sincronización bancaria</li><li>Seguimiento del puntaje</li><li>Recordatorios de facturas</li></ul></div>
+        <div class="app-cons"><ul><li>Anuncios en la app</li><li>Puede tener errores</li><li>Menos control que YNAB</li></ul></div>
+      </div>
+      <div class="best-for">✅ Ideal para: Principiantes que quieren seguimiento automático sin esfuerzo de configuración</div>
+    </div>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">💚</div>
+          <div class="app-title"><h3>YNAB (You Need A Budget)</h3><div class="sub">Prueba gratis · iOS y Android</div></div>
+        </div>
+        <span class="app-badge badge-freemium">Prueba gratis 34 días</span>
+      </div>
+      <div class="app-stars">★★★★★ 4.8/5</div>
+      <p class="app-desc">El estándar de oro de las apps de presupuesto. Usa el método de presupuesto base cero — asignas cada peso a un trabajo antes de que comience el mes. Curva de aprendizaje más pronunciada pero dramáticamente más efectiva.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Método más efectivo</li><li>Excelente educación</li><li>Sincronización bancaria</li><li>Gran comunidad</li></ul></div>
+        <div class="app-cons"><ul><li>$14.99/mes después de prueba</li><li>Curva de aprendizaje</li><li>Requiere uso activo</li></ul></div>
+      </div>
+      <div class="best-for">✅ Ideal para: Cualquiera serio sobre el presupuesto base cero dispuesto a pagar después de la prueba</div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-name">
+          <div class="app-ico">📱</div>
+          <div class="app-title"><h3>Goodbudget</h3><div class="sub">Versión gratis · iOS y Android</div></div>
+        </div>
+        <span class="app-badge badge-free">Gratis (limitado)</span>
+      </div>
+      <div class="app-stars">★★★★☆ 4.1/5</div>
+      <p class="app-desc">Una versión digital del método de sobres. Asignas dinero manualmente a sobres virtuales y rastreas el gasto contra cada uno. Sin sincronización bancaria — todo entrada manual. Funciona muy bien para parejas que presupuestan juntas.</p>
+      <div class="app-pros-cons">
+        <div class="app-pros"><ul><li>Método de sobres digital</li><li>Excelente para parejas</li><li>Concepto simple</li></ul></div>
+        <div class="app-cons"><ul><li>Solo entrada manual</li><li>Límite de 10 sobres (gratis)</li><li>Sin seguimiento de inversiones</li></ul></div>
+      </div>
+      <div class="best-for">✅ Ideal para: Personas que les gusta el método de sobres pero no quieren usar efectivo físico</div>
+    </div>
+
+    <h2>Comparación rápida</h2>
+    <table class="comparison-table">
+      <thead><tr><th>App</th><th>Costo</th><th>Sincronización</th><th>Método</th><th>Ideal para</th></tr></thead>
+      <tbody>
+        <tr><td>Mint</td><td>Gratis</td><td>✅ Sí</td><td>Seguimiento por categoría</td><td>Principiantes</td></tr>
+        <tr><td>YNAB</td><td>$15/mes después de prueba</td><td>✅ Sí</td><td>Base cero</td><td>Presupuestadores serios</td></tr>
+        <tr><td>EveryDollar</td><td>Gratis (limitado)</td><td>❌ Solo pago</td><td>Base cero</td><td>Seguidores Dave Ramsey</td></tr>
+        <tr><td>Goodbudget</td><td>Gratis (limitado)</td><td>❌ No</td><td>Sobres</td><td>Parejas / método sobres</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tipbox">
+      <strong>💡 La mejor app es la que usas</strong>
+      No pases semanas investigando apps. Elige una, úsala durante 30 días y ve si te queda. Empieza con Mint si quieres cero fricción, o la prueba gratuita de YNAB si quieres máxima efectividad.
+    </div>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">What Makes a Great App?</a></li>
+        <li><a href="#" id="toc2">Mint</a></li>
+        <li><a href="#" id="toc3">YNAB</a></li>
+        <li><a href="#" id="toc4">EveryDollar</a></li>
+        <li><a href="#" id="toc5">Quick Comparison</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="budget-guide.html" id="rel1">The 50/30/20 Budget Rule</a></li>
+        <li><a href="zero-based-budgeting.html" id="rel2">Zero-Based Budgeting</a></li>
+        <li><a href="envelope-method.html" id="rel3">The Envelope Method</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Budgeting",atag:"Budgeting · Beginner",ah1:"Best Free Budgeting Apps in 2025",ameta:"📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly",aintro:"The right budgeting app can transform your finances — or sit unused on your phone. The best app isn't the one with the most features. It's the one you'll actually use. Here are the top free options and how to pick the right one for you.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"What Makes a Great App?",toc2:"Mint",toc3:"YNAB",toc4:"EveryDollar",toc5:"Quick Comparison",relh:"Related Articles",rel1:"The 50/30/20 Budget Rule",rel2:"Zero-Based Budgeting",rel3:"The Envelope Method",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Presupuesto",atag:"Presupuesto · Principiante",ah1:"Las mejores apps gratuitas de presupuesto en 2025",ameta:"📅 Actualizado junio 2025 · ⏱ 7 min de lectura · 👤 Para principiantes",aintro:"La app de presupuesto correcta puede transformar tus finanzas — o quedarse sin usar en tu teléfono. La mejor app no es la que tiene más funciones. Es la que realmente usarás. Aquí están las mejores opciones gratuitas.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"¿Qué hace una gran app?",toc2:"Mint",toc3:"YNAB",toc4:"EveryDollar",toc5:"Comparación rápida",relh:"Artículos relacionados",rel1:"La regla del 50/30/20",rel2:"Presupuesto base cero",rel3:"El método de sobres",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){
+  lang=l;localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+setLang(lang);
+</script>
+</body>
+</html>
