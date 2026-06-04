@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What happens if you only pay the minimum payment on your credit card? The real cost — and how to escape the minimum payment trap.">
+<title>What Happens If You Only Pay the Minimum Payment? | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--red:#C0392B;--rl:#FDEDEC;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.warnbox{background:var(--rl);border:1px solid #f5b7b1;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.warnbox strong{display:block;margin-bottom:.38rem;color:var(--red);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.warnbox p{color:#7b241c;font-size:.92rem;margin:0}
+.real-cost{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.9rem}
+.real-cost th{background:var(--red);color:#fff;padding:.6rem .9rem;text-align:left;font-weight:500}
+.real-cost td{padding:.6rem .9rem;border-bottom:1px solid var(--border)}
+.real-cost tr:last-child td{border-bottom:none;font-weight:500;background:var(--gl)}
+.real-cost tr:nth-child(even) td{background:#fdf5f4}
+.scenario{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem;margin-bottom:1rem}
+.scenario h3{font-size:.95rem;font-weight:500;margin-bottom:.5rem}
+.scenario .numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:.7rem}
+.scenario .num-box{text-align:center;background:var(--bg);border-radius:8px;padding:.7rem}
+.scenario .num-box .val{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--red)}
+.scenario .num-box .lbl{font-size:.72rem;color:var(--muted)}
+.scenario.good .num-box .val{color:var(--green)}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.scenario .numbers{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="debt.html" id="bc2">Debt & Credit</a></div>
+  <div class="atag" id="atag">Debt · Beginner</div>
+  <h1 id="ah1">What Happens If You Only Pay the Minimum Payment?</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">Paying the minimum on your credit card feels like you're staying on top of your debt. You're not. Minimum payments are designed to keep you in debt as long as possible while the bank collects years of interest. Here's exactly what it costs you.</p>
+
+  <div id="len">
+    <h2>What Is the Minimum Payment?</h2>
+    <p>The minimum payment is the smallest amount your credit card company will accept each month without penalising you. It's typically calculated as either a flat amount (like $25) or a percentage of your balance (usually 1–3%), whichever is higher.</p>
+    <p>Paying the minimum keeps your account in good standing and avoids late fees — but it does almost nothing to reduce your actual debt. Most of your minimum payment goes toward interest, not the principal balance.</p>
+
+    <div class="warnbox">
+      <strong>⚠️ The Minimum Payment Trap</strong>
+      <p>On a $3,000 balance at 22% APR, your minimum payment might be around $60/month. Of that $60, roughly $55 goes to interest and only $5 reduces your actual debt. At that rate, it would take over 20 years to pay off — and cost you more than $7,000 in interest alone.</p>
+    </div>
+
+    <h2>The Real Cost — Side by Side</h2>
+    <table class="real-cost">
+      <thead><tr><th>Balance</th><th>APR</th><th>Min. Only</th><th>Time to Pay Off</th><th>Total Interest</th></tr></thead>
+      <tbody>
+        <tr><td>$1,000</td><td>22%</td><td>~$25/mo</td><td>5+ years</td><td>$635</td></tr>
+        <tr><td>$3,000</td><td>22%</td><td>~$60/mo</td><td>20+ years</td><td>$7,200</td></tr>
+        <tr><td>$5,000</td><td>22%</td><td>~$100/mo</td><td>25+ years</td><td>$14,400</td></tr>
+        <tr><td>$10,000</td><td>22%</td><td>~$200/mo</td><td>30+ years</td><td>$32,000</td></tr>
+      </tbody>
+    </table>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>What Paying More Does — Real Numbers</h2>
+
+    <div class="scenario">
+      <h3>Scenario: $3,000 balance at 22% APR</h3>
+      <div class="numbers">
+        <div class="num-box"><div class="val">$60/mo</div><div class="lbl">Minimum only</div></div>
+        <div class="num-box"><div class="val">20+ yrs</div><div class="lbl">Time to pay off</div></div>
+        <div class="num-box"><div class="val">$7,200</div><div class="lbl">Interest paid</div></div>
+      </div>
+    </div>
+
+    <div class="scenario good">
+      <h3>Same debt — paying $150/month instead</h3>
+      <div class="numbers">
+        <div class="num-box"><div class="val">$150/mo</div><div class="lbl">Fixed payment</div></div>
+        <div class="num-box"><div class="val">2 years</div><div class="lbl">Time to pay off</div></div>
+        <div class="num-box"><div class="val">$780</div><div class="lbl">Interest paid</div></div>
+      </div>
+    </div>
+
+    <p>Paying $150/month instead of the minimum saves you <strong>$6,420 in interest</strong> and <strong>18 years of payments</strong>. That's the real cost of the minimum payment.</p>
+
+    <h2>Why Banks Want You to Pay the Minimum</h2>
+    <p>Credit card companies make most of their money from interest charges — not from annual fees or merchant fees. The longer you carry a balance, the more they earn. Minimum payments are deliberately calculated to extend your repayment period as long as possible while keeping you just comfortable enough to not panic and pay it off.</p>
+    <p>The fact that your statement shows a manageable minimum payment is a feature — for the bank, not for you.</p>
+
+    <h2>How to Escape the Minimum Payment Trap</h2>
+    <ol>
+      <li><strong>Stop adding to the balance.</strong> Put the card away or freeze it. You can't dig out of a hole while still digging.</li>
+      <li><strong>Find any extra money</strong> — cut one subscription, skip dining out twice a week, sell something. Direct every extra dollar to the card.</li>
+      <li><strong>Pay as much above the minimum as you can.</strong> Even an extra $30–$50/month makes a dramatic difference over time.</li>
+      <li><strong>Consider a balance transfer.</strong> Moving to a 0% intro APR card stops the interest clock for 12–18 months and lets every payment attack the principal.</li>
+      <li><strong>Use the avalanche method.</strong> Once you're paying more than the minimum, focus extra payments on the highest-interest card first.</li>
+    </ol>
+
+    <div class="tipbox">
+      <strong>💡 The One Number to Know</strong>
+      Your credit card statement is legally required to show you how long it will take to pay off your balance if you only make minimum payments. Find that number on your next statement. Most people are shocked into action when they see "27 years" printed right there.
+    </div>
+
+    <h2>The Bottom Line</h2>
+    <p>Paying the minimum isn't "making a payment" — it's treading water while slowly sinking. It protects your credit score and avoids late fees, but it does almost nothing to reduce what you owe. The goal is always to pay as much above the minimum as possible, every single month, until the balance is zero.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>¿Qué es el pago mínimo?</h2>
+    <p>El pago mínimo es la cantidad más pequeña que tu compañía de tarjeta de crédito aceptará cada mes sin penalizarte. Generalmente se calcula como una cantidad fija (como $25) o un porcentaje de tu saldo (usualmente 1–3%), el que sea mayor.</p>
+    <p>Pagar el mínimo mantiene tu cuenta al día y evita cargos por pago tardío — pero casi no reduce tu deuda real. La mayor parte de tu pago mínimo va hacia los intereses, no al saldo principal.</p>
+
+    <div class="warnbox">
+      <strong>⚠️ La trampa del pago mínimo</strong>
+      <p>Con un saldo de $3.000.000 al 22% de tasa anual, tu pago mínimo puede ser alrededor de $60.000 al mes. De esos $60.000, aproximadamente $55.000 van a intereses y solo $5.000 reducen tu deuda real. A ese ritmo, tardarías más de 20 años en pagar — y te costaría más de $7.000.000 solo en intereses.</p>
+    </div>
+
+    <h2>El costo real — lado a lado</h2>
+    <table class="real-cost">
+      <thead><tr><th>Saldo</th><th>Tasa</th><th>Solo mínimo</th><th>Tiempo para pagar</th><th>Interés total</th></tr></thead>
+      <tbody>
+        <tr><td>$1.000.000</td><td>22%</td><td>~$25.000/mes</td><td>5+ años</td><td>$635.000</td></tr>
+        <tr><td>$3.000.000</td><td>22%</td><td>~$60.000/mes</td><td>20+ años</td><td>$7.200.000</td></tr>
+        <tr><td>$5.000.000</td><td>22%</td><td>~$100.000/mes</td><td>25+ años</td><td>$14.400.000</td></tr>
+      </tbody>
+    </table>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Por qué los bancos quieren que pagues el mínimo</h2>
+    <p>Las compañías de tarjetas de crédito ganan la mayor parte de su dinero con los cargos de intereses. Cuanto más tiempo lleves un saldo, más ganan. Los pagos mínimos se calculan deliberadamente para extender tu período de pago lo más posible mientras te mantienen lo suficientemente cómodo para no entrar en pánico y pagarlo todo.</p>
+
+    <h2>Cómo escapar de la trampa del pago mínimo</h2>
+    <ol>
+      <li><strong>Deja de agregar al saldo.</strong> Guarda la tarjeta. No puedes salir de un hoyo mientras sigues cavando.</li>
+      <li><strong>Encuentra dinero extra</strong> — cancela una suscripción, evita comer afuera dos veces a la semana, vende algo. Dirige cada peso extra a la tarjeta.</li>
+      <li><strong>Paga todo lo que puedas por encima del mínimo.</strong> Incluso $30.000–$50.000 adicionales al mes hace una diferencia dramática con el tiempo.</li>
+      <li><strong>Considera una transferencia de saldo.</strong> Mover a una tarjeta con 0% de tasa introductoria detiene el reloj de intereses por 12–18 meses.</li>
+      <li><strong>Usa el método avalancha.</strong> Una vez que estés pagando más del mínimo, enfoca los pagos extra en la tarjeta con mayor interés primero.</li>
+    </ol>
+
+    <div class="tipbox">
+      <strong>💡 El número que debes conocer</strong>
+      Tu estado de cuenta de tarjeta de crédito está legalmente obligado a mostrarte cuánto tiempo tardarás en pagar si solo haces pagos mínimos. Encuentra ese número en tu próximo estado de cuenta. La mayoría de las personas actúan de inmediato cuando ven "27 años" impreso allí.
+    </div>
+
+    <h2>Conclusión</h2>
+    <p>Pagar el mínimo no es "hacer un pago" — es nadar sin avanzar mientras lentamente te hundes. Protege tu puntaje crediticio y evita cargos por pago tardío, pero casi no reduce lo que debes. El objetivo siempre es pagar tanto por encima del mínimo como sea posible, cada mes, hasta que el saldo sea cero.</p>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">What Is the Minimum Payment?</a></li>
+        <li><a href="#" id="toc2">The Real Cost</a></li>
+        <li><a href="#" id="toc3">What Paying More Does</a></li>
+        <li><a href="#" id="toc4">Why Banks Love It</a></li>
+        <li><a href="#" id="toc5">How to Escape</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="credit-cards-101.html" id="rel1">Credit Cards 101</a></li>
+        <li><a href="debt-avalanche-snowball.html" id="rel2">Debt Avalanche vs Snowball</a></li>
+        <li><a href="credit-score.html" id="rel3">What Is a Credit Score?</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Debt & Credit",atag:"Debt · Beginner",ah1:"What Happens If You Only Pay the Minimum Payment?",ameta:"📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly",aintro:"Paying the minimum on your credit card feels like you're staying on top of your debt. You're not. Minimum payments are designed to keep you in debt as long as possible while the bank collects years of interest. Here's exactly what it costs you.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"What Is the Minimum Payment?",toc2:"The Real Cost",toc3:"What Paying More Does",toc4:"Why Banks Love It",toc5:"How to Escape",relh:"Related Articles",rel1:"Credit Cards 101",rel2:"Debt Avalanche vs Snowball",rel3:"What Is a Credit Score?",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Deudas y crédito",atag:"Deudas · Principiante",ah1:"¿Qué pasa si solo pagas el mínimo de tu tarjeta de crédito?",ameta:"📅 Actualizado junio 2025 · ⏱ 7 min de lectura · 👤 Para principiantes",aintro:"Pagar el mínimo de tu tarjeta de crédito se siente como estar al día con tu deuda. No lo estás. Los pagos mínimos están diseñados para mantenerte en deuda el mayor tiempo posible mientras el banco cobra años de intereses. Aquí exactamente lo que te cuesta.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"¿Qué es el pago mínimo?",toc2:"El costo real",toc3:"Qué hace pagar más",toc4:"Por qué los bancos lo aman",toc5:"Cómo escapar",relh:"Artículos relacionados",rel1:"Tarjetas de crédito 101",rel2:"Avalancha vs bola de nieve",rel3:"¿Qué es el puntaje de crédito?",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){
+  lang=l;localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+setLang(lang);
+</script>
+</body>
+</html>

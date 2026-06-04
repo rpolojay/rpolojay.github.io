@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Savings account vs checking account — what's the difference and which do you need? A simple guide for beginners.">
+<title>Savings Account vs Checking Account: What's the Difference? | MoneyMadeSimple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.4rem 0}
+.acct{border-radius:var(--r);padding:1.3rem;border:2px solid var(--border)}
+.acct.checking{background:var(--bl);border-color:#b5d4f4}
+.acct.savings{background:var(--gl);border-color:#9FE1CB}
+.acct .tag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem;display:block}
+.acct.checking .tag{color:#0C447C}
+.acct.savings .tag{color:var(--gd)}
+.acct h3{font-size:1rem;font-weight:500;margin-bottom:.7rem}
+.acct ul{margin:0 0 0 1.1rem}
+.acct li{font-size:.84rem;margin-bottom:.3rem}
+.comparison-table{width:100%;border-collapse:collapse;margin:1.4rem 0;font-size:.88rem}
+.comparison-table th{background:var(--gd);color:#fff;padding:.58rem .85rem;text-align:left;font-weight:500}
+.comparison-table td{padding:.58rem .85rem;border-bottom:1px solid var(--border)}
+.comparison-table tr:nth-child(even) td{background:#f7f7f3}
+.comparison-table tr:last-child td{border-bottom:none}
+.use-case{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0}
+.uc{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem}
+.uc h3{font-size:.9rem;font-weight:500;margin-bottom:.5rem}
+.uc ul{margin:0 0 0 1rem}
+.uc li{font-size:.82rem;color:var(--muted);margin-bottom:.25rem}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.compare,.use-case{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Made</span>Simple</a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="saving.html" id="bc2">Saving</a></div>
+  <div class="atag" id="atag">Saving · Beginner</div>
+  <h1 id="ah1">Savings Account vs Checking Account: What's the Difference?</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 5 min read · 👤 Complete beginner</div>
+  <p class="aintro" id="aintro">A checking account is for spending. A savings account is for saving. That's the core difference — but understanding how each one works (and how to use them together) can save you money and help you build wealth faster.</p>
+
+  <div id="len">
+    <h2>The Simple One-Line Answer</h2>
+    <p><strong>Checking account</strong> = your everyday spending account. Money flows in and out constantly — bills, groceries, debit card purchases.</p>
+    <p><strong>Savings account</strong> = where you store money you're not spending right now. It earns interest and is meant to be left mostly untouched.</p>
+    <p>Most people need both — and using them together is how smart personal finance works.</p>
+
+    <h2>Checking vs Savings — Side by Side</h2>
+    <div class="compare">
+      <div class="acct checking">
+        <span class="tag">💳 Checking Account</span>
+        <h3>For everyday spending</h3>
+        <ul>
+          <li>Unlimited transactions</li>
+          <li>Debit card access</li>
+          <li>Bill pay & direct deposit</li>
+          <li>ATM withdrawals</li>
+          <li>Little to no interest</li>
+          <li>No withdrawal limits</li>
+        </ul>
+      </div>
+      <div class="acct savings">
+        <span class="tag">🏦 Savings Account</span>
+        <h3>For storing & growing money</h3>
+        <ul>
+          <li>Earns interest (0.5%–5%)</li>
+          <li>Limited monthly withdrawals</li>
+          <li>No debit card (usually)</li>
+          <li>Designed to be left alone</li>
+          <li>FDIC insured up to $250k</li>
+          <li>Easy transfers to checking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>Full Comparison Table</h2>
+    <table class="comparison-table">
+      <thead><tr><th>Feature</th><th>Checking</th><th>Savings</th></tr></thead>
+      <tbody>
+        <tr><td>Purpose</td><td>Daily spending</td><td>Storing money</td></tr>
+        <tr><td>Interest earned</td><td>0–0.1%</td><td>0.5%–5%+ (HYSA)</td></tr>
+        <tr><td>Debit card</td><td>✅ Yes</td><td>❌ Usually no</td></tr>
+        <tr><td>Withdrawal limits</td><td>Unlimited</td><td>Limited (some banks)</td></tr>
+        <tr><td>Best for</td><td>Bills, groceries, daily use</td><td>Emergency fund, goals</td></tr>
+        <tr><td>FDIC insured</td><td>✅ Yes (up to $250k)</td><td>✅ Yes (up to $250k)</td></tr>
+        <tr><td>Minimum balance</td><td>Often $0–$25</td><td>Often $0–$100</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to Use Both Accounts Together</h2>
+    <p>The most effective approach is a two-account system:</p>
+    <ol>
+      <li><strong>Your paycheck goes into checking.</strong> This is your "flow" account — money comes in and bills go out.</li>
+      <li><strong>On payday, transfer your savings amount automatically.</strong> Move a fixed amount to savings before you have a chance to spend it. Even $50/month builds real wealth over time.</li>
+      <li><strong>Spend from checking, save in savings.</strong> Never touch the savings account except for genuine emergencies or planned goals.</li>
+    </ol>
+
+    <h2>What to Put in Each Account</h2>
+    <div class="use-case">
+      <div class="uc">
+        <h3>💳 Put in Checking</h3>
+        <ul>
+          <li>Monthly bill money</li>
+          <li>Grocery budget</li>
+          <li>Transport money</li>
+          <li>Entertainment budget</li>
+          <li>2–4 weeks of expenses as a buffer</li>
+        </ul>
+      </div>
+      <div class="uc">
+        <h3>🏦 Put in Savings</h3>
+        <ul>
+          <li>Emergency fund (3–6 months expenses)</li>
+          <li>Vacation fund</li>
+          <li>Car or home down payment</li>
+          <li>Any money you won't need for 1+ months</li>
+          <li>Sinking funds for irregular expenses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tipbox">
+      <strong>💡 Upgrade Your Savings Account</strong>
+      Traditional savings accounts at big banks pay almost nothing in interest (0.01%–0.1%). A high-yield savings account (HYSA) at an online bank pays 4–5% on the same money with the same FDIC protection. If your savings are sitting in a regular account, you're leaving free money on the table. See our guide on <a href="high-yield-savings.html">high-yield savings accounts</a>.
+    </div>
+
+    <h2>Do You Need Both?</h2>
+    <p>Yes — for almost everyone, having both accounts is the right move. They serve completely different purposes. Using your checking account as your savings account means your savings are always one impulse purchase away from disappearing.</p>
+    <p>Separation creates a psychological and practical barrier that protects your savings. Out of sight, out of mind — and earning interest while you're at it.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>La respuesta simple en una línea</h2>
+    <p><strong>Cuenta corriente</strong> = tu cuenta de gasto diario. El dinero entra y sale constantemente — facturas, mercado, compras con tarjeta débito.</p>
+    <p><strong>Cuenta de ahorros</strong> = donde guardas el dinero que no vas a gastar ahora mismo. Gana intereses y está pensada para dejarse mayormente sin tocar.</p>
+    <p>La mayoría de las personas necesita ambas — y usarlas juntas es cómo funcionan las finanzas personales inteligentes.</p>
+
+    <h2>Cuenta corriente vs ahorros — lado a lado</h2>
+    <div class="compare">
+      <div class="acct checking">
+        <span class="tag">💳 Cuenta corriente</span>
+        <h3>Para gastos del día a día</h3>
+        <ul>
+          <li>Transacciones ilimitadas</li>
+          <li>Acceso con tarjeta débito</li>
+          <li>Pago de facturas y depósito directo</li>
+          <li>Retiros en cajero automático</li>
+          <li>Poco o nada de intereses</li>
+          <li>Sin límites de retiro</li>
+        </ul>
+      </div>
+      <div class="acct savings">
+        <span class="tag">🏦 Cuenta de ahorros</span>
+        <h3>Para guardar y crecer dinero</h3>
+        <ul>
+          <li>Gana intereses (0.5%–5%)</li>
+          <li>Retiros mensuales limitados</li>
+          <li>Sin tarjeta débito (generalmente)</li>
+          <li>Diseñada para dejarse sola</li>
+          <li>Asegurada hasta $250k</li>
+          <li>Transferencias fáciles a corriente</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Cómo usar ambas cuentas juntas</h2>
+    <ol>
+      <li><strong>Tu salario va a la cuenta corriente.</strong> Esta es tu cuenta de "flujo" — el dinero entra y las facturas salen.</li>
+      <li><strong>El día de pago, transfiere tu monto de ahorro automáticamente.</strong> Mueve una cantidad fija a ahorros antes de tener la oportunidad de gastarla. Incluso $50.000 al mes construye riqueza real con el tiempo.</li>
+      <li><strong>Gasta desde la corriente, ahorra en ahorros.</strong> No toques la cuenta de ahorros excepto para emergencias genuinas o metas planificadas.</li>
+    </ol>
+
+    <h2>Qué poner en cada cuenta</h2>
+    <div class="use-case">
+      <div class="uc">
+        <h3>💳 Pon en cuenta corriente</h3>
+        <ul>
+          <li>Dinero para facturas mensuales</li>
+          <li>Presupuesto del mercado</li>
+          <li>Dinero para transporte</li>
+          <li>Presupuesto de entretenimiento</li>
+          <li>2–4 semanas de gastos como colchón</li>
+        </ul>
+      </div>
+      <div class="uc">
+        <h3>🏦 Pon en cuenta de ahorros</h3>
+        <ul>
+          <li>Fondo de emergencia (3–6 meses)</li>
+          <li>Fondo de vacaciones</li>
+          <li>Cuota inicial de carro o casa</li>
+          <li>Dinero que no necesitarás en 1+ mes</li>
+          <li>Fondos para gastos irregulares</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tipbox">
+      <strong>💡 Mejora tu cuenta de ahorros</strong>
+      Las cuentas de ahorro tradicionales en bancos grandes pagan casi nada en intereses. Una cuenta de ahorro de alto rendimiento en un banco en línea paga 4–5% con la misma protección. Si tus ahorros están en una cuenta regular, estás dejando dinero gratis sobre la mesa. Consulta nuestra guía sobre <a href="high-yield-savings.html">cuentas de ahorro de alto rendimiento</a>.
+    </div>
+
+    <h2>¿Necesitas las dos?</h2>
+    <p>Sí — para casi todas las personas, tener ambas cuentas es la decisión correcta. Sirven para propósitos completamente diferentes. Usar tu cuenta corriente como cuenta de ahorros significa que tus ahorros están siempre a una compra impulsiva de desaparecer.</p>
+    <p>La separación crea una barrera psicológica y práctica que protege tus ahorros. Fuera de la vista, fuera de la mente — y ganando intereses mientras tanto.</p>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">The Simple Answer</a></li>
+        <li><a href="#" id="toc2">Side by Side Comparison</a></li>
+        <li><a href="#" id="toc3">Full Comparison Table</a></li>
+        <li><a href="#" id="toc4">How to Use Both Together</a></li>
+        <li><a href="#" id="toc5">Do You Need Both?</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="high-yield-savings.html" id="rel1">High-Yield Savings Accounts</a></li>
+        <li><a href="emergency-fund.html" id="rel2">Build an Emergency Fund</a></li>
+        <li><a href="automate-savings.html" id="rel3">Automate Your Savings</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMadeSimple</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Made</span>Simple",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Saving",atag:"Saving · Beginner",ah1:"Savings Account vs Checking Account: What's the Difference?",ameta:"📅 Updated June 2025 · ⏱ 5 min read · 👤 Complete beginner",aintro:"A checking account is for spending. A savings account is for saving. That's the core difference — but understanding how each one works (and how to use them together) can save you money and help you build wealth faster.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"The Simple Answer",toc2:"Side by Side Comparison",toc3:"Full Comparison Table",toc4:"How to Use Both Together",toc5:"Do You Need Both?",relh:"Related Articles",rel1:"High-Yield Savings Accounts",rel2:"Build an Emergency Fund",rel3:"Automate Your Savings",flogo:"MoneyMadeSimple",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Dinero<span style='color:var(--green)'>Fácil</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Ahorro",atag:"Ahorro · Principiante",ah1:"Cuenta corriente vs cuenta de ahorros: ¿cuál es la diferencia?",ameta:"📅 Actualizado junio 2025 · ⏱ 5 min de lectura · 👤 Principiante completo",aintro:"La cuenta corriente es para gastar. La cuenta de ahorros es para ahorrar. Esa es la diferencia principal — pero entender cómo funciona cada una (y cómo usarlas juntas) puede ahorrarte dinero y ayudarte a construir riqueza más rápido.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"La respuesta simple",toc2:"Comparación lado a lado",toc3:"Tabla completa",toc4:"Cómo usar las dos juntas",toc5:"¿Necesitas las dos?",relh:"Artículos relacionados",rel1:"Cuentas de ahorro de alto rendimiento",rel2:"Fondo de emergencia",rel3:"Automatiza tus ahorros",flogo:"DineroFácil",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){
+  lang=l;localStorage.setItem('lang',l);
+  const d=T[l];
+  for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}
+  document.getElementById('len').style.display=l==='en'?'block':'none';
+  document.getElementById('les').style.display=l==='es'?'block':'none';
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+}
+setLang(lang);
+</script>
+</body>
+</html>
