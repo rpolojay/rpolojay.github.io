@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How much should you have in your emergency fund? The exact number for your situation — and how to build it fast.">
+<title>How Much Should You Have in Your Emergency Fund? | MoneyMigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.answer-box{background:var(--green);color:#fff;border-radius:var(--r);padding:1.5rem;text-align:center;margin:1.4rem 0}
+.answer-box .big{font-family:'Playfair Display',serif;font-size:2.2rem;line-height:1;margin-bottom:.4rem}
+.answer-box p{opacity:.9;font-size:.9rem;margin:0}
+.situation-grid{display:grid;gap:.9rem;margin:1.4rem 0}
+.sit{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem;display:flex;gap:1rem;align-items:flex-start}
+.sit .ico{font-size:1.4rem;flex-shrink:0}
+.sit h3{font-size:.92rem;font-weight:500;margin-bottom:.2rem}
+.sit p{font-size:.84rem;color:var(--muted);margin:0}
+.sit .rec{font-size:.78rem;font-weight:500;color:var(--green);margin-top:.3rem;display:block}
+.calc-example{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:1.4rem 0}
+.ce-header{background:var(--gd);color:#fff;padding:.75rem 1rem;font-size:.88rem;font-weight:500}
+.ce-row{display:flex;justify-content:space-between;padding:.58rem 1rem;border-bottom:1px solid var(--border);font-size:.88rem}
+.ce-row:last-child{border-bottom:none;font-weight:500;background:var(--gl)}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Migo</span></a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="saving.html" id="bc2">Saving</a></div>
+  <div class="atag" id="atag">Saving · Beginner</div>
+  <h1 id="ah1">How Much Should You Have in Your Emergency Fund?</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">The standard advice is 3–6 months of expenses. But the right number for you depends on your job security, income type, and family situation. Here's how to find your exact number — and how to build it.</p>
+
+  <div id="len">
+    <h2>The Quick Answer</h2>
+    <div class="answer-box">
+      <div class="big">3–6 months of expenses</div>
+      <p>This is the standard recommendation — but your specific situation may require more or less.</p>
+    </div>
+    <p>The key word is <strong>expenses</strong> — not income. Your emergency fund should cover what you actually spend each month, not what you earn. Add up your rent/mortgage, food, utilities, transport, insurance, and minimum debt payments. That's your monthly expense number.</p>
+
+    <h2>How Much Is Right for Your Situation?</h2>
+    <div class="situation-grid">
+      <div class="sit"><div class="ico">💼</div><div><h3>Stable job, single income, no dependents</h3><p>Government job, tenured position, or other very secure employment.</p><span class="rec">→ 3 months is sufficient</span></div></div>
+      <div class="sit"><div class="ico">👨‍👩‍👧</div><div><h3>Single income with dependents (children or family)</h3><p>One earner supporting others means one job loss affects everyone.</p><span class="rec">→ 6 months minimum</span></div></div>
+      <div class="sit"><div class="ico">💑</div><div><h3>Dual income household, both jobs stable</h3><p>Two incomes means one job loss doesn't immediately threaten housing.</p><span class="rec">→ 3 months is usually enough</span></div></div>
+      <div class="sit"><div class="ico">🏠</div><div><h3>Homeowner</h3><p>Homes come with unexpected repairs — roof, plumbing, HVAC. These are expensive.</p><span class="rec">→ 6 months + separate home repair fund</span></div></div>
+      <div class="sit"><div class="ico">💻</div><div><h3>Freelancer or self-employed</h3><p>Irregular income means you need more buffer for slow months.</p><span class="rec">→ 6–9 months recommended</span></div></div>
+      <div class="sit"><div class="ico">🏥</div><div><h3>Chronic health condition or single parent</h3><p>Higher medical costs or sole caregiver responsibilities increase your risk.</p><span class="rec">→ 9–12 months for peace of mind</span></div></div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>How to Calculate Your Exact Number</h2>
+    <div class="calc-example">
+      <div class="ce-header">Monthly Essential Expenses — Example</div>
+      <div class="ce-row"><span>Rent / Mortgage</span><span>$1,200</span></div>
+      <div class="ce-row"><span>Groceries</span><span>$350</span></div>
+      <div class="ce-row"><span>Utilities & Phone</span><span>$150</span></div>
+      <div class="ce-row"><span>Transport</span><span>$200</span></div>
+      <div class="ce-row"><span>Insurance</span><span>$100</span></div>
+      <div class="ce-row"><span>Minimum debt payments</span><span>$150</span></div>
+      <div class="ce-row"><span>Monthly essential total</span><span>$2,150</span></div>
+      <div class="ce-row"><span><strong>3-month emergency fund target</strong></span><span><strong>$6,450</strong></span></div>
+    </div>
+    <p>Notice this calculation excludes dining out, entertainment, clothing, and subscriptions — those are wants you can cut in an emergency. Your fund only needs to cover what you absolutely cannot stop paying.</p>
+
+    <h2>Build It in Stages — Don't Wait for the Full Amount</h2>
+    <p>Most people stall because the full target feels overwhelming. The solution is to build in stages:</p>
+    <ol>
+      <li><strong>Stage 1: $500–$1,000 starter fund</strong> — prevents small emergencies from becoming debt. Do this first, before anything else.</li>
+      <li><strong>Stage 2: 1 month of expenses</strong> — covers a job loss long enough to find income or cut costs.</li>
+      <li><strong>Stage 3: 3 months of expenses</strong> — the standard recommendation for most people.</li>
+      <li><strong>Stage 4: 6 months of expenses</strong> — full financial security for higher-risk situations.</li>
+    </ol>
+    <p>Each stage makes you meaningfully more secure. Don't skip Stage 1 waiting to do Stage 4 perfectly.</p>
+
+    <h2>Where to Keep Your Emergency Fund</h2>
+    <p>Your emergency fund needs two things: it must be <strong>accessible</strong> (you can get it within 1–2 days) and <strong>earning interest</strong> (not losing value sitting in a 0.01% account). The best option is a <a href="high-yield-savings.html">high-yield savings account</a> — pays 4–5% annually and is accessible within 1–3 business days.</p>
+    <p>Never invest your emergency fund in stocks. Markets can be down 30% exactly when you need the money most.</p>
+
+    <div class="tipbox">
+      <strong>💡 Once You Hit Your Target</strong>
+      When your emergency fund is fully funded, don't stop the automatic transfer — redirect it. Move those monthly contributions to an investment account or toward a savings goal. The habit of saving is more valuable than any single target. Keep the momentum going.
+    </div>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>La respuesta rápida</h2>
+    <div class="answer-box">
+      <div class="big">3–6 meses de gastos</div>
+      <p>Esta es la recomendación estándar — pero el número correcto para ti depende de tu situación específica.</p>
+    </div>
+    <p>La palabra clave es <strong>gastos</strong> — no ingresos. Tu fondo de emergencia debe cubrir lo que realmente gastas cada mes, no lo que ganas. Suma tu arriendo, comida, servicios, transporte, seguros y pagos mínimos de deuda. Ese es tu número mensual.</p>
+
+    <h2>¿Cuánto es correcto para tu situación?</h2>
+    <div class="situation-grid">
+      <div class="sit"><div class="ico">💼</div><div><h3>Empleo estable, ingreso único, sin dependientes</h3><p>Empleo en el gobierno u otra posición muy segura.</p><span class="rec">→ 3 meses es suficiente</span></div></div>
+      <div class="sit"><div class="ico">👨‍👩‍👧</div><div><h3>Ingreso único con dependientes</h3><p>Un solo proveedor que sostiene a otros — una pérdida de empleo afecta a todos.</p><span class="rec">→ Mínimo 6 meses</span></div></div>
+      <div class="sit"><div class="ico">💑</div><div><h3>Hogar con dos ingresos, ambos estables</h3><p>Dos ingresos significan que una pérdida de empleo no amenaza inmediatamente la vivienda.</p><span class="rec">→ 3 meses generalmente es suficiente</span></div></div>
+      <div class="sit"><div class="ico">💻</div><div><h3>Freelancer o trabajador independiente</h3><p>Los ingresos irregulares significan que necesitas más colchón para los meses lentos.</p><span class="rec">→ 6–9 meses recomendados</span></div></div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Constrúyelo en etapas — no esperes tener el monto completo</h2>
+    <ol>
+      <li><strong>Etapa 1: $500.000–$1.000.000 de fondo inicial</strong> — previene que las pequeñas emergencias se conviertan en deudas. Haz esto primero.</li>
+      <li><strong>Etapa 2: 1 mes de gastos</strong> — cubre una pérdida de empleo el tiempo suficiente para encontrar ingresos o reducir costos.</li>
+      <li><strong>Etapa 3: 3 meses de gastos</strong> — la recomendación estándar para la mayoría de las personas.</li>
+      <li><strong>Etapa 4: 6 meses de gastos</strong> — seguridad financiera completa para situaciones de mayor riesgo.</li>
+    </ol>
+
+    <h2>Dónde guardar tu fondo de emergencia</h2>
+    <p>Tu fondo de emergencia necesita dos cosas: debe ser <strong>accesible</strong> (puedes obtenerlo en 1–2 días) y <strong>generando intereses</strong>. La mejor opción es una <a href="high-yield-savings.html">cuenta de ahorro de alto rendimiento</a> — paga 4–5% anual y es accesible en 1–3 días hábiles.</p>
+    <p>Nunca inviertas tu fondo de emergencia en acciones. Los mercados pueden estar bajos un 30% exactamente cuando más necesitas el dinero.</p>
+
+    <div class="tipbox">
+      <strong>💡 Una vez que alcances tu objetivo</strong>
+      Cuando tu fondo de emergencia esté completamente financiado, no detengas la transferencia automática — redirigela. Mueve esas contribuciones mensuales a una cuenta de inversión o hacia una meta de ahorro. El hábito de ahorrar es más valioso que cualquier objetivo individual.
+    </div>
+  </div>
+</article>
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">The Quick Answer</a></li>
+        <li><a href="#" id="toc2">Your Specific Situation</a></li>
+        <li><a href="#" id="toc3">Calculate Your Exact Number</a></li>
+        <li><a href="#" id="toc4">Build It in Stages</a></li>
+        <li><a href="#" id="toc5">Where to Keep It</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="emergency-fund.html" id="rel1">Build an Emergency Fund</a></li>
+        <li><a href="high-yield-savings.html" id="rel2">High-Yield Savings Accounts</a></li>
+        <li><a href="automate-savings.html" id="rel3">Automate Your Savings</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+<footer>
+  <a href="index.html" id="flogo">MoneyMigo</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Saving",atag:"Saving · Beginner",ah1:"How Much Should You Have in Your Emergency Fund?",ameta:"📅 Updated June 2025 · ⏱ 6 min read · 👤 Beginner-friendly",aintro:"The standard advice is 3–6 months of expenses. But the right number for you depends on your job security, income type, and family situation. Here's how to find your exact number — and how to build it.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"The Quick Answer",toc2:"Your Specific Situation",toc3:"Calculate Your Exact Number",toc4:"Build It in Stages",toc5:"Where to Keep It",relh:"Related Articles",rel1:"Build an Emergency Fund",rel2:"High-Yield Savings Accounts",rel3:"Automate Your Savings",flogo:"MoneyMigo",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Ahorro",atag:"Ahorro · Principiante",ah1:"¿Cuánto deberías tener en tu fondo de emergencia?",ameta:"📅 Actualizado junio 2025 · ⏱ 6 min de lectura · 👤 Para principiantes",aintro:"El consejo estándar es 3–6 meses de gastos. Pero el número correcto para ti depende de tu seguridad laboral, tipo de ingreso y situación familiar. Aquí cómo encontrar tu número exacto — y cómo construirlo.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"La respuesta rápida",toc2:"Tu situación específica",toc3:"Calcula tu número exacto",toc4:"Constrúyelo en etapas",toc5:"Dónde guardarlo",relh:"Artículos relacionados",rel1:"Fondo de emergencia",rel2:"Cuentas de ahorro de alto rendimiento",rel3:"Automatiza tus ahorros",flogo:"MoneyMigo",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'block':'none';document.getElementById('les').style.display=l==='es'?'block':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>
