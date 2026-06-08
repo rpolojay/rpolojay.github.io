@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What is a 401k and how does it work? A simple plain-English guide to understanding, using, and maximizing your 401k retirement account.">
+<title>What Is a 401k and How Does It Work? | MoneyMigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.quick-answer{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.4rem;margin:1.4rem 0}
+.quick-answer h3{font-size:.95rem;font-weight:500;margin-bottom:.9rem}
+.qa-row{display:flex;gap:.8rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:.88rem}
+.qa-row:last-child{border-bottom:none}
+.qa-label{min-width:140px;opacity:.75}
+.qa-val{font-weight:500;color:#5DCAA5}
+.match-example{background:var(--white);border:2px solid var(--green);border-radius:var(--r);padding:1.3rem;margin:1.4rem 0}
+.match-example h3{font-size:.95rem;font-weight:500;color:var(--gd);margin-bottom:.9rem}
+.match-row{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--border);font-size:.9rem}
+.match-row:last-child{border-bottom:none;font-weight:500;color:var(--green)}
+.types{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0}
+.type-card{border-radius:var(--r);padding:1.2rem;border:1px solid var(--border)}
+.type-card.trad{background:var(--bl);border-color:#b5d4f4}
+.type-card.roth{background:var(--gl);border-color:#9FE1CB}
+.type-card h3{font-size:.95rem;font-weight:500;margin-bottom:.5rem}
+.type-card .tax{font-size:.78rem;font-weight:500;padding:.2rem .6rem;border-radius:999px;display:inline-block;margin-bottom:.6rem}
+.trad .tax{background:#b5d4f4;color:#0C447C}
+.roth .tax{background:#9FE1CB;color:var(--gd)}
+.type-card ul{margin:0 0 0 1rem}
+.type-card li{font-size:.84rem;margin-bottom:.25rem}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.types{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Migo</span></a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="investing.html" id="bc2">Investing</a></div>
+  <div class="atag" id="atag">Investing · Beginner</div>
+  <h1 id="ah1">What Is a 401k and How Does It Work?</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">A 401k is the most powerful retirement savings tool most Americans have access to — and millions of people either don't use it or don't use it correctly. Here's everything you need to know in plain English.</p>
+
+  <div id="len">
+    <h2>The Quick Answer</h2>
+    <div class="quick-answer">
+      <h3>401k at a glance</h3>
+      <div class="qa-row"><span class="qa-label">What is it?</span><span class="qa-val">A tax-advantaged retirement savings account through your employer</span></div>
+      <div class="qa-row"><span class="qa-label">2025 contribution limit</span><span class="qa-val">$23,500/year ($31,000 if age 50+)</span></div>
+      <div class="qa-row"><span class="qa-label">Tax benefit</span><span class="qa-val">Contributions reduce your taxable income today</span></div>
+      <div class="qa-row"><span class="qa-label">Employer match</span><span class="qa-val">Many employers match 50–100% of contributions</span></div>
+      <div class="qa-row"><span class="qa-label">When can you withdraw?</span><span class="qa-val">Age 59½ without penalty</span></div>
+      <div class="qa-row"><span class="qa-label">Who offers it?</span><span class="qa-val">For-profit employers (nonprofits use 403b)</span></div>
+    </div>
+
+    <h2>How a 401k Actually Works</h2>
+    <p>When you enroll in your employer's 401k plan, a percentage of your paycheck goes directly into your 401k account before taxes are taken out. That money gets invested — usually in a mix of stock and bond funds you choose from a menu your employer provides.</p>
+    <p>The tax benefit is immediate: if you earn $60,000 and contribute $6,000 to your 401k, you only pay income tax on $54,000. That's a real tax saving of $600–$1,320 depending on your tax bracket.</p>
+    <p>The money then grows tax-deferred — meaning you don't pay taxes on gains until you withdraw the money in retirement. By that time, you may be in a lower tax bracket.</p>
+
+    <h2>The Employer Match — Free Money You Can't Ignore</h2>
+    <p>Many employers match a percentage of your 401k contributions. This is the single best financial benefit most employees never fully use.</p>
+
+    <div class="match-example">
+      <h3>Example: 50% match up to 6% of salary</h3>
+      <div class="match-row"><span>Your salary</span><span>$60,000/year</span></div>
+      <div class="match-row"><span>You contribute 6% ($3,600)</span><span>$3,600/year</span></div>
+      <div class="match-row"><span>Employer adds 50% match</span><span>$1,800/year FREE</span></div>
+      <div class="match-row"><span>Total going into your 401k</span><span>$5,400/year</span></div>
+    </div>
+
+    <p>Not contributing enough to get the full match is like turning down a 50% raise on that portion of your salary. Always contribute at least enough to get the full employer match — before any other investing.</p>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>Traditional 401k vs Roth 401k</h2>
+    <div class="types">
+      <div class="type-card trad">
+        <h3>Traditional 401k</h3>
+        <span class="tax">Tax now → Tax later</span>
+        <ul>
+          <li>Contributions reduce taxable income today</li>
+          <li>Pay taxes when you withdraw in retirement</li>
+          <li>Better if you expect lower taxes in retirement</li>
+          <li>Required minimum distributions at 73</li>
+        </ul>
+      </div>
+      <div class="type-card roth">
+        <h3>Roth 401k</h3>
+        <span class="tax">Tax now → Tax free later</span>
+        <ul>
+          <li>Contributions made with after-tax dollars</li>
+          <li>Withdrawals in retirement are tax-free</li>
+          <li>Better if you expect higher taxes in retirement</li>
+          <li>No required minimum distributions</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>If you're early in your career and currently in a lower tax bracket, the Roth 401k is often the better choice — you pay taxes now at a low rate, and all future growth is completely tax-free. If you're in a high tax bracket now, the Traditional 401k saves you more in taxes today.</p>
+
+    <h2>What to Invest In</h2>
+    <p>Your 401k offers a menu of investment options — usually mutual funds or index funds. For most people the best approach is simple:</p>
+    <ul>
+      <li><strong>Target-date fund</strong> — pick the fund closest to your expected retirement year (e.g. "2055 Fund"). It automatically adjusts from aggressive to conservative as you age. This is the best option for most beginners.</li>
+      <li><strong>Index funds</strong> — low-cost funds that track the total stock market. Lower fees than actively managed funds. See our guide on <a href="index-funds.html">what index funds are</a>.</li>
+      <li><strong>Avoid</strong> — high-fee actively managed funds. Check the expense ratio — anything above 0.5% is too expensive.</li>
+    </ul>
+
+    <h2>How Much Should You Contribute?</h2>
+    <ol>
+      <li><strong>At minimum:</strong> contribute enough to get the full employer match</li>
+      <li><strong>Ideally:</strong> contribute 10–15% of your salary total</li>
+      <li><strong>Maximum:</strong> $23,500/year in 2025</li>
+    </ol>
+    <p>If you can't afford 10–15% right now, start with whatever gets you the full employer match and increase by 1% each year — or every time you get a raise. Small consistent increases compound dramatically over 20–30 years.</p>
+
+    <div class="tipbox">
+      <strong>💡 The Most Important Thing to Do Today</strong>
+      If your employer offers a 401k and you're not enrolled, enroll today. If you're enrolled but not getting the full employer match, increase your contribution to get it. These two actions take 15 minutes and could be worth $100,000+ over your career. Nothing else you do with money today has a higher return.
+    </div>
+
+    <h2>What Happens to Your 401k if You Leave Your Job?</h2>
+    <p>You have four options when you leave an employer:</p>
+    <ul>
+      <li><strong>Leave it in the old employer's plan</strong> — simple, but you lose access to new contributions</li>
+      <li><strong>Roll it over to your new employer's 401k</strong> — keeps everything consolidated</li>
+      <li><strong>Roll it over to an IRA</strong> — more investment options, often lower fees</li>
+      <li><strong>Cash it out</strong> — almost always a bad idea. You pay income taxes plus a 10% early withdrawal penalty</li>
+    </ul>
+    <p>The rollover to an IRA is usually the best option — it gives you more investment choices and typically lower fees than employer plans.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>La respuesta rápida</h2>
+    <div class="quick-answer">
+      <h3>El 401k de un vistazo</h3>
+      <div class="qa-row"><span class="qa-label">¿Qué es?</span><span class="qa-val">Una cuenta de ahorro para el retiro con ventajas fiscales a través de tu empleador</span></div>
+      <div class="qa-row"><span class="qa-label">Límite 2025</span><span class="qa-val">$23,500/año ($31,000 si tienes 50+ años)</span></div>
+      <div class="qa-row"><span class="qa-label">Beneficio fiscal</span><span class="qa-val">Las contribuciones reducen tu ingreso gravable hoy</span></div>
+      <div class="qa-row"><span class="qa-label">Aporte del empleador</span><span class="qa-val">Muchos empleadores igualan el 50–100% de tus contribuciones</span></div>
+      <div class="qa-row"><span class="qa-label">¿Cuándo retirar?</span><span class="qa-val">A partir de los 59½ sin penalización</span></div>
+    </div>
+
+    <h2>Cómo funciona realmente un 401k</h2>
+    <p>Cuando te inscribes en el plan 401k de tu empleador, un porcentaje de tu cheque de pago va directamente a tu cuenta 401k antes de que se descuenten los impuestos. Ese dinero se invierte — generalmente en una combinación de fondos de acciones y bonos que tú eliges de un menú que proporciona tu empleador.</p>
+    <p>El beneficio fiscal es inmediato: si ganas $60,000 y contribuyes $6,000 a tu 401k, solo pagas impuesto sobre la renta en $54,000.</p>
+
+    <h2>El aporte del empleador — dinero gratis que no puedes ignorar</h2>
+    <div class="match-example">
+      <h3>Ejemplo: aporte del 50% hasta el 6% del salario</h3>
+      <div class="match-row"><span>Tu salario</span><span>$60,000/año</span></div>
+      <div class="match-row"><span>Tú contribuyes 6% ($3,600)</span><span>$3,600/año</span></div>
+      <div class="match-row"><span>Empleador agrega 50%</span><span>$1,800/año GRATIS</span></div>
+      <div class="match-row"><span>Total en tu 401k</span><span>$5,400/año</span></div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>¿En qué invertir?</h2>
+    <p>Para la mayoría de las personas la mejor estrategia es simple:</p>
+    <ul>
+      <li><strong>Fondo de fecha objetivo</strong> — elige el fondo más cercano a tu año de retiro esperado (ej. "Fondo 2055"). Se ajusta automáticamente de agresivo a conservador a medida que envejeces.</li>
+      <li><strong>Fondos indexados</strong> — fondos de bajo costo que rastrean el mercado bursátil total. Lee nuestra guía sobre <a href="index-funds.html">qué son los fondos indexados</a>.</li>
+    </ul>
+
+    <h2>¿Cuánto deberías contribuir?</h2>
+    <ol>
+      <li><strong>Como mínimo:</strong> contribuye suficiente para obtener el aporte completo del empleador</li>
+      <li><strong>Idealmente:</strong> contribuye el 10–15% de tu salario total</li>
+      <li><strong>Máximo:</strong> $23,500/año en 2025</li>
+    </ol>
+
+    <div class="tipbox">
+      <strong>💡 Lo más importante que puedes hacer hoy</strong>
+      Si tu empleador ofrece un 401k y no estás inscrito, inscríbete hoy. Si estás inscrito pero no obtienes el aporte completo del empleador, aumenta tu contribución. Estas dos acciones toman 15 minutos y podrían valer $100,000+ durante tu carrera.
+    </div>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">The Quick Answer</a></li>
+        <li><a href="#" id="toc2">How It Works</a></li>
+        <li><a href="#" id="toc3">The Employer Match</a></li>
+        <li><a href="#" id="toc4">Traditional vs Roth 401k</a></li>
+        <li><a href="#" id="toc5">What to Invest In</a></li>
+        <li><a href="#" id="toc6">When You Leave Your Job</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="index-funds.html" id="rel1">What Are Index Funds?</a></li>
+        <li><a href="investing-beginners.html" id="rel2">Investing for Beginners</a></li>
+        <li><a href="compound-interest.html" id="rel3">Compound Interest Explained</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMigo</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Investing",atag:"Investing · Beginner",ah1:"What Is a 401k and How Does It Work?",ameta:"📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly",aintro:"A 401k is the most powerful retirement savings tool most Americans have access to — and millions of people either don't use it or don't use it correctly. Here's everything you need to know in plain English.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"The Quick Answer",toc2:"How It Works",toc3:"The Employer Match",toc4:"Traditional vs Roth 401k",toc5:"What to Invest In",toc6:"When You Leave Your Job",relh:"Related Articles",rel1:"What Are Index Funds?",rel2:"Investing for Beginners",rel3:"Compound Interest Explained",flogo:"MoneyMigo",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Inversión",atag:"Inversión · Principiante",ah1:"¿Qué es un 401k y cómo funciona?",ameta:"📅 Actualizado junio 2025 · ⏱ 7 min de lectura · 👤 Para principiantes",aintro:"Un 401k es la herramienta de ahorro para el retiro más poderosa a la que tienen acceso la mayoría de los estadounidenses — y millones de personas no lo usan o no lo usan correctamente. Aquí todo lo que necesitas saber en términos simples.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"La respuesta rápida",toc2:"Cómo funciona",toc3:"El aporte del empleador",toc4:"401k tradicional vs Roth",toc5:"En qué invertir",toc6:"Al dejar tu trabajo",relh:"Artículos relacionados",rel1:"¿Qué son los fondos indexados?",rel2:"Inversión para principiantes",rel3:"El interés compuesto explicado",flogo:"MoneyMigo",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'block':'none';document.getElementById('les').style.display=l==='es'?'block':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>

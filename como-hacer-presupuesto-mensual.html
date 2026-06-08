@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cómo hacer un presupuesto mensual paso a paso — la guía más simple para organizar tus finanzas personales desde cero.">
+<title>Cómo Hacer un Presupuesto Mensual Paso a Paso | MoneyMigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.step{display:flex;gap:1rem;margin-bottom:1.2rem;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
+.snum{min-width:34px;height:34px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.05rem;flex-shrink:0}
+.sc h3{font-size:.95rem;font-weight:500;margin-bottom:.28rem}
+.sc p{font-size:.88rem;color:var(--muted);margin:0}
+.budget-example{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:1.4rem 0}
+.be-header{background:var(--green);color:#fff;padding:.8rem 1rem;font-size:.88rem;font-weight:500;display:flex;justify-content:space-between}
+.be-row{display:flex;justify-content:space-between;padding:.6rem 1rem;border-bottom:1px solid var(--border);font-size:.88rem}
+.be-row:last-child{border-bottom:none;font-weight:500;background:var(--gl)}
+.be-row.section{background:#f7f7f3;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding:.4rem 1rem}
+.errores{display:grid;gap:.8rem;margin:1.4rem 0}
+.error-item{background:var(--white);border:1px solid var(--border);border-left:3px solid var(--amber);border-radius:0 var(--r) var(--r) 0;padding:1rem}
+.error-item h3{font-size:.9rem;font-weight:500;margin-bottom:.25rem;color:var(--amber)}
+.error-item p{font-size:.84rem;color:var(--muted);margin:0}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Money<span>Migo</span></a>
+  <ul>
+    <li><a href="budgeting.html">Presupuesto</a></li>
+    <li><a href="saving.html">Ahorro</a></li>
+    <li><a href="debt.html">Deudas</a></li>
+    <li><a href="investing.html">Inversión</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta">Herramientas</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb" onclick="window.location.href='first-time-budget.html'">EN</button>
+      <button class="lb on">ES</button>
+    </div>
+  </div>
+</nav>
+
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html">Inicio</a> → <a href="budgeting.html">Presupuesto</a></div>
+  <div class="atag">Presupuesto · Principiante</div>
+  <h1>Cómo Hacer un Presupuesto Mensual Paso a Paso</h1>
+  <div class="ameta">📅 Actualizado junio 2025 · ⏱ 8 min de lectura · 👤 Para principiantes</div>
+  <p class="aintro">Un presupuesto mensual es la herramienta más poderosa en las finanzas personales — y también la más ignorada. No necesitas ser experto en números ni tener una app especial. Solo necesitas 30 minutos, tu extracto bancario y esta guía.</p>
+
+  <h2>¿Por qué necesitas un presupuesto mensual?</h2>
+  <p>Sin un presupuesto, el dinero simplemente desaparece. No porque lo gastes en cosas malas — sino porque nunca le diste instrucciones de a dónde ir. Un presupuesto no te restringe, te da control. La diferencia entre las personas que avanzan financieramente y las que no, en la mayoría de los casos, es simplemente que las primeras saben a dónde va su dinero.</p>
+
+  <h2>Los 6 pasos para crear tu presupuesto mensual</h2>
+
+  <div class="step"><div class="snum">1</div><div class="sc">
+    <h3>Calcula tu ingreso neto mensual</h3>
+    <p>Anota exactamente cuánto dinero llega a tu cuenta bancaria cada mes después de impuestos y deducciones. Si tu ingreso varía, usa el promedio de los últimos 3 meses. Incluye todas las fuentes: salario, trabajos adicionales, arriendos, lo que sea regular.</p>
+  </div></div>
+
+  <div class="step"><div class="snum">2</div><div class="sc">
+    <h3>Lista todos tus gastos del mes pasado</h3>
+    <p>Abre tu extracto bancario y tarjeta de crédito del mes pasado. Categoriza cada gasto: vivienda, comida, transporte, servicios, entretenimiento, ropa, suscripciones, deudas. No juzgues — solo registra. Este es tu punto de partida real.</p>
+  </div></div>
+
+  <div class="step"><div class="snum">3</div><div class="sc">
+    <h3>Aplica la regla 50/30/20</h3>
+    <p>La forma más simple de estructurar un presupuesto. Divide tu ingreso neto en tres partes: 50% para necesidades, 30% para deseos y 20% para ahorros y pago de deudas. Lee nuestra guía completa sobre la <a href="budget-guide.html">regla 50/30/20</a>.</p>
+  </div></div>
+
+  <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+  <h2>Ejemplo de presupuesto mensual con $3.000.000</h2>
+  <div class="budget-example">
+    <div class="be-header"><span>Presupuesto mensual</span><span>Ingreso: $3.000.000</span></div>
+    <div class="be-row section">NECESIDADES — 50% ($1.500.000)</div>
+    <div class="be-row"><span>Arriendo</span><span>$900.000</span></div>
+    <div class="be-row"><span>Mercado</span><span>$300.000</span></div>
+    <div class="be-row"><span>Transporte</span><span>$150.000</span></div>
+    <div class="be-row"><span>Servicios públicos y celular</span><span>$150.000</span></div>
+    <div class="be-row section">DESEOS — 30% ($900.000)</div>
+    <div class="be-row"><span>Restaurantes y domicilios</span><span>$250.000</span></div>
+    <div class="be-row"><span>Entretenimiento</span><span>$150.000</span></div>
+    <div class="be-row"><span>Ropa y compras</span><span>$200.000</span></div>
+    <div class="be-row"><span>Suscripciones</span><span>$80.000</span></div>
+    <div class="be-row"><span>Imprevistos</span><span>$220.000</span></div>
+    <div class="be-row section">AHORROS — 20% ($600.000)</div>
+    <div class="be-row"><span>Fondo de emergencia</span><span>$300.000</span></div>
+    <div class="be-row"><span>Meta de ahorro</span><span>$150.000</span></div>
+    <div class="be-row"><span>Pago extra de deuda</span><span>$150.000</span></div>
+    <div class="be-row"><span><strong>Total</strong></span><span><strong>$3.000.000 ✅</strong></span></div>
+  </div>
+
+  <div class="step"><div class="snum">4</div><div class="sc">
+    <h3>Establece límites para el próximo mes</h3>
+    <p>Basándote en lo que gastaste el mes pasado y la regla 50/30/20, establece un límite para cada categoría. Sé realista — no te propongas bajar el gasto en restaurantes un 90% de un mes para otro. Apunta a reducciones del 20–30% en las categorías que están muy altas.</p>
+  </div></div>
+
+  <div class="step"><div class="snum">5</div><div class="sc">
+    <h3>Automatiza tus ahorros el día de pago</h3>
+    <p>Configura una transferencia automática a tu cuenta de ahorros el día que recibes tu salario. Aunque sea $50.000 para empezar. El dinero que no ves no lo gastas. Este es el hábito más importante del presupuesto. Lee más sobre cómo <a href="automate-savings.html">automatizar tus ahorros</a>.</p>
+  </div></div>
+
+  <div class="step"><div class="snum">6</div><div class="sc">
+    <h3>Revisa y ajusta cada semana</h3>
+    <p>Una vez a la semana — los domingos funcionan bien — toma 5 minutos para revisar cómo va tu gasto real versus tus límites. No necesitas una app. Una nota en el teléfono o un papel funciona perfectamente. El objetivo es consciencia, no perfección.</p>
+  </div></div>
+
+  <h2>Los 5 errores más comunes en el primer presupuesto</h2>
+  <div class="errores">
+    <div class="error-item"><h3>❌ Hacerlo demasiado restrictivo</h3><p>Un presupuesto que se siente como castigo se abandona en 2 semanas. Incluye dinero para diversión — aunque sea poco.</p></div>
+    <div class="error-item"><h3>❌ Olvidar los gastos irregulares</h3><p>Cumpleaños, ropa de temporada, mantenimiento del carro. Divide el costo anual entre 12 y agrégalo como una categoría mensual.</p></div>
+    <div class="error-item"><h3>❌ No revisar durante el mes</h3><p>Un presupuesto que solo miras el 1 del mes no funciona. Revísalo semanalmente para hacer ajustes a tiempo.</p></div>
+    <div class="error-item"><h3>❌ Mezclar los ahorros con la cuenta corriente</h3><p>Si tus ahorros están en la misma cuenta que tus gastos, siempre encontrarás una razón para gastarlos. Separa las cuentas.</p></div>
+    <div class="error-item"><h3>❌ Rendirse después del primer mes imperfecto</h3><p>Todos los presupuestos del primer mes tienen errores. El segundo mes es mejor. El tercero es cuando empieza a funcionar de verdad.</p></div>
+  </div>
+
+  <h2>Herramientas para hacer tu presupuesto</h2>
+  <ul>
+    <li><strong>Calculadora gratuita</strong> — usa nuestra <a href="tools/budget-calculator.html">Calculadora de Presupuesto 50/30/20</a> — toma 5 minutos</li>
+    <li><strong>Hoja de cálculo</strong> — Google Sheets tiene plantillas de presupuesto gratuitas</li>
+    <li><strong>Aplicación</strong> — Mint o YNAB automatizan el seguimiento. Ver nuestra guía de <a href="budgeting-apps.html">mejores apps de presupuesto</a></li>
+    <li><strong>Papel y lápiz</strong> — sigue funcionando perfectamente</li>
+  </ul>
+
+  <div class="tipbox">
+    <strong>💡 El secreto del presupuesto exitoso</strong>
+    No es la herramienta que uses — es la consistencia. Un presupuesto simple que revisas cada semana durante 12 meses transformará tu vida financiera. Un presupuesto perfecto que abandonas después de 3 semanas no te lleva a ningún lado. Empieza simple, sé consistente y ajusta sobre la marcha.
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside">Publicidad (300×250)</div>
+    <div class="scard">
+      <h4>En este artículo</h4>
+      <ul class="tocl">
+        <li><a href="#">¿Por qué necesitas un presupuesto?</a></li>
+        <li><a href="#">Los 6 pasos</a></li>
+        <li><a href="#">Ejemplo de presupuesto</a></li>
+        <li><a href="#">Los 5 errores comunes</a></li>
+        <li><a href="#">Herramientas</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4>Artículos relacionados</h4>
+      <ul class="rll">
+        <li><a href="budget-guide.html">La regla del 50/30/20</a></li>
+        <li><a href="zero-based-budgeting.html">Presupuesto base cero</a></li>
+        <li><a href="automate-savings.html">Automatiza tus ahorros</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html">MoneyMigo</a> · <a href="privacy.html">Política de privacidad</a> · <a href="disclaimer.html">Aviso legal</a> · <a href="contact.html">Contacto</a><br><br>
+  Este contenido es solo para fines informativos y no constituye asesoría financiera.
+</footer>
+</body>
+</html>
