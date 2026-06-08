@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What is a Roth IRA and how does it work? A simple plain-English guide to understanding, opening, and maximizing your Roth IRA.">
+<title>What Is a Roth IRA and How Does It Work? | MoneyMigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--blue:#378ADD;--bl:#E6F1FB;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.quick-answer{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.4rem;margin:1.4rem 0}
+.quick-answer h3{font-size:.95rem;font-weight:500;margin-bottom:.9rem}
+.qa-row{display:flex;gap:.8rem;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:.88rem}
+.qa-row:last-child{border-bottom:none}
+.qa-label{min-width:140px;opacity:.75}
+.qa-val{font-weight:500;color:#5DCAA5}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.4rem 0}
+.ccard{border-radius:var(--r);padding:1.2rem;border:1px solid var(--border)}
+.ccard.roth{background:var(--gl);border-color:#9FE1CB}
+.ccard.trad{background:var(--bl);border-color:#b5d4f4}
+.ccard h3{font-size:.95rem;font-weight:500;margin-bottom:.5rem}
+.ccard ul{margin:0 0 0 1rem}
+.ccard li{font-size:.84rem;margin-bottom:.3rem}
+.power-calc{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.4rem;margin:1.4rem 0}
+.power-calc h3{font-size:.95rem;font-weight:500;margin-bottom:1rem}
+.pc-row{display:flex;justify-content:space-between;padding:.42rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:.88rem}
+.pc-row:last-child{border-bottom:none;font-weight:500}
+.pc-val{color:#5DCAA5;font-weight:500}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}.compare{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Migo</span></a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="investing.html" id="bc2">Investing</a></div>
+  <div class="atag" id="atag">Investing · Beginner</div>
+  <h1 id="ah1">What Is a Roth IRA and How Does It Work?</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly</div>
+  <p class="aintro" id="aintro">A Roth IRA is one of the most powerful wealth-building tools available to everyday Americans — yet most people either don't have one or don't fully understand why it's so valuable. Here's everything you need to know in plain English.</p>
+  <div id="len">
+    <h2>The Quick Answer</h2>
+    <div class="quick-answer">
+      <h3>Roth IRA at a glance</h3>
+      <div class="qa-row"><span class="qa-label">What is it?</span><span class="qa-val">A retirement account where your money grows completely tax-free</span></div>
+      <div class="qa-row"><span class="qa-label">2025 contribution limit</span><span class="qa-val">$7,000/year ($8,000 if age 50+)</span></div>
+      <div class="qa-row"><span class="qa-label">Tax benefit</span><span class="qa-val">Pay taxes now, withdraw tax-free in retirement</span></div>
+      <div class="qa-row"><span class="qa-label">Income limit</span><span class="qa-val">Under $146,000 single / $230,000 married (2025)</span></div>
+      <div class="qa-row"><span class="qa-label">When to withdraw</span><span class="qa-val">Age 59½ and account open 5+ years</span></div>
+      <div class="qa-row"><span class="qa-label">Who offers it?</span><span class="qa-val">Fidelity, Vanguard, Charles Schwab, many others</span></div>
+    </div>
+
+    <h2>How a Roth IRA Works</h2>
+    <p>With a Roth IRA, you contribute money you've already paid taxes on. That money then grows tax-free inside the account — dividends, capital gains, interest — all tax-free. When you withdraw in retirement, you pay zero taxes on any of it.</p>
+    <p>This is the opposite of a Traditional IRA or 401k, where you get a tax deduction now but pay taxes on withdrawals later. With a Roth, you pay taxes now and never again.</p>
+
+    <h2>Roth IRA vs Traditional IRA</h2>
+    <div class="compare">
+      <div class="ccard roth">
+        <h3>✅ Roth IRA</h3>
+        <ul>
+          <li>Contribute after-tax dollars</li>
+          <li>Tax-free growth</li>
+          <li>Tax-free withdrawals in retirement</li>
+          <li>No required minimum distributions</li>
+          <li>Can withdraw contributions anytime</li>
+          <li>Best when young or in low tax bracket</li>
+        </ul>
+      </div>
+      <div class="ccard trad">
+        <h3>Traditional IRA</h3>
+        <ul>
+          <li>Contribute pre-tax dollars</li>
+          <li>Tax-deferred growth</li>
+          <li>Pay taxes on withdrawals</li>
+          <li>Required withdrawals at age 73</li>
+          <li>10% penalty for early withdrawal</li>
+          <li>Best when in high tax bracket now</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>The Power of a Roth IRA — Real Numbers</h2>
+    <div class="power-calc">
+      <h3>📈 Contributing $500/month to a Roth IRA at 7% return</h3>
+      <div class="pc-row"><span>After 10 years</span><span class="pc-val">$86,000 — all tax-free</span></div>
+      <div class="pc-row"><span>After 20 years</span><span class="pc-val">$260,000 — all tax-free</span></div>
+      <div class="pc-row"><span>After 30 years</span><span class="pc-val">$608,000 — all tax-free</span></div>
+      <div class="pc-row"><span>Total contributed</span><span class="pc-val">$180,000</span></div>
+      <div class="pc-row"><span>Tax-free gains</span><span class="pc-val">$428,000</span></div>
+    </div>
+    <p>In a taxable account, those $428,000 in gains would be subject to capital gains taxes. In a Roth IRA, they're completely yours — no taxes ever.</p>
+
+    <h2>How to Open a Roth IRA in 4 Steps</h2>
+    <ol>
+      <li><strong>Choose a provider</strong> — Fidelity, Vanguard, or Charles Schwab are the best options. All are free to open with no minimums.</li>
+      <li><strong>Open the account online</strong> — takes about 10 minutes. You'll need your Social Security number and bank account information.</li>
+      <li><strong>Fund the account</strong> — transfer money from your checking or savings account. Even $50 to start is fine.</li>
+      <li><strong>Choose your investments</strong> — for most beginners, a target-date fund or a total market <a href="index-funds.html">index fund</a> is the best choice. Low fees, automatic diversification.</li>
+    </ol>
+
+    <h2>Who Should Open a Roth IRA?</h2>
+    <p>A Roth IRA is ideal if you:</p>
+    <ul>
+      <li>Are early in your career and currently in a low tax bracket</li>
+      <li>Expect to be in a higher tax bracket in retirement</li>
+      <li>Want flexibility — you can withdraw your contributions (not earnings) at any time without penalty</li>
+      <li>Want to leave money to heirs tax-free</li>
+    </ul>
+    <p>If you earn too much to contribute directly (over $146,000 single or $230,000 married in 2025), look into the "backdoor Roth IRA" — a legal strategy to contribute regardless of income.</p>
+
+    <div class="tipbox">
+      <strong>💡 Open One Today — Even With $50</strong>
+      The single biggest Roth IRA mistake is waiting. Every year you delay costs you years of tax-free compounding that you can never get back. You don't need $7,000 to start — open one today with whatever you have and contribute more as you can. Time in the market beats timing the market every time.
+    </div>
+
+    <h2>Roth IRA vs 401k — Which First?</h2>
+    <p>The recommended order is:</p>
+    <ol>
+      <li>Contribute to your <a href="what-is-401k.html">401k</a> enough to get the full employer match</li>
+      <li>Max out your Roth IRA ($7,000/year)</li>
+      <li>Go back and contribute more to your 401k</li>
+    </ol>
+    <p>The employer match on your 401k is an instant 50–100% return — always capture that first. Then the Roth IRA's tax-free growth makes it the second priority for most people.</p>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>La respuesta rápida</h2>
+    <div class="quick-answer">
+      <h3>Roth IRA de un vistazo</h3>
+      <div class="qa-row"><span class="qa-label">¿Qué es?</span><span class="qa-val">Una cuenta de retiro donde tu dinero crece completamente libre de impuestos</span></div>
+      <div class="qa-row"><span class="qa-label">Límite 2025</span><span class="qa-val">$7,000/año ($8,000 si tienes 50+ años)</span></div>
+      <div class="qa-row"><span class="qa-label">Beneficio fiscal</span><span class="qa-val">Pagas impuestos ahora, retiras libre de impuestos en el retiro</span></div>
+      <div class="qa-row"><span class="qa-label">Límite de ingresos</span><span class="qa-val">Menos de $146,000 soltero / $230,000 casado (2025)</span></div>
+      <div class="qa-row"><span class="qa-label">¿Cuándo retirar?</span><span class="qa-val">A los 59½ y con la cuenta abierta 5+ años</span></div>
+    </div>
+
+    <h2>Cómo funciona un Roth IRA</h2>
+    <p>Con un Roth IRA, contribuyes dinero sobre el que ya pagaste impuestos. Ese dinero crece libre de impuestos dentro de la cuenta — dividendos, ganancias de capital, intereses — todo libre de impuestos. Cuando retiras en el retiro, no pagas ningún impuesto.</p>
+
+    <h2>El poder de un Roth IRA — números reales</h2>
+    <div class="power-calc">
+      <h3>📈 Contribuyendo $500/mes a un Roth IRA al 7% de rendimiento</h3>
+      <div class="pc-row"><span>Después de 10 años</span><span class="pc-val">$86,000 — todo libre de impuestos</span></div>
+      <div class="pc-row"><span>Después de 20 años</span><span class="pc-val">$260,000 — todo libre de impuestos</span></div>
+      <div class="pc-row"><span>Después de 30 años</span><span class="pc-val">$608,000 — todo libre de impuestos</span></div>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Cómo abrir un Roth IRA en 4 pasos</h2>
+    <ol>
+      <li><strong>Elige un proveedor</strong> — Fidelity, Vanguard o Charles Schwab son las mejores opciones. Todos son gratuitos para abrir sin mínimos.</li>
+      <li><strong>Abre la cuenta en línea</strong> — toma unos 10 minutos. Necesitarás tu número de Seguro Social e información bancaria.</li>
+      <li><strong>Financia la cuenta</strong> — transfiere dinero de tu cuenta bancaria. Incluso $50 para empezar está bien.</li>
+      <li><strong>Elige tus inversiones</strong> — para la mayoría de principiantes, un fondo de fecha objetivo o un <a href="index-funds.html">fondo indexado</a> del mercado total es la mejor opción.</li>
+    </ol>
+
+    <div class="tipbox">
+      <strong>💡 Abre uno hoy — incluso con $50</strong>
+      El mayor error del Roth IRA es esperar. Cada año que demoras te cuesta años de capitalización libre de impuestos que nunca podrás recuperar. No necesitas $7,000 para empezar — abre uno hoy con lo que tengas.
+    </div>
+  </div>
+</article>
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">The Quick Answer</a></li>
+        <li><a href="#" id="toc2">How It Works</a></li>
+        <li><a href="#" id="toc3">Roth vs Traditional IRA</a></li>
+        <li><a href="#" id="toc4">The Power — Real Numbers</a></li>
+        <li><a href="#" id="toc5">How to Open One</a></li>
+        <li><a href="#" id="toc6">Roth IRA vs 401k</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="what-is-401k.html" id="rel1">What Is a 401k?</a></li>
+        <li><a href="index-funds.html" id="rel2">What Are Index Funds?</a></li>
+        <li><a href="investing-beginners.html" id="rel3">Investing for Beginners</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+<footer>
+  <a href="index.html" id="flogo">MoneyMigo</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Investing",atag:"Investing · Beginner",ah1:"What Is a Roth IRA and How Does It Work?",ameta:"📅 Updated June 2025 · ⏱ 7 min read · 👤 Beginner-friendly",aintro:"A Roth IRA is one of the most powerful wealth-building tools available to everyday Americans — yet most people either don't have one or don't fully understand why it's so valuable. Here's everything you need to know in plain English.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"The Quick Answer",toc2:"How It Works",toc3:"Roth vs Traditional IRA",toc4:"The Power — Real Numbers",toc5:"How to Open One",toc6:"Roth IRA vs 401k",relh:"Related Articles",rel1:"What Is a 401k?",rel2:"What Are Index Funds?",rel3:"Investing for Beginners",flogo:"MoneyMigo",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Inversión",atag:"Inversión · Principiante",ah1:"¿Qué es un Roth IRA y cómo funciona?",ameta:"📅 Actualizado junio 2025 · ⏱ 7 min de lectura · 👤 Para principiantes",aintro:"Un Roth IRA es una de las herramientas de construcción de riqueza más poderosas disponibles — sin embargo, la mayoría de las personas o no tiene una o no entiende completamente por qué es tan valiosa.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"La respuesta rápida",toc2:"Cómo funciona",toc3:"Roth vs IRA tradicional",toc4:"El poder — números reales",toc5:"Cómo abrir uno",toc6:"Roth IRA vs 401k",relh:"Artículos relacionados",rel1:"¿Qué es un 401k?",rel2:"¿Qué son los fondos indexados?",rel3:"Inversión para principiantes",flogo:"MoneyMigo",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'block':'none';document.getElementById('les').style.display=l==='es'?'block':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>
