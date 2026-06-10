@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Best ways to send money home from the US to Latin America — compare Wise, Remitly, Western Union and more. Stop losing money on fees.">
+<title>Best Ways to Send Money Home from the US | MoneyMigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1D9E75;--gl:#E1F5EE;--gd:#085041;--amber:#BA7517;--al:#FAEEDA;--red:#C0392B;--rl:#FDEDEC;--text:#1a1a1a;--muted:#5a5a5a;--bg:#fafaf8;--white:#fff;--border:#e4e4e0;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100}
+.logo{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gd)}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weight:500;color:var(--muted)}nav ul a:hover{color:var(--green);text-decoration:none}
+.nav-r{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--green);color:#fff!important;padding:.42rem 1rem;border-radius:999px;font-size:.84rem!important;font-weight:500!important}
+.ltog{display:flex;background:#f0f0ea;border-radius:999px;padding:3px;gap:2px}
+.lb{padding:.28rem .8rem;border-radius:999px;border:none;font-size:.78rem;font-weight:500;cursor:pointer;background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;transition:all .15s}
+.lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.aw{max-width:960px;margin:0 auto;padding:2.5rem 1.5rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem}
+.bc{font-size:.78rem;color:var(--muted);margin-bottom:1.1rem}.bc a{color:var(--muted)}
+.atag{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:.55rem}
+article h1{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,4vw,2.3rem);line-height:1.25;margin-bottom:.95rem}
+.ameta{font-size:.8rem;color:var(--muted);margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.aintro{font-size:1.02rem;color:var(--muted);margin-bottom:2rem;padding:1.1rem;background:var(--gl);border-left:3px solid var(--green);border-radius:0 8px 8px 0}
+article h2{font-family:'Playfair Display',serif;font-size:1.35rem;margin:1.9rem 0 .75rem}
+article p{margin-bottom:.95rem;font-size:.96rem}
+article ul,article ol{margin:.75rem 0 .95rem 1.4rem}article li{margin-bottom:.38rem;font-size:.96rem}
+.tipbox{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.tipbox strong{display:block;margin-bottom:.38rem;color:var(--amber);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.warnbox{background:var(--rl);border:1px solid #f5b7b1;border-radius:var(--r);padding:1.15rem;margin:1.4rem 0}
+.warnbox strong{display:block;margin-bottom:.38rem;color:var(--red);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.warnbox p{color:#7b241c;font-size:.92rem;margin:0}
+.service-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.3rem;margin-bottom:1.1rem;position:relative}
+.service-card.top{border-color:var(--green);border-width:2px}
+.top-badge{position:absolute;top:-12px;right:16px;background:var(--green);color:#fff;font-size:.72rem;font-weight:500;padding:.2rem .7rem;border-radius:999px}
+.service-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.7rem}
+.service-name{font-size:1.05rem;font-weight:500}
+.service-fee{font-size:.85rem;font-weight:500;padding:.2rem .6rem;border-radius:999px}
+.fee-low{background:var(--gl);color:var(--gd)}
+.fee-mid{background:var(--al);color:#633806}
+.fee-high{background:var(--rl);color:#7b241c}
+.service-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.7rem}
+.service-tag{font-size:.72rem;background:#f0f0ea;color:var(--muted);padding:.18rem .5rem;border-radius:999px}
+.service-desc{font-size:.87rem;color:var(--muted);margin-bottom:.6rem}
+.service-best{font-size:.82rem;font-weight:500;color:var(--green)}
+.fee-calc{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.4rem;margin:1.4rem 0}
+.fee-calc h3{font-size:.95rem;font-weight:500;margin-bottom:1rem}
+.fc-row{display:flex;justify-content:space-between;padding:.42rem 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:.88rem}
+.fc-row:last-child{border-bottom:none;font-weight:500;font-size:.95rem;padding-top:.6rem}
+.fc-val{color:#5DCAA5;font-weight:500}
+.fc-bad{color:#ff8080;font-weight:500}
+.compare-table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.84rem}
+.compare-table th{background:var(--gd);color:#fff;padding:.55rem .8rem;text-align:left;font-weight:500}
+.compare-table td{padding:.55rem .8rem;border-bottom:1px solid var(--border)}
+.compare-table tr:nth-child(even) td{background:#f7f7f3}
+.compare-table tr:last-child td{border-bottom:none}
+.adil{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:95px;color:#bbb;font-size:.74rem;margin:1.9rem 0}
+.ssticky{position:sticky;top:80px}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem;margin-bottom:1.1rem}
+.scard h4{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:.9rem;border-bottom:1px solid var(--border);padding-bottom:.52rem}
+.tocl,.rll{list-style:none}
+.tocl li,.rll li{padding:.38rem 0;border-bottom:1px solid var(--border);font-size:.84rem}
+.tocl li:last-child,.rll li:last-child{border-bottom:none}
+.tocl a,.rll a{color:var(--muted)}.tocl a:hover,.rll a:hover{color:var(--green);text-decoration:none}
+.adside{background:#f5f5f0;border:1px dashed #ccc;border-radius:var(--r);display:flex;align-items:center;justify-content:center;height:250px;color:#bbb;font-size:.73rem;margin-bottom:1.1rem}
+footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
+footer a{color:rgba(255,255,255,.8)}
+.lc{display:none}
+@media(max-width:768px){nav ul{display:none}.aw{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo" id="logo">Money<span>Migo</span></a>
+  <ul>
+    <li><a href="budgeting.html" id="n1">Budgeting</a></li>
+    <li><a href="saving.html" id="n2">Saving</a></li>
+    <li><a href="debt.html" id="n3">Debt</a></li>
+    <li><a href="investing.html" id="n4">Investing</a></li>
+    <li><a href="tools/budget-calculator.html" class="nav-cta" id="n5">Free Tools</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="ltog">
+      <button class="lb on" onclick="setLang('en')">EN</button>
+      <button class="lb" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+<div class="aw">
+<article>
+  <div class="bc"><a href="index.html" id="bc1">Home</a> → <a href="saving.html" id="bc2">Saving</a></div>
+  <div class="atag" id="atag">Remittances · Crew Finance</div>
+  <h1 id="ah1">Best Ways to Send Money Home from the US to Latin America</h1>
+  <div class="ameta" id="ameta">📅 Updated June 2025 · ⏱ 7 min read · ⚓ For crew members & workers abroad</div>
+  <p class="aintro" id="aintro">Every year Latin American workers lose billions of dollars in unnecessary transfer fees. A crew member sending $500 home through Western Union can lose $25–$40 in fees and exchange rate markups. Wise or Remitly sends the same $500 for under $5. Here's exactly what to use.</p>
+
+  <div id="len">
+    <h2>The Real Cost of Sending Money Home</h2>
+    <p>Most people focus on the transfer fee — the $5 or $10 shown on screen. But the bigger cost is hidden in the exchange rate. Services like Western Union and MoneyGram show you an exchange rate that's worse than the real mid-market rate. That gap — called the exchange rate markup — is where they make most of their money.</p>
+
+    <div class="fee-calc">
+      <h3>💸 Sending $500 home — what you actually pay</h3>
+      <div class="fc-row"><span>Western Union (cash pickup)</span><span class="fc-bad">$25–$40 in fees + markup</span></div>
+      <div class="fc-row"><span>MoneyGram</span><span class="fc-bad">$15–$30 in fees + markup</span></div>
+      <div class="fc-row"><span>Bank wire transfer</span><span class="fc-bad">$25–$50 flat fee</span></div>
+      <div class="fc-row"><span>Remitly (economy)</span><span class="fc-val">$3–$5 total</span></div>
+      <div class="fc-row"><span>Wise</span><span class="fc-val">$4–$7 total</span></div>
+      <div class="fc-row"><span>Your savings per transfer</span><span class="fc-val">$20–$35 every time</span></div>
+    </div>
+
+    <p>If you send $500 home every month, switching from Western Union to Wise or Remitly saves you $240–$420 per year. Over a 6-month contract, that's an extra $120–$210 that stays in your pocket.</p>
+
+    <div class="warnbox">
+      <strong>⚠️ The Exchange Rate Trick</strong>
+      <p>Always compare the total amount your family receives — not just the fee. A service advertising "$0 fee" may still give you a worse exchange rate than a service charging $4. Use Wise's rate comparison tool to see the true cost before every transfer.</p>
+    </div>
+
+    <h2>Best Services to Send Money to Latin America</h2>
+
+    <div class="service-card top">
+      <div class="top-badge">⭐ Best Overall</div>
+      <div class="service-header">
+        <span class="service-name">Wise (formerly TransferWise)</span>
+        <span class="service-fee fee-low">~0.5–1.5% fee</span>
+      </div>
+      <div class="service-tags">
+        <span class="service-tag">Mid-market exchange rate</span>
+        <span class="service-tag">Bank deposit</span>
+        <span class="service-tag">Fast — 1–2 days</span>
+        <span class="service-tag">Multi-currency account</span>
+      </div>
+      <p class="service-desc">Wise uses the real mid-market exchange rate — the same rate you see on Google — and charges a small transparent fee. No hidden markups. What you see is what your family receives. Also offers a multi-currency account where you can hold USD, EUR, and local currency.</p>
+      <p class="service-best">✅ Best for: Regular transfers, transparency, holding multiple currencies</p>
+    </div>
+
+    <div class="service-card top">
+      <div class="top-badge">⭐ Best for Speed</div>
+      <div class="service-header">
+        <span class="service-name">Remitly</span>
+        <span class="service-fee fee-low">$3–$5 flat fee</span>
+      </div>
+      <div class="service-tags">
+        <span class="service-tag">Express: minutes</span>
+        <span class="service-tag">Economy: 3–5 days</span>
+        <span class="service-tag">Cash pickup available</span>
+        <span class="service-tag">Great Latin America coverage</span>
+      </div>
+      <p class="service-desc">Remitly is built specifically for sending money to Latin America. Express transfers arrive in minutes (higher fee), economy transfers take 3–5 days (lower fee). Excellent coverage across Colombia, Mexico, Peru, Guatemala, Dominican Republic, and more.</p>
+      <p class="service-best">✅ Best for: Fast transfers, first-time senders, Latin America coverage</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-header">
+        <span class="service-name">WorldRemit</span>
+        <span class="service-fee fee-low">$2–$5 fee</span>
+      </div>
+      <div class="service-tags">
+        <span class="service-tag">Mobile wallet delivery</span>
+        <span class="service-tag">Cash pickup</span>
+        <span class="service-tag">Bank deposit</span>
+      </div>
+      <p class="service-desc">Good rates and multiple delivery options including mobile wallet — useful if your family uses Nequi, Daviplata (Colombia), or similar. Competitive for smaller amounts.</p>
+      <p class="service-best">✅ Best for: Mobile wallet transfers, Colombia, smaller amounts</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-header">
+        <span class="service-name">Western Union</span>
+        <span class="service-fee fee-high">$15–$40+ fee</span>
+      </div>
+      <div class="service-tags">
+        <span class="service-tag">Cash pickup anywhere</span>
+        <span class="service-tag">Widely available</span>
+        <span class="service-tag">Expensive</span>
+      </div>
+      <p class="service-desc">The most widely recognized name — but consistently one of the most expensive options. The only reason to use Western Union is if your family truly cannot access a bank account or mobile wallet and needs cash pickup in a very remote area.</p>
+      <p class="service-best">⚠️ Only use if: No other option — always check Wise or Remitly first</p>
+    </div>
+
+    <div class="adil">Advertisement — Replace with AdSense unit</div>
+
+    <h2>Quick Comparison</h2>
+    <table class="compare-table">
+      <thead><tr><th>Service</th><th>Fee on $500</th><th>Speed</th><th>Best For</th></tr></thead>
+      <tbody>
+        <tr><td>Wise</td><td>$4–$7</td><td>1–2 days</td><td>Best rates, transparency</td></tr>
+        <tr><td>Remitly</td><td>$3–$5</td><td>Minutes–5 days</td><td>Speed, Latin America</td></tr>
+        <tr><td>WorldRemit</td><td>$2–$5</td><td>Minutes–2 days</td><td>Mobile wallets</td></tr>
+        <tr><td>MoneyGram</td><td>$10–$20</td><td>Minutes–3 days</td><td>Cash pickup only</td></tr>
+        <tr><td>Western Union</td><td>$15–$40</td><td>Minutes–3 days</td><td>Last resort</td></tr>
+        <tr><td>Bank wire</td><td>$25–$50</td><td>3–5 days</td><td>Large amounts only</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to Set Up Your First Transfer</h2>
+    <ol>
+      <li><strong>Download the Wise or Remitly app</strong> — both available on iOS and Android, free</li>
+      <li><strong>Create an account</strong> — you'll need your ID and US bank account or debit card</li>
+      <li><strong>Verify your identity</strong> — required by law, takes 1–2 days for first transfer</li>
+      <li><strong>Enter the amount and recipient details</strong> — your family's bank account or pickup location</li>
+      <li><strong>Compare the rate shown</strong> — always check what amount your family actually receives before confirming</li>
+      <li><strong>Send</strong> — save the transaction receipt</li>
+    </ol>
+
+    <h2>Tips for Crew Members Sending Money Home</h2>
+    <ul>
+      <li><strong>Set up transfers before you board.</strong> Verify your account and do one test transfer while you still have easy internet access. Shipboard WiFi can make app verification difficult.</li>
+      <li><strong>Send in larger amounts less frequently.</strong> Each transfer has a fixed fee component — sending $500 twice costs less in fees than sending $100 ten times.</li>
+      <li><strong>Use the Wise multi-currency account.</strong> Hold your USD savings in Wise while at sea. When you're ready to send home, convert and transfer at the best available rate.</li>
+      <li><strong>Have a backup method.</strong> Know two services in case one has an issue. Wise + Remitly is the best combination.</li>
+    </ul>
+
+    <div class="tipbox">
+      <strong>💡 The Crew Member Transfer Strategy</strong>
+      Don't send money home every paycheck — the fixed fees add up. Instead, send one larger transfer per month. Save your contract earnings in a <a href="best-high-yield-savings-accounts.html">high-yield savings account</a>, then transfer a planned monthly amount to your family. You save on fees AND earn interest on your savings between transfers.
+    </div>
+  </div>
+
+  <div id="les" class="lc">
+    <h2>El costo real de enviar dinero a casa</h2>
+    <p>La mayoría de las personas se enfoca en la comisión de transferencia — los $5 o $10 que aparecen en pantalla. Pero el costo mayor está oculto en el tipo de cambio. Servicios como Western Union y MoneyGram te muestran un tipo de cambio peor que la tasa real del mercado. Esa diferencia es donde hacen la mayor parte de su dinero.</p>
+
+    <div class="fee-calc">
+      <h3>💸 Enviando $500 a casa — lo que realmente pagas</h3>
+      <div class="fc-row"><span>Western Union (retiro en efectivo)</span><span class="fc-bad">$25–$40 en comisiones + margen</span></div>
+      <div class="fc-row"><span>MoneyGram</span><span class="fc-bad">$15–$30 en comisiones + margen</span></div>
+      <div class="fc-row"><span>Transferencia bancaria</span><span class="fc-bad">$25–$50 tarifa fija</span></div>
+      <div class="fc-row"><span>Remitly (económico)</span><span class="fc-val">$3–$5 total</span></div>
+      <div class="fc-row"><span>Wise</span><span class="fc-val">$4–$7 total</span></div>
+      <div class="fc-row"><span>Tu ahorro por transferencia</span><span class="fc-val">$20–$35 cada vez</span></div>
+    </div>
+
+    <p>Si envías $500 a casa cada mes, cambiar de Western Union a Wise o Remitly te ahorra $240–$420 al año. En un contrato de 6 meses, eso son $120–$210 adicionales en tu bolsillo.</p>
+
+    <h2>Mejores servicios para enviar dinero a Latinoamérica</h2>
+
+    <div class="service-card top">
+      <div class="top-badge">⭐ Mejor en general</div>
+      <div class="service-header">
+        <span class="service-name">Wise (antes TransferWise)</span>
+        <span class="service-fee fee-low">~0.5–1.5% de comisión</span>
+      </div>
+      <div class="service-tags">
+        <span class="service-tag">Tasa de cambio real</span>
+        <span class="service-tag">Depósito bancario</span>
+        <span class="service-tag">Rápido — 1–2 días</span>
+        <span class="service-tag">Cuenta multimoneda</span>
+      </div>
+      <p class="service-desc">Wise usa la tasa de cambio real del mercado — la misma que ves en Google — y cobra una pequeña comisión transparente. Sin márgenes ocultos. Lo que ves es lo que recibe tu familia.</p>
+      <p class="service-best">✅ Mejor para: Transferencias regulares, transparencia, múltiples monedas</p>
+    </div>
+
+    <div class="service-card top">
+      <div class="top-badge">⭐ Mejor para velocidad</div>
+      <div class="service-header">
+        <span class="service-name">Remitly</span>
+        <span class="service-fee fee-low">$3–$5 tarifa fija</span>
+      </div>
+      <div class="service-tags">
+        <span class="service-tag">Exprés: minutos</span>
+        <span class="service-tag">Económico: 3–5 días</span>
+        <span class="service-tag">Retiro en efectivo disponible</span>
+        <span class="service-tag">Excelente cobertura en Latinoamérica</span>
+      </div>
+      <p class="service-desc">Remitly está construido específicamente para enviar dinero a Latinoamérica. Las transferencias exprés llegan en minutos. Excelente cobertura en Colombia, México, Perú, Guatemala, República Dominicana y más.</p>
+      <p class="service-best">✅ Mejor para: Transferencias rápidas, primera vez, cobertura en Latinoamérica</p>
+    </div>
+
+    <div class="adil">Publicidad — Reemplaza con unidad AdSense</div>
+
+    <h2>Consejos para tripulantes que envían dinero a casa</h2>
+    <ul>
+      <li><strong>Configura las transferencias antes de abordar.</strong> Verifica tu cuenta y haz una transferencia de prueba mientras aún tienes acceso fácil a internet. El WiFi del barco puede dificultar la verificación de apps.</li>
+      <li><strong>Envía cantidades más grandes con menos frecuencia.</strong> Cada transferencia tiene un componente de tarifa fija — enviar $500 dos veces cuesta menos en comisiones que enviar $100 diez veces.</li>
+      <li><strong>Usa la cuenta multimoneda de Wise.</strong> Guarda tus ahorros en USD en Wise mientras estás en el mar. Cuando estés listo para enviar a casa, convierte y transfiere a la mejor tasa disponible.</li>
+    </ul>
+
+    <div class="tipbox">
+      <strong>💡 La estrategia de transferencia del tripulante</strong>
+      No envíes dinero a casa con cada pago — las tarifas fijas se acumulan. En cambio, envía una transferencia más grande por mes. Guarda tus ganancias del contrato en una <a href="best-high-yield-savings-accounts.html">cuenta de ahorro de alto rendimiento</a>, luego transfiere un monto mensual planificado a tu familia.
+    </div>
+  </div>
+</article>
+
+<aside>
+  <div class="ssticky">
+    <div class="adside" id="adside">Ad (300×250) — AdSense</div>
+    <div class="scard">
+      <h4 id="toch">In This Article</h4>
+      <ul class="tocl">
+        <li><a href="#" id="toc1">The Real Cost</a></li>
+        <li><a href="#" id="toc2">Best Services Compared</a></li>
+        <li><a href="#" id="toc3">Quick Comparison Table</a></li>
+        <li><a href="#" id="toc4">How to Set Up</a></li>
+        <li><a href="#" id="toc5">Tips for Crew Members</a></li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h4 id="relh">Related Articles</h4>
+      <ul class="rll">
+        <li><a href="save-money-cruise-ship.html" id="rel1">Save $10,000 on a Cruise Ship</a></li>
+        <li><a href="best-high-yield-savings-accounts.html" id="rel2">Best Savings Accounts</a></li>
+        <li><a href="emergency-fund.html" id="rel3">Build an Emergency Fund</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <a href="index.html" id="flogo">MoneyMigo</a> · <a href="privacy.html" id="fpr">Privacy Policy</a> · <a href="disclaimer.html" id="fdi">Disclaimer</a> · <a href="contact.html" id="fco">Contact</a><br><br>
+  <span id="flegal">This content is for informational purposes only and does not constitute financial advice.</span>
+</footer>
+
+<script>
+const T={
+  en:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",bc1:"Home",bc2:"Saving",atag:"Remittances · Crew Finance",ah1:"Best Ways to Send Money Home from the US to Latin America",ameta:"📅 Updated June 2025 · ⏱ 7 min read · ⚓ For crew members & workers abroad",aintro:"Every year Latin American workers lose billions of dollars in unnecessary transfer fees. A crew member sending $500 home through Western Union can lose $25–$40 in fees and exchange rate markups. Wise or Remitly sends the same $500 for under $5. Here's exactly what to use.",adside:"Ad (300×250) — AdSense",toch:"In This Article",toc1:"The Real Cost",toc2:"Best Services Compared",toc3:"Quick Comparison Table",toc4:"How to Set Up",toc5:"Tips for Crew Members",relh:"Related Articles",rel1:"Save $10,000 on a Cruise Ship",rel2:"Best Savings Accounts",rel3:"Build an Emergency Fund",flogo:"MoneyMigo",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",bc1:"Inicio",bc2:"Ahorro",atag:"Remesas · Finanzas en cruceros",ah1:"Mejores formas de enviar dinero a Latinoamérica desde EE.UU.",ameta:"📅 Actualizado junio 2025 · ⏱ 7 min de lectura · ⚓ Para tripulantes y trabajadores en el exterior",aintro:"Cada año los trabajadores latinoamericanos pierden miles de millones de dólares en comisiones de transferencia innecesarias. Un tripulante que envía $500 a casa a través de Western Union puede perder $25–$40 en comisiones y márgenes de tipo de cambio. Wise o Remitly envía los mismos $500 por menos de $5.",adside:"Publicidad (300×250)",toch:"En este artículo",toc1:"El costo real",toc2:"Mejores servicios comparados",toc3:"Tabla de comparación",toc4:"Cómo configurarlo",toc5:"Consejos para tripulantes",relh:"Artículos relacionados",rel1:"Ahorrar $10.000 en un crucero",rel2:"Mejores cuentas de ahorro",rel3:"Fondo de emergencia",flogo:"MoneyMigo",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+};
+let lang=localStorage.getItem('lang')||'en';
+function setLang(l){lang=l;localStorage.setItem('lang',l);const d=T[l];for(const[id,val]of Object.entries(d)){const el=document.getElementById(id);if(el)el.innerHTML=val;}document.getElementById('len').style.display=l==='en'?'block':'none';document.getElementById('les').style.display=l==='es'?'block':'none';document.documentElement.lang=l;document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));}
+setLang(lang);
+</script>
+</body>
+</html>
