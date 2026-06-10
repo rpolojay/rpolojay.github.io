@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="About MoneyMigo — built by Raul, who paid off debt and learned personal finance the hard way. Now sharing what actually works.">
-<title>About MoneyMigo | Built by Someone Who's Been There</title>
+<meta name="description" content="About MoneyMigo — built by Raul, who has placed hundreds of Latin American crew members with cruise lines through Selective Crew. Real experience. Real financial guidance.">
+<title>About MoneyMigo | Built by Someone Who Knows Your World</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -22,9 +22,14 @@ nav ul{list-style:none;display:flex;gap:2rem}nav ul a{font-size:.9rem;font-weigh
 .lb.on{background:var(--white);color:var(--gd);box-shadow:0 1px 4px rgba(0,0,0,.12)}
 .hero{background:linear-gradient(135deg,var(--gd) 0%,#0f6e56 100%);color:#fff;padding:4rem 2rem;text-align:center}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:.8rem}
-.hero p{font-size:1.05rem;opacity:.88;max-width:560px;margin:0 auto}
+.hero p{font-size:1.05rem;opacity:.88;max-width:600px;margin:0 auto}
 .wrap{max-width:800px;margin:0 auto;padding:3rem 1.5rem}
-.author-card{display:flex;gap:1.5rem;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.8rem;margin-bottom:2.5rem}
+.credential-card{background:var(--gd);color:#fff;border-radius:var(--r);padding:1.8rem;margin-bottom:2rem;position:relative;overflow:hidden}
+.credential-card::before{content:"⚓";position:absolute;right:-10px;top:-20px;font-size:8rem;opacity:.08}
+.credential-card .label{font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:#5DCAA5;margin-bottom:.5rem}
+.credential-card h2{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.7rem}
+.credential-card p{font-size:.95rem;opacity:.9;margin:0}
+.author-card{display:flex;gap:1.5rem;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.8rem;margin-bottom:2rem}
 .author-avatar{min-width:72px;height:72px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;flex-shrink:0}
 .author-info h2{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:.25rem}
 .author-info .role{font-size:.82rem;color:var(--green);font-weight:500;margin-bottom:.6rem}
@@ -33,11 +38,19 @@ h2.section{font-family:'Playfair Display',serif;font-size:1.5rem;margin:2rem 0 .
 p.body{font-size:.97rem;margin-bottom:1rem}
 .story-block{background:var(--gl);border-left:3px solid var(--green);border-radius:0 var(--r) var(--r) 0;padding:1.3rem 1.5rem;margin:1.5rem 0}
 .story-block p{font-size:.96rem;margin:0;font-style:italic;color:var(--gd)}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
+.stat-box{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem;text-align:center}
+.stat-box .num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--green);line-height:1}
+.stat-box .lbl{font-size:.78rem;color:var(--muted);margin-top:.3rem}
 .pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0}
 .pillar{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.1rem}
 .pillar .ico{font-size:1.5rem;margin-bottom:.5rem}
 .pillar h3{font-size:.95rem;font-weight:500;margin-bottom:.3rem}
 .pillar p{font-size:.84rem;color:var(--muted);margin:0}
+.crew-section{background:var(--al);border:1px solid #FAC775;border-radius:var(--r);padding:1.5rem;margin:1.5rem 0}
+.crew-section h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--amber);margin-bottom:.7rem}
+.crew-section ul{margin:0 0 0 1.2rem}
+.crew-section li{font-size:.9rem;margin-bottom:.4rem}
 .values{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
 .val{text-align:center;padding:1.2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--r)}
 .val .ico{font-size:1.8rem;margin-bottom:.5rem}
@@ -51,7 +64,7 @@ p.body{font-size:.97rem;margin-bottom:1rem}
 footer{background:var(--gd);color:rgba(255,255,255,.75);padding:2rem;text-align:center;font-size:.8rem;margin-top:2.5rem}
 footer a{color:rgba(255,255,255,.8)}
 .lc{display:none}
-@media(max-width:768px){nav ul{display:none}.pillars{grid-template-columns:1fr}.values{grid-template-columns:1fr}.author-card{flex-direction:column;align-items:center;text-align:center}}
+@media(max-width:768px){nav ul{display:none}.pillars{grid-template-columns:1fr}.values{grid-template-columns:1fr}.author-card{flex-direction:column;align-items:center;text-align:center}.stat-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -73,91 +86,143 @@ footer a{color:rgba(255,255,255,.8)}
 </nav>
 
 <div class="hero">
-  <h1 id="h1">Built for Latin Americans Working Far From Home</h1>
-  <p id="hp">MoneyMigo exists for the cruise ship cook, the offshore worker, the nanny abroad — anyone earning foreign currency and building a future far from home.</p>
+  <h1 id="h1">Built by Someone Who Knows Your World</h1>
+  <p id="hp">MoneyMigo was created by a cruise industry recruiter who has seen firsthand what happens when crew members have — and don't have — a financial plan.</p>
 </div>
 
 <div class="wrap">
+
+  <!-- Primary Credential Card -->
+  <div class="credential-card">
+    <div class="label">⚓ The Credential That Matters</div>
+    <h2 id="cred-h">Raul has placed hundreds of Latin American crew members with cruise lines through Selective Crew</h2>
+    <p id="cred-p">That means he has seen hundreds of people leave home with a dream, earn real USD at sea — and watched some build life-changing savings while others returned with nothing. MoneyMigo exists because the financial guidance was always missing from the recruitment process.</p>
+  </div>
+
+  <!-- Author Card -->
   <div class="author-card">
     <div class="author-avatar">R</div>
     <div class="author-info">
       <h2 id="aname">Raul — Founder, MoneyMigo</h2>
-      <div class="role" id="arole">Personal Finance Writer · Bilingual EN/ES</div>
-      <p id="abio">I'm not a certified financial planner or a Wall Street veteran. I'm someone who spent years carrying credit card debt, not really understanding how interest worked, and watching my paycheck disappear before the month ended. I learned personal finance the hard way — by making mistakes, researching obsessively, and slowly turning things around. This site is everything I wish I had found when I was starting out.</p>
+      <div class="role" id="arole">Cruise Industry Recruiter · Selective Crew · Bilingual EN/ES</div>
+      <p id="abio">I've spent years connecting Latin American workers — cooks, stewards, bartenders, housekeeping staff — with opportunities on major cruise lines. I've seen the excitement of the first contract. I've also seen crew members return home with almost nothing after 8 months at sea, having spent everything on port days and the crew bar. That gap between potential and outcome is why I built MoneyMigo.</p>
     </div>
   </div>
 
+  <!-- EN Content -->
   <div id="len">
-    <h2 class="section">My Story</h2>
-    <p class="body">For a long time, I was living with debt I didn't fully understand. I knew the minimum payment number and I paid it every month — not realising I was barely touching the principal. Every month the balance barely moved. I felt stuck.</p>
-    <div class="story-block">
-      <p>"I remember the moment I actually calculated how long it would take to pay off my debt making only minimum payments. The number was shocking. That was the moment everything changed."</p>
+    <div class="stat-row">
+      <div class="stat-box"><div class="num">100s</div><div class="lbl">Crew members placed with cruise lines</div></div>
+      <div class="stat-box"><div class="num">60+</div><div class="lbl">Free financial guides on MoneyMigo</div></div>
+      <div class="stat-box"><div class="num">$0</div><div class="lbl">Cost to access every guide</div></div>
     </div>
-    <p class="body">I started reading everything I could about personal finance. Not the complicated investing strategies — just the fundamentals. How interest works. What a budget actually is. How to build an emergency fund. Simple things that nobody had ever explained clearly to me.</p>
-    <p class="body">Over time, I paid off the debt. I built an emergency fund. I started investing small amounts. None of it was dramatic or fast — it was consistent, informed decisions made month after month.</p>
-    <p class="body">I built MoneyMigo because I noticed two things: most personal finance content is written for people who already understand finance, and almost none of it is available in quality Spanish for the millions of Spanish speakers who need it just as much.</p>
+
+    <h2 class="section">Why I Built MoneyMigo</h2>
+    <p class="body">In my work at Selective Crew, I've placed hundreds of Latin American workers on cruise ships — NCL, Royal Caribbean, MSC, and others. The contracts are real. The salaries are good. The opportunity to save is genuinely extraordinary.</p>
+    <p class="body">But here's what I kept seeing: crew members earning $1,500–$2,500 per month with zero expenses — no rent, no food costs, no commute — and coming home 6 months later with almost nothing saved. Not because they were irresponsible. Because nobody had ever taught them what to do with the money.</p>
+
+    <div class="story-block">
+      <p>"A cook I placed on NCL was earning $1,800 a month — more than he'd ever made. Six months later, he came back with $800. He'd spent it at the crew bar, on port day shopping, sending money home with high-fee transfers. The opportunity was there. The plan wasn't. That's the gap MoneyMigo fills."</p>
+    </div>
+
+    <p class="body">I started writing these guides because every crew member deserves to know what to do with their first real paycheck. How to save the maximum in a contract. How to send money home without losing 8% in fees. What to do with $10,000 when the ship docks. How to build something permanent from temporary work abroad.</p>
+    <p class="body">That's MoneyMigo. Not generic finance advice rephrased for a new audience — but financial guidance written specifically for the Latin American worker who earns in dollars and builds in pesos, soles, or quetzales.</p>
+
+    <h2 class="section">Who MoneyMigo Is For</h2>
+    <div class="crew-section">
+      <h3>⚓ If you're one of these people, MoneyMigo was built for you:</h3>
+      <ul>
+        <li>A crew member on your first or second contract wanting to save the maximum</li>
+        <li>Someone preparing to apply for a cruise ship job and wanting to understand the finances</li>
+        <li>A Latin American worker abroad — in the US, Europe, or anywhere — earning foreign currency</li>
+        <li>Someone sending remittances home and wanting to minimize fees</li>
+        <li>A returned crew member with savings who doesn't know what to do next</li>
+        <li>A family member back home managing money sent from abroad</li>
+      </ul>
+    </div>
 
     <h2 class="section">What This Site Covers</h2>
     <div class="pillars">
-      <div class="pillar"><div class="ico">💰</div><h3>Budgeting</h3><p>How to track your spending, set limits, and stick to a plan without feeling restricted.</p></div>
-      <div class="pillar"><div class="ico">🛡️</div><h3>Saving</h3><p>Building an emergency fund, setting savings goals, and making your money grow while it sits.</p></div>
-      <div class="pillar"><div class="ico">💳</div><h3>Debt & Credit</h3><p>Understanding credit scores, paying off debt faster, and using credit cards without getting burned.</p></div>
-      <div class="pillar"><div class="ico">📈</div><h3>Investing</h3><p>Growing your money long-term — starting with whatever you have, even if it's just $50.</p></div>
+      <div class="pillar"><div class="ico">⚓</div><h3>Cruise Ship Finance</h3><p>Save the maximum every contract. Avoid the traps. Come home with real money.</p></div>
+      <div class="pillar"><div class="ico">💸</div><h3>Sending Money Home</h3><p>Remittances, transfer fees, and the best ways to send USD home to Latin America.</p></div>
+      <div class="pillar"><div class="ico">💰</div><h3>Budgeting & Saving</h3><p>Build a budget that works whether you're at sea or on land between contracts.</p></div>
+      <div class="pillar"><div class="ico">📈</div><h3>Investing & Growing</h3><p>Turn contract savings into long-term wealth — starting with whatever you have.</p></div>
     </div>
 
     <h2 class="section">Our Commitment to You</h2>
     <div class="values">
-      <div class="val"><div class="ico">🎯</div><h3>Simple First</h3><p>If it needs a finance degree to understand, we rewrite it.</p></div>
-      <div class="val"><div class="ico">🤝</div><h3>No Judgment</h3><p>Everyone starts somewhere. We meet you where you are.</p></div>
-      <div class="val"><div class="ico">🆓</div><h3>Always Free</h3><p>Every guide, article, and tool on this site is free.</p></div>
+      <div class="val"><div class="ico">🎯</div><h3>Written for You</h3><p>Not generic advice. Content built for Latin Americans working abroad.</p></div>
+      <div class="val"><div class="ico">🤝</div><h3>No Judgment</h3><p>Whether it's your first contract or your tenth — you're in the right place.</p></div>
+      <div class="val"><div class="ico">🆓</div><h3>Always Free</h3><p>Every guide, article and tool on MoneyMigo is completely free.</p></div>
     </div>
 
     <h2 class="section">A Note on the Advice Here</h2>
-    <p class="body">Everything on this site is based on well-established personal finance principles — the 50/30/20 rule, compound interest, debt payoff strategies — researched and validated over decades. I'm not a licensed financial advisor, and nothing here is personalised financial advice. Every article is educational. For major financial decisions, please consult a qualified professional.</p>
+    <p class="body">Everything on MoneyMigo is based on real experience working with Latin American crew members and well-established personal finance principles. I'm not a licensed financial advisor, and nothing here is personalised financial advice. Every article is educational — designed to give you the knowledge to make better decisions. For major financial decisions, please consult a qualified professional.</p>
 
     <div class="cta-box">
-      <h2>Ready to Start?</h2>
-      <p>The best time to take control of your money was yesterday. The second best time is right now.</p>
-      <a href="budget-guide.html">Start With the 50/30/20 Rule →</a>
+      <h2>Ready to Make the Most of Your Contract?</h2>
+      <p>Start with the guide that's changed how crew members think about their money at sea.</p>
+      <a href="save-money-cruise-ship.html">How to Save $10,000 on a Cruise Ship →</a>
     </div>
+
     <div class="disclaimer"><strong>Disclaimer:</strong> MoneyMigo is for informational and educational purposes only. Content does not constitute financial, investment, tax, or legal advice. Always consult a qualified professional before making major financial decisions. See our full <a href="disclaimer.html">disclaimer</a> and <a href="privacy.html">privacy policy</a>.</div>
   </div>
 
+  <!-- ES Content -->
   <div id="les" class="lc">
-    <h2 class="section">Mi historia</h2>
-    <p class="body">Durante mucho tiempo viví con deudas que no entendía completamente. Conocía el número del pago mínimo y lo pagaba cada mes — sin darme cuenta de que apenas tocaba el capital. Cada mes el saldo casi no se movía. Me sentía atrapado.</p>
-    <div class="story-block">
-      <p>"Recuerdo el momento en que realmente calculé cuánto tiempo tardaría en pagar mi deuda haciendo solo los pagos mínimos. El número fue impactante. Ese fue el momento en que todo cambió."</p>
+    <div class="stat-row">
+      <div class="stat-box"><div class="num">100s</div><div class="lbl">Tripulantes colocados en cruceros</div></div>
+      <div class="stat-box"><div class="num">60+</div><div class="lbl">Guías financieras gratuitas</div></div>
+      <div class="stat-box"><div class="num">$0</div><div class="lbl">Costo de acceso a todo</div></div>
     </div>
-    <p class="body">Comencé a leer todo lo que pude sobre finanzas personales. No las estrategias complicadas — solo los fundamentos. Cómo funcionan los intereses. Qué es realmente un presupuesto. Cómo construir un fondo de emergencia. Cosas simples que nadie me había explicado claramente.</p>
-    <p class="body">Con el tiempo, pagué la deuda. Construí un fondo de emergencia. Comencé a invertir pequeñas cantidades. Nada fue dramático ni rápido — fueron decisiones consistentes e informadas tomadas mes tras mes.</p>
-    <p class="body">Construí MoneyMigo porque noté dos cosas: la mayoría del contenido de finanzas personales está escrito para quienes ya entienden de finanzas, y casi nada está disponible en español de calidad para los millones de hispanohablantes que lo necesitan igual.</p>
+
+    <h2 class="section">Por qué construí MoneyMigo</h2>
+    <p class="body">En mi trabajo en Selective Crew, he colocado a cientos de trabajadores latinoamericanos en cruceros — NCL, Royal Caribbean, MSC y otros. Los contratos son reales. Los salarios son buenos. La oportunidad de ahorrar es genuinamente extraordinaria.</p>
+    <p class="body">Pero esto es lo que seguía viendo: tripulantes ganando $1.500–$2.500 al mes sin gastos — sin arriendo, sin costo de comida, sin transporte — y regresando a casa 6 meses después con casi nada ahorrado. No porque fueran irresponsables. Porque nadie les había enseñado qué hacer con el dinero.</p>
+
+    <div class="story-block">
+      <p>"Un cocinero que coloqué en NCL ganaba $1.800 al mes — más de lo que había ganado nunca. Seis meses después, regresó con $800. Lo había gastado en el bar de tripulación, en compras en días de puerto, enviando dinero a casa con transferencias de altas comisiones. La oportunidad estaba ahí. El plan no. Esa es la brecha que llena MoneyMigo."</p>
+    </div>
+
+    <p class="body">Empecé a escribir estas guías porque cada tripulante merece saber qué hacer con su primer salario real en dólares. Cómo ahorrar el máximo en un contrato. Cómo enviar dinero a casa sin perder el 8% en comisiones. Qué hacer con $10.000 cuando el barco atraca. Cómo construir algo permanente con trabajo temporal en el exterior.</p>
+
+    <h2 class="section">Para quién es MoneyMigo</h2>
+    <div class="crew-section">
+      <h3>⚓ Si eres una de estas personas, MoneyMigo fue construido para ti:</h3>
+      <ul>
+        <li>Un tripulante en tu primer o segundo contrato queriendo ahorrar el máximo</li>
+        <li>Alguien preparándose para solicitar trabajo en un crucero</li>
+        <li>Un trabajador latinoamericano en el exterior ganando moneda extranjera</li>
+        <li>Alguien enviando remesas a casa y queriendo minimizar comisiones</li>
+        <li>Un tripulante que regresó con ahorros y no sabe qué hacer después</li>
+        <li>Un familiar en casa administrando dinero enviado desde el exterior</li>
+      </ul>
+    </div>
 
     <h2 class="section">Lo que cubre este sitio</h2>
     <div class="pillars">
-      <div class="pillar"><div class="ico">💰</div><h3>Presupuesto</h3><p>Cómo rastrear tus gastos, establecer límites y realmente cumplir un plan sin sentirte restringido.</p></div>
-      <div class="pillar"><div class="ico">🛡️</div><h3>Ahorro</h3><p>Construir un fondo de emergencia, establecer metas y hacer crecer tu dinero mientras descansa.</p></div>
-      <div class="pillar"><div class="ico">💳</div><h3>Deudas y crédito</h3><p>Entender los puntajes de crédito, pagar deudas más rápido y usar tarjetas sin quemarte.</p></div>
-      <div class="pillar"><div class="ico">📈</div><h3>Inversión</h3><p>Hacer crecer tu dinero a largo plazo — empezando con lo que tengas, incluso $50.</p></div>
+      <div class="pillar"><div class="ico">⚓</div><h3>Finanzas en cruceros</h3><p>Ahorra el máximo en cada contrato. Evita las trampas. Regresa a casa con dinero real.</p></div>
+      <div class="pillar"><div class="ico">💸</div><h3>Envío de dinero a casa</h3><p>Remesas, comisiones de transferencia y las mejores formas de enviar dólares a Latinoamérica.</p></div>
+      <div class="pillar"><div class="ico">💰</div><h3>Presupuesto y ahorro</h3><p>Construye un presupuesto que funcione tanto en el mar como en tierra entre contratos.</p></div>
+      <div class="pillar"><div class="ico">📈</div><h3>Inversión y crecimiento</h3><p>Convierte los ahorros del contrato en riqueza a largo plazo — empezando con lo que tengas.</p></div>
     </div>
 
     <h2 class="section">Nuestro compromiso contigo</h2>
     <div class="values">
-      <div class="val"><div class="ico">🎯</div><h3>Simple primero</h3><p>Si necesita un título para entenderlo, lo reescribimos.</p></div>
-      <div class="val"><div class="ico">🤝</div><h3>Sin juicios</h3><p>Todos empezamos en algún lugar. Te encontramos donde estás.</p></div>
-      <div class="val"><div class="ico">🆓</div><h3>Siempre gratis</h3><p>Cada guía, artículo y herramienta en este sitio es gratuita.</p></div>
+      <div class="val"><div class="ico">🎯</div><h3>Escrito para ti</h3><p>No consejos genéricos. Contenido construido para latinos que trabajan en el exterior.</p></div>
+      <div class="val"><div class="ico">🤝</div><h3>Sin juicios</h3><p>Ya sea tu primer contrato o tu décimo — estás en el lugar correcto.</p></div>
+      <div class="val"><div class="ico">🆓</div><h3>Siempre gratis</h3><p>Cada guía, artículo y herramienta en MoneyMigo es completamente gratuita.</p></div>
     </div>
-
-    <h2 class="section">Una nota sobre los consejos aquí</h2>
-    <p class="body">Todo en MoneyMigo se basa en principios de finanzas personales bien establecidos. No soy un asesor financiero certificado y nada aquí es asesoría personalizada. Para decisiones financieras importantes, consulta a un profesional calificado.</p>
 
     <div class="cta-box">
-      <h2>¿Listo para empezar?</h2>
-      <p>El mejor momento para tomar control de tu dinero fue ayer. El segundo mejor momento es ahora mismo.</p>
-      <a href="budget-guide.html">Empieza con la regla 50/30/20 →</a>
+      <h2>¿Listo para aprovechar al máximo tu contrato?</h2>
+      <p>Empieza con la guía que ha cambiado cómo los tripulantes piensan sobre su dinero en el mar.</p>
+      <a href="save-money-cruise-ship.html">Cómo ahorrar $10.000 en un crucero →</a>
     </div>
+
     <div class="disclaimer"><strong>Aviso legal:</strong> MoneyMigo es solo para fines informativos y educativos. El contenido no constituye asesoría financiera, de inversión, fiscal o legal. Siempre consulta a un profesional calificado antes de tomar decisiones financieras importantes.</div>
   </div>
+
 </div>
 
 <footer>
@@ -167,8 +232,22 @@ footer a{color:rgba(255,255,255,.8)}
 
 <script>
 const T={
-  en:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",h1:"Built for Latin Americans Working Far From Home",hp:"MoneyMigo exists for the cruise ship cook, the offshore worker, the nanny abroad — anyone earning foreign currency and building a future far from home.",aname:"Raul — Founder, MoneyMigo",arole:"Personal Finance Writer · Bilingual EN/ES · Built for Latin Americans Abroad",abio:"I'm not a certified financial planner or a Wall Street veteran. I'm someone who spent years carrying credit card debt, not really understanding how interest worked, and watching my paycheck disappear before the month ended. I learned personal finance the hard way — by making mistakes, researching obsessively, and slowly turning things around. This site is everything I wish I had found when I was starting out.",flogo:"MoneyMigo",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
-  es:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",h1:"Creado para latinos que trabajan lejos de casa",hp:"MoneyMigo existe porque las finanzas personales no deberían requerir un título — solo deberían requerir un punto de partida.",aname:"Raul — Fundador, MoneyMigo",arole:"Escritor de finanzas personales · Bilingüe EN/ES",abio:"No soy un planificador financiero certificado ni un veterano de Wall Street. Soy alguien que pasó años cargando deuda de tarjeta de crédito, sin entender cómo funcionaban los intereses, y viendo cómo su salario desaparecía antes de que terminara el mes. Aprendí finanzas personales a la manera difícil — cometiendo errores, investigando obsesivamente y dando vuelta las cosas poco a poco. Este sitio es todo lo que desearía haber encontrado cuando estaba empezando.",flogo:"MoneyMigo",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
+  en:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Budgeting",n2:"Saving",n3:"Debt",n4:"Investing",n5:"Free Tools",
+  h1:"Built by Someone Who Knows Your World",
+  hp:"MoneyMigo was created by a cruise industry recruiter who has seen firsthand what happens when crew members have — and don't have — a financial plan.",
+  "cred-h":"Raul has placed hundreds of Latin American crew members with cruise lines through Selective Crew",
+  "cred-p":"That means he has seen hundreds of people leave home with a dream, earn real USD at sea — and watched some build life-changing savings while others returned with nothing. MoneyMigo exists because the financial guidance was always missing from the recruitment process.",
+  aname:"Raul — Founder, MoneyMigo",arole:"Cruise Industry Recruiter · Selective Crew · Bilingual EN/ES",
+  abio:"I've spent years connecting Latin American workers — cooks, stewards, bartenders, housekeeping staff — with opportunities on major cruise lines. I've seen the excitement of the first contract. I've also seen crew members return home with almost nothing after 8 months at sea. That gap between potential and outcome is why I built MoneyMigo.",
+  flogo:"MoneyMigo",fpr:"Privacy Policy",fdi:"Disclaimer",fco:"Contact",flegal:"This content is for informational purposes only and does not constitute financial advice."},
+  es:{logo:"Money<span style='color:var(--green)'>Migo</span>",n1:"Presupuesto",n2:"Ahorro",n3:"Deudas",n4:"Inversión",n5:"Herramientas",
+  h1:"Creado por alguien que conoce tu mundo",
+  hp:"MoneyMigo fue creado por un reclutador de la industria de cruceros que ha visto de primera mano lo que sucede cuando los tripulantes tienen — y no tienen — un plan financiero.",
+  "cred-h":"Raul ha colocado a cientos de tripulantes latinoamericanos en cruceros a través de Selective Crew",
+  "cred-p":"Eso significa que ha visto a cientos de personas salir de casa con un sueño, ganar dólares reales en el mar — y ha visto cómo algunos construyeron ahorros que cambiaron sus vidas mientras otros regresaron con nada. MoneyMigo existe porque la orientación financiera siempre estuvo ausente del proceso de reclutamiento.",
+  aname:"Raul — Fundador, MoneyMigo",arole:"Reclutador de cruceros · Selective Crew · Bilingüe EN/ES",
+  abio:"He pasado años conectando a trabajadores latinoamericanos — cocineros, camareros, bartenders, personal de limpieza — con oportunidades en las principales líneas de cruceros. He visto la emoción del primer contrato. También he visto a tripulantes regresar a casa con casi nada después de 8 meses en el mar. Esa brecha entre el potencial y el resultado es por qué construí MoneyMigo.",
+  flogo:"MoneyMigo",fpr:"Política de privacidad",fdi:"Aviso legal",fco:"Contacto",flegal:"Este contenido es solo para fines informativos y no constituye asesoría financiera."}
 };
 let lang=localStorage.getItem('lang')||'en';
 function setLang(l){
